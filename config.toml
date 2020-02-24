@@ -1,0 +1,94 @@
+# 白夜主题
+# PaleBlueYk https://css0209.cn
+baseURL = "http://css0209.cn"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "PaleBlueYk'Blog"
+summaryLength = 100
+hasCJKLanguage = true # 如果为true，则自动检测内容中的中文/日语/韩语。这将使.Summary和.WordCount正确行为的CJK语言。
+paginate = 6  
+enableEmoji = true
+
+[params]
+  title = "PaleBlueYk's Blog"
+  subTitle = "Don't Be So Serious"
+  author = "PaleBlueYk"
+  description = "paleBlueYk,blog"
+  record = "蜀ICP备17038940号-2" # 备案号
+  policeRecordProvince = "川" # 公安备案省份简称,如“川公网安备”则填"川"
+  policeRecordNumber = "51010702001557" # 公安备案号
+  linksFeedback = "交换友链请在下方留言,并将本站添加到贵站的友链中,且确保贵站支持HTTPS协议!"
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[params.valine]
+  enable = true #文章页面下评论是否开启
+  appId = "1qw0wI8rRU2aokRUy7A0Hzld-gzGzoHsz"
+  appKey = "kTlur1J9v6jOExvFIlWM5jbp"
+  placeholder = "Yo~"
+  visitor = true
+  highlight = true
+  linksEnable = true # 友链下评论
+
+# 图标采用fontawesome(http://www.fontawesome.com.cn/faicons/)
+# key = value key与图标名相同
+[social]
+  github-alt = "https://github.com/paleBlueYk"
+  qq = "tencent://Message/?Uin=917885215&amp;websiteName=q-zone.qq.com&amp;Menu=yes"
+  television = "https://space.bilibili.com/10061915"
+  envelope-o = "mailto:blankyk@css0209.cn"
+
+[[menu.main]]
+  identifier = "welcome"
+  name = "欢迎页"
+  weight = "10"
+  url = "/"
+[[menu.main]]
+  identifier = "home"
+  name = "主页"
+  weight = "20"
+  url = "/posts"
+[[menu.main]]
+  identifier = "about"
+  name = "关于我"
+  weight = "30"
+  url = "/about"
+[[menu.main]]
+  identifier = "links"
+  name = "友链"
+  weight = "40"
+  url = "/links"
+
+# 友链
+[[menu.links]]
+ identifier = "Bamboo Sticks"
+ name = "Bamboo Sticks"
+ url = "https://haowei.ch/"
+[[menu.links]]
+ identifier = "IUblog"
+ name = "IUblog"
+ url = "https://blog.iucode.cn/"
+[[menu.links]]
+ identifier = "蠢黑通行"
+ name = "蠢黑通行"
+ url = "https://blackyau.cc/"
+[[menu.links]]
+ identifier = "徐AB"
+ name = "徐AB"
+ url = "https://www.xuab.net/"
+[[menu.links]]
+ identifier = "Water"
+ name = "Water"
+ url = "https://water1127.github.io"
+[[menu.links]]
+ identifier = "CanYe"
+ name = "CanYe"
+ url = "http://blog.canye365.cn"
+[[menu.links]]
+ identifier = "玄儿"
+ name = "玄儿"
+ url = "http://blogs.kiyori.icu/"
+[[menu.links]]
+ identifier= "Tmiracle"
+ name = "Tmiracle"
+ url = "https://www.maokdown.com/"
