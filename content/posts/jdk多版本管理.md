@@ -2,7 +2,7 @@
 title: "JDK多版本管理"
 date: 2019-07-11T10:52:03+08:00
 hidden: false
-draft: true
+draft: false
 tags: [Java]
 keywords: ['jdk','多版本管理']
 description: "jdk的多版本管理"
