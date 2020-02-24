@@ -2,6 +2,8 @@
 title: "使用jenkins发布hugo博客"
 date: 2020-02-24T22:36:47+08:00
 draft: false
+hidden: false
+tags: [jenkins,hugo,blog]
 ---
 
 ## 准备
