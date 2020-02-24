@@ -8,6 +8,7 @@ pipeline {
     stages {
           stage('Init') {
             steps {
+                sh 'hugo version:'
                 sh '$HUGO version'
             }
         }
