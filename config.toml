@@ -1,6 +1,6 @@
 # 白夜主题
 # PaleBlueYk https://css0209.cn
-baseURL = "http://css0209.cn"
+baseURL = "https://css0209.cn"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "PaleBlueYk'Blog"

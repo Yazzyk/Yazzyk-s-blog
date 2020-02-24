@@ -153,6 +153,7 @@ html, body {
   margin-right: auto;
   margin-bottom: 50px;
   box-shadow: 0 0 20px #ccc;
+  z-index: 1;
 }
 
 .main::after {
@@ -162,11 +163,11 @@ html, body {
 }
 
 .postList {
+  padding: 0 50px;
   padding-top: 30px;
 }
 
 .listBox {
-  padding: 10px 50px;
   font-weight: 200;
 }
 
@@ -196,8 +197,9 @@ html, body {
   transform: scaleX(1);
 }
 
-.listBox p {
+.listBox p, .listBox pre{
   letter-spacing: 0.2px;
+  font-size: .9em;
   color: #444;
   overflow: hidden;
 }
@@ -208,7 +210,7 @@ html, body {
 
 .listBox span {
   color: #666;
-  font-size: 2px;
+  font-size: .6em;
   margin-right: 5px;
 }
 
@@ -269,108 +271,7 @@ footer a {
   width: 50%;
 }
 
-@media (min-width: 723px) and (max-width: 1200px) {
-  .nav {
-    width: calc(95vw);
-  }
-  .header {
-    width: 95%;
-  }
-  .main {
-    width: 95%;
-  }
-  footer {
-    width: 95%;
-  }
-}
 
-@media (max-width: 768px) {
-  .nav {
-    width: calc(97vw);
-    text-align: center;
-  }
-  .bars {
-    width: 20px;
-    height: 20px;
-    display: block;
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    background-color: none;
-  }
-  .bars i {
-    font-size: 20px;
-  }
-  .nav ul {
-    display: none;
-    position: fixed;
-    float: left;
-    margin: 0;
-    padding: 0;
-  }
-  .nav li {
-    float: none;
-    margin: 0;
-    margin-top: 5px;
-  }
-  .nav .linkBox:before {
-    transform: scaleY(1);
-  }
-  .nav .linkBox {
-    color: #fff;
-    transition: .1s;
-  }
-  .nav .linkBox:hover {
-    color: #000;
-  }
-  .nav .linkBox:hover::before {
-    transform: scaleY(0);
-  }
-  .logoBox {
-    margin: 0 auto;
-    float: unset;
-  }
-  .logo {
-    width: 60px;
-    height: 60px;
-  }
-  .header {
-    width: calc(97vw);
-    text-align: center;
-  }
-  .header div {
-    width: calc(97vw);
-    float: none;
-    clear: both;
-    margin: 0 auto;
-  }
-  .subTitle {
-    text-align: center;
-  }
-  .socialLinks {
-    text-align: center;
-  }
-  .socials a {
-    margin: 0 10px;
-  }
-  .main {
-    width: calc(97vw);
-    margin-bottom: 10px;
-  }
-  footer {
-    width: calc(97vw);
-    text-align: center;
-  }
-  footer .leftBox {
-    float: none;
-    width: 100%;
-  }
-  footer .rightBox {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
-}
 
 /* 文章内容 */
 
@@ -417,6 +318,11 @@ blockquote {
   color: #555555;
   background-color: #eee;
   border-left: none;
+  overflow-x: auto;
+}
+
+blockquote p{
+  margin: 0;
 }
 
 blockquote:before {
@@ -442,4 +348,117 @@ blockquote:before {
   border-left: 3px solid #ff1700;
   background-color: #f9f9f9;
   list-style: none;
+}
+
+@media (min-width: 723px) and (max-width: 1200px) {
+  .nav {
+    width: calc(95vw);
+  }
+  .header {
+    width: 95%;
+  }
+  .main {
+    width: 95%;
+  }
+  footer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: calc(97vw);
+    text-align: center;
+  }
+  .bars {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: transparent;
+    border: none;
+  }
+  .bars i {
+    font-size: 20px;
+  }
+  .bars:focus{
+    border: none;
+    outline: none;
+  }
+  .nav ul {
+    display: none;
+    position: fixed;
+    float: left;
+    top: 40px;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+  }
+  .nav li {
+    float: none;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .nav .linkBox:before {
+    transform: scaleY(1);
+  }
+  .nav .linkBox {
+    color: #fff;
+    transition: .1s;
+  }
+  .nav .linkBox:hover {
+    color: #000;
+  }
+  .nav .linkBox:hover::before {
+    transform: scaleY(0);
+  }
+  .logoBox {
+    margin: 0 auto;
+    float: unset;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .header {
+    width: calc(97vw);
+    text-align: center;
+  }
+  .header div {
+    width: calc(97vw);
+    float: none;
+    clear: both;
+    margin: 0 auto;
+  }
+  .subTitle {
+    text-align: center;
+  }
+  .socialLinks {
+    text-align: center;
+  }
+  .postContent, .postList{
+    padding: 10px 20px;
+  }
+  .socials a {
+    margin: 0 10px;
+  }
+  .main {
+    width: calc(97vw);
+    margin-bottom: 10px;
+  }
+  footer {
+    width: calc(97vw);
+    text-align: center;
+  }
+  footer .leftBox {
+    float: none;
+    width: 100%;
+  }
+  footer .rightBox {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 }
