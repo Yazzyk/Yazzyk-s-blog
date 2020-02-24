@@ -1,4 +1,5 @@
 public/
 # OSX
+**/.DS_Store
 .DS_Store
 *.map
