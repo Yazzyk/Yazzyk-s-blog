@@ -280,7 +280,7 @@ footer a {
   letter-spacing: 1px;
   word-wrap: break-word;
   word-break: break-all;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .postContent img {
