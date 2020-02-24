@@ -1,12 +1,12 @@
-# 白夜主题
-# PaleBlueYk https://css0209.cn
+# 白 主题
+# Theme author: PaleBlueYk https://css0209.cn
 baseURL = "https://css0209.cn"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "PaleBlueYk'Blog"
 summaryLength = 100
 hasCJKLanguage = true # 如果为true，则自动检测内容中的中文/日语/韩语。这将使.Summary和.WordCount正确行为的CJK语言。
-paginate = 6  
+paginate = 6 # 分页，没做太多css处理,不建议修改
 enableEmoji = true
 
 [params]
