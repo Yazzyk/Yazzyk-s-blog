@@ -1,9 +1,10 @@
 # 白 主题
 # Theme author: PaleBlueYk https://css0209.cn
-baseURL = "https://css0209.cn"
+baseURL = "https://css0209.cn" # 注意不要在最后加’/‘如”https://css0209.cn“不要写成"https://css0209.cn/"
 languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"
+defaultContentLanguage = "en-us"
 title = "PaleBlueYk'Blog"
+theme = "white"
 summaryLength = 100
 hasCJKLanguage = true # 如果为true，则自动检测内容中的中文/日语/韩语。这将使.Summary和.WordCount正确行为的CJK语言。
 paginate = 6 # 分页，没做太多css处理,不建议修改
@@ -40,22 +41,22 @@ enableEmoji = true
 
 [[menu.main]]
   identifier = "welcome"
-  name = "欢迎页"
+  name = "Welcome"
   weight = "10"
   url = "/"
 [[menu.main]]
   identifier = "home"
-  name = "主页"
+  name = "Home"
   weight = "20"
   url = "/posts"
 [[menu.main]]
   identifier = "about"
-  name = "关于我"
+  name = "About me"
   weight = "30"
   url = "/about"
 [[menu.main]]
   identifier = "links"
-  name = "友链"
+  name = "Links"
   weight = "40"
   url = "/links"
 
