@@ -4,7 +4,7 @@ pipeline {
     environment {
         HUGO = '/bin/hugo'
         DEPLOY_DIR = '/www/wwwroot/css0209.cn/public'
-        WELLKNOWN = '/www/wwwroot/css0209.cn/.well-known'
+        WELLKNOWN = '/www/wwwroot/css0209.cn/well-known'
     }
     stages {
           stage('Init') {
