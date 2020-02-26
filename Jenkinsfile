@@ -4,7 +4,6 @@ pipeline {
     environment {
         HUGO = '/bin/hugo'
         DEPLOY_DIR = '/www/wwwroot/css0209.cn/public'
-        WELLKNOWN = '/www/wwwroot/css0209.cn/well-known'
     }
     stages {
           stage('Init') {
@@ -24,7 +23,6 @@ pipeline {
             steps {
                 sh 'rm -rf $DEPLOY_DIR'
                 sh 'mv ./public $DEPLOY_DIR'
-                sh 'cp $WELLKNOWN $DEPLOY_DIR/.well-known'
                 sh 'echo "deploy on $DEPLOY_DIR"'
             }
         }
