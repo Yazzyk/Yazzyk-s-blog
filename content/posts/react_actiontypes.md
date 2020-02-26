@@ -2,7 +2,7 @@
 title: "React&Redux ActionTypes"
 date: 2019-05-27T22:54:38+08:00
 hidden: false
-draft: true
+draft: false
 tags: [react]
 keywords: [react,ActionTypes]
 description: ""
