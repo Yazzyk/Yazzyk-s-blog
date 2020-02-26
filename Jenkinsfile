@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'ls -a'
-                sh '$HUGO -t white -D'
+                sh '$HUGO --baseUrl="https://css0209.cn" -D'
                 sh 'ls ./public'
             }
         }
