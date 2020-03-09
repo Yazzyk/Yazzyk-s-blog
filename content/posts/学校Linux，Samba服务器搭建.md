@@ -58,7 +58,7 @@ mkdir /etc/book #在根目录下etc目录下创建book文件夹
 ```bash
 vi /etc/samba/smb.conf #利用vi编辑器打开配置文件
 ```
-命令模式下输入`/global`快速查找关键字'global'(`vi/vim`的部分使用：[Linux vi/vim笔记](../240.html))
+命令模式下输入`/global`快速查找关键字'global'(`vi/vim`的部分使用：[Linux vi/vim笔记](../linux-vi-vim/))
 按`i`切换到文本编辑模式
 ```bash
 [global]
