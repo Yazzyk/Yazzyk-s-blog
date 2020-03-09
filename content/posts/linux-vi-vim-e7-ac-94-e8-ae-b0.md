@@ -1,6 +1,5 @@
 ---
 title: Linux Vi/Vim笔记
-url: 240.html
 id: 240
 comments: true
 categories:
