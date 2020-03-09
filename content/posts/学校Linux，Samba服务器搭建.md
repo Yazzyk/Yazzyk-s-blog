@@ -19,10 +19,12 @@ mount -t iso9660 /dev/hdc /mnt  #挂载光盘(/dev/hdc)到 /mnt目录
 - 所有的软件包都在Server目录(`/mnt/Server`)
 - `rpm -ivh` (`-i`安装、`-v`显示安装过程、`-h`以“#”符号表示安装进度）
 - samba服务器需要安装两个软件包：
+
 ```bash
 rpm -ivh /mnt/Server/perl-Convert-ASNI-0.20-1.1.noarch.rpm
 rpm -ivh /mnt/Server/samba-3.0.33-3.14.e15.i386.rpm
 ```
+
 > 注：使用tab键自动补全，更方便  
 
 检查是否安装成功：`service smb start`（`Samba`服务器使用`smb`协议）
