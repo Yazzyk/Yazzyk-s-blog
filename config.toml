@@ -93,3 +93,7 @@ enableEmoji = true
  identifier= "Tmiracle"
  name = "Tmiracle"
  url = "https://www.maokdown.com/"
+ [[menu.links]]
+ identifier = "冰峰"
+ name = "冰峰"
+ url = "https://www.ad-s.cn/"
