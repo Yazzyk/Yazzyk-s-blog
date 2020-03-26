@@ -13,7 +13,7 @@ slug: ""
 
 ![](http://www.ruanyifeng.com/blogimg/asset/2016/bg2016091802.jpg)
 
-# 0x000
+# 0x00
 `render`函数
 ```js
 render() {
@@ -41,7 +41,7 @@ render() {
 }
 ```
 
-# 0x001
+# 0x01
 在`src`下创建`store/index.js`  
 这里就创建好了Store
 ```js
@@ -52,7 +52,7 @@ const store = createStore();
 
 export default store;
 ```
-# 0x002
+# 0x02
 在`src/store`下创建`reducer.js`
 ```js
 const defaultState={};
@@ -62,7 +62,7 @@ export default (state = defaultState,action)=>{
 }
 ```
 
-# 0x003
+# 0x03
 发送`action`
 ```js
 handleInputChange(e){
@@ -75,7 +75,7 @@ handleInputChange(e){
 }
 ```
 
-# 0x004
+# 0x04
 检测数据的传递
 ```js
 constructor(props) {
