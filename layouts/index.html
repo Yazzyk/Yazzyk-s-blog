@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  <link rel="shortcut icon" href="{{"img/favicon.ico" |absURL}}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ "css/index.css" |absURL }}">
+  <link rel="stylesheet" href="{{ "css/font-awesome.min.css" |absURL }}">
+</head>
+
+<body>
+  <div class="mainBox">
+    <h1 class="title">
+      {{ if .Site.Params.Title }}
+      {{.Site.Params.Title}}
+      {{ else }}
+      Welcome to My Blog
+      {{ end }}
+    </h1>
+    <h4 class="subTitle">
+      {{ if .Site.Params.SubTitle }}
+      {{.Site.Params.SubTitle}}
+      {{ else }}
+      芝灵生于幽谷,不以无人而不芳
+      {{ end }}
+    </h4>
+    <div class="socials">
+      {{ range $key,$value := .Site.Social }}
+      {{ if ne $value "" }}
+      <a href="{{ $value }}" title="{{ $key }}" target="_blank"><i class="fa fa-{{ $key }}" aria-hidden="true"></i></a>
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="btn">
+      <a class="toHome" href="/posts/">{{ i18n "enter" }}</a>
+    </div>
+  </div>
+  <footer>
+    <div class="indexFooter">
+      {{ if .Site.Params.record }}
+      <span><a href="http://www.beian.miit.gov.cn/" target="_blank">{{ .Site.Params.record }}</a></span><br />
+      {{ end }}
+      {{ if (and .Site.Params.policeRecordNumber .Site.Params.policeRecordProvince)}}
+      <span>
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{.Site.Params.policeRecordNumber}}" target="_blank">
+          <img class="beian" src="{{"/img/beian.png"|absURL}}" alt="">{{.Site.Params.policeRecordProvince}}公网安备 {{.Site.Params.policeRecordNumber}}号
+        </a>
+      </span>
+      {{ end }}
+    </div>
+  </footer>
+</body>
+
+</html>
