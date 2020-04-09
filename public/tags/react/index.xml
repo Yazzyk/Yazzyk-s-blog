@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on PaleBlueYk&#39;Blog</title>
+    <link>https://css0209.cn/tags/react/</link>
+    <description>Recent content in React on PaleBlueYk&#39;Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 27 May 2019 23:20:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://css0209.cn/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>React&amp;Redux actionCreators</title>
+      <link>https://css0209.cn/posts/react_actioncreators/</link>
+      <pubDate>Mon, 27 May 2019 23:20:12 +0800</pubDate>
+      
+      <guid>https://css0209.cn/posts/react_actioncreators/</guid>
+      <description>0x01 创建文件 创建actionCreators.js import {INPUT_VALUE_CHANGE,ADD_TODO_ITEM,DEL_TODO_ITEM} from &amp;#39;./ActionTypes&amp;#39;; export const getInputChangeAction = (value) =&amp;gt;({ type : INPUT_VALUE_CHANGE, value }); export const getAddItemAction = () =&amp;gt;({ type: ADD_TODO_ITEM }); export const getDelItemAction = (index)=&amp;gt;({ type: DEL_TODO_ITEM, index }); 0x02 修改 修改ToDoList.js相关的地方 handleInputChange(e) { const action = getInputChangeAction(e.target.value); store.dispatch(action); } handleBtnClick() { const action = getAddItemAction(); store.dispatch(action); } handleItemClick(index) { const action = getDelItemAction(index);</description>
+    </item>
+    
+    <item>
+      <title>React&amp;Redux ActionTypes</title>
+      <link>https://css0209.cn/posts/react_actiontypes/</link>
+      <pubDate>Mon, 27 May 2019 22:54:38 +0800</pubDate>
+      
+      <guid>https://css0209.cn/posts/react_actiontypes/</guid>
+      <description>0x00 前言 ActionTypes是为了防止在大型项目的开发中action中的type出现打错字之类的错误，此时，控制台不会报错，但功能异常。使用ActionTypes后，页面将会出现报错，减少排错时间 0x01 创</description>
+    </item>
+    
+    <item>
+      <title>React之Redux工作流程</title>
+      <link>https://css0209.cn/posts/react_reduxflow/</link>
+      <pubDate>Mon, 27 May 2019 19:13:18 +0800</pubDate>
+      
+      <guid>https://css0209.cn/posts/react_reduxflow/</guid>
+      <description>阮一峰 0x00 render函数 render() { return ( &amp;lt;div style={{ width: &amp;#39;500px&amp;#39;, padding: &amp;#39;10px&amp;#39; }}&amp;gt; &amp;lt;Input value={this.state.inputValue} style={{ width: &amp;#34;400px&amp;#34;, marginRight: &amp;#34;15px&amp;#34; }} onChange={this.handleInputChange} /&amp;gt; &amp;lt;Button type=&amp;#34;primary&amp;#34; &amp;gt; 提交 &amp;lt;/Button&amp;gt; &amp;lt;List bordered dataSource={this.state.list} renderItem={item =&amp;gt; ( &amp;lt;List.Item&amp;gt; {item} &amp;lt;/List.Item&amp;gt; )} /&amp;gt; &amp;lt;/div&amp;gt; ) } 0x01 在src下创建store/index.js 这里就创建好了Store import {createStore} from &amp;#39;redux&amp;#39;; import reducer from &amp;#39;./reducer&amp;#39;; const store = createStore(); export</description>
+    </item>
+    
+    <item>
+      <title>React Fragment</title>
+      <link>https://css0209.cn/posts/react_fragment/</link>
+      <pubDate>Mon, 27 May 2019 15:12:56 +0800</pubDate>
+      
+      <guid>https://css0209.cn/posts/react_fragment/</guid>
+      <description>https://react.docschina.org/docs/fragments.html Fragment相当于占位符吧，正常情况下，React中子组件只能返回一个Dom节点,而Fragment可以让你的子组件返回多个Dom节点 父组件 import React, { Fragment } from &amp;#39;react&amp;#39;; import ToDoItem from &amp;#39;./ToDoItem&amp;#39;; class ToDoList extends React.Component { constructor(props) { super(props); //组价状态 this.state =</description>
+    </item>
+    
+  </channel>
+</rss>

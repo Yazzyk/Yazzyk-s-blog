@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpringBoot on PaleBlueYk&#39;Blog</title>
+    <link>https://css0209.cn/categories/springboot/</link>
+    <description>Recent content in SpringBoot on PaleBlueYk&#39;Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 14 Apr 2019 15:27:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://css0209.cn/categories/springboot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot中使用MongoDB</title>
+      <link>https://css0209.cn/posts/spring-boot%E4%B8%AD%E4%BD%BF%E7%94%A8mongodb/</link>
+      <pubDate>Sun, 14 Apr 2019 15:27:30 +0000</pubDate>
+      
+      <guid>https://css0209.cn/posts/spring-boot%E4%B8%AD%E4%BD%BF%E7%94%A8mongodb/</guid>
+      <description>pom文件中 &amp;lt;dependencies&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-data-mongodb&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; application.properties中 ##mongo配置 spring.data.mongodb.host=127.0.0.1 spring.data.mongodb.port=27017 spring.data.mongodb.database=test 主类中 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)</description>
+    </item>
+    
+  </channel>
+</rss>

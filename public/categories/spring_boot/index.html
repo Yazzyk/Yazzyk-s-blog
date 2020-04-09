@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaleBlueYk&#39;Blog</title>
+  <meta name="author" content="PaleBlueYk" />
+  
+  <meta name="description" content="paleBlueYk,blog" />
+  
+  <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://css0209.cn/css/white.css">
+  <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://css0209.cn/css/highlight.css">
+  <script src="https://css0209.cn/js/heighlight.min.js"></script>
+  
+  
+  
+  <script src="https://css0209.cn/js/jQuery.min.js"></script>
+  <script src="https://css0209.cn/js/lodash.js"></script>
+  <link rel="stylesheet" href="https://css0209.cn/css/main.css">
+</head>
+<body>
+  <div class="nav">
+  <div class="logoBox">
+    <a href="/posts"><img src="/img/logo.png" alt="" class="logo"></a>
+  </div>
+  <button class="bars" onclick="toggleMenus()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <ul>
+    
+    
+    <li><a class="linkBox" href="/">Welcome</a></li>
+    
+    <li><a class="linkBox" href="/posts">Home</a></li>
+    
+    <li><a class="linkBox" href="/about">About me</a></li>
+    
+    <li><a class="linkBox" href="/links">Links</a></li>
+    
+  </ul>
+</div>
+<div class="header">
+  <div class="subTitle">
+    
+    芝灵生于幽谷,不以无人而不芳
+    
+  </div>
+  <div class="socials">
+    <div class="socialLinks">
+      
+      
+      <a href="mailto:blankyk@css0209.cn" title="envelope-o" target="_blank"><i class="fa fa-envelope-o"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="https://github.com/paleBlueYk" title="github-alt" target="_blank"><i class="fa fa-github-alt"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="tencent://Message/?Uin=917885215&amp;amp;websiteName=q-zone.qq.com&amp;amp;Menu=yes" title="qq" target="_blank"><i class="fa fa-qq"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="https://space.bilibili.com/10061915" title="television" target="_blank"><i class="fa fa-television"
+          aria-hidden="true"></i></a>
+      
+      
+    </div>
+  </div>
+</div>
+  <div class="main">
+    <div class="postList">
+      
+      
+      <div class="listBox">
+        <h3><a href="/posts/spring-boot%E5%92%8Creact%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%A7%A3%E5%86%B3/">spring boot和React跨域请求解决</a></h3>
+        <p>首先是在React，前端上只需要注意请求是POST请求，因为GET请求会有一个错误，然后就是用fetch传输了 handleSubmit = (e) =&gt; { e.preventDefault(); this.props.form.validateFields((err, values) =&gt; { if (!err) { console.log(&#39;Received values of form: &#39;, values); let data = new FormData(); data.append(&#34;userName&#34;,values.userName); data.append(&#34;password&#34;,values.password); data.append(&#34;remember&#34;,values.remember); fetch(&#34;http://localhost:8080/post&#34;,{ method: &#39;POST&#39;, body : data }).catch(); } }); }; 然后主要是在sp...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-04-10
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>SpringBoot
+          </span>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="pagination">
+      
+    </div>
+  </div>
+  <footer>
+  <div class="leftBox">
+    <span>Theme Designed by <a href="https://css0209.cn" target="_blank">PaleBlueYk</a></span><br />
+    <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
+  </div>
+  <div class="rightBox">
+    <span>Copyright © 2020-2020.04 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    
+    <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
+    
+    
+    <span>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001557" target="_blank">
+        <img class="beian" src="https://css0209.cn/img/beian.png" alt="">川公网安备 51010702001557号
+      </a>
+    </span>
+    
+  </div>
+</footer>
+</body>
+
+<script src="https://css0209.cn/js/list.js"></script>

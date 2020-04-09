@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaleBlueYk&#39;Blog</title>
+  <meta name="author" content="PaleBlueYk" />
+  
+  <meta name="description" content="学校的端口号为95，是非安全端口，这里我来说一下这样用Chrome或者Firefox进入非安全端口 Firefox:(Windows和Linux、macOS通用) (1) about:config进入参数设置界" />
+  
+  <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://css0209.cn/css/white.css">
+  <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://css0209.cn/css/highlight.css">
+  <script src="https://css0209.cn/js/heighlight.min.js"></script>
+  
+  
+  
+  <script src="https://css0209.cn/js/jQuery.min.js"></script>
+  <script src="https://css0209.cn/js/lodash.js"></script>
+  <link rel="stylesheet" href="https://css0209.cn/css/main.css">
+</head>
+<body>
+  <div class="nav">
+  <div class="logoBox">
+    <a href="/posts"><img src="/img/logo.png" alt="" class="logo"></a>
+  </div>
+  <button class="bars" onclick="toggleMenus()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <ul>
+    
+    
+    <li><a class="linkBox" href="/">Welcome</a></li>
+    
+    <li><a class="linkBox" href="/posts">Home</a></li>
+    
+    <li><a class="linkBox" href="/about">About me</a></li>
+    
+    <li><a class="linkBox" href="/links">Links</a></li>
+    
+  </ul>
+</div>
+<div class="header">
+  <div class="subTitle">
+    
+    芝灵生于幽谷,不以无人而不芳
+    
+  </div>
+  <div class="socials">
+    <div class="socialLinks">
+      
+      
+      <a href="mailto:blankyk@css0209.cn" title="envelope-o" target="_blank"><i class="fa fa-envelope-o"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="https://github.com/paleBlueYk" title="github-alt" target="_blank"><i class="fa fa-github-alt"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="tencent://Message/?Uin=917885215&amp;amp;websiteName=q-zone.qq.com&amp;amp;Menu=yes" title="qq" target="_blank"><i class="fa fa-qq"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="https://space.bilibili.com/10061915" title="television" target="_blank"><i class="fa fa-television"
+          aria-hidden="true"></i></a>
+      
+      
+    </div>
+  </div>
+</div>
+  <div class="main">
+    <div class="postContent">
+      <h1>Chrome/Firefox非安全端口问题</h1>
+      <small><i class="fa fa-clock-o" aria-hidden="true"></i>2018-09-10
+        PaleBlueYk</small>
+      <p>学校的端口号为95，是非安全端口，这里我来说一下这样用Chrome或者Firefox进入非安全端口</p>
+<h1 id="firefoxwindows和linuxmacos通用">Firefox:(Windows和Linux、macOS通用)</h1>
+<p>(1) about:config进入参数设置界面
+(2) 鼠标右键新建新的字符串设置项，名称为：network.security.ports.banned.override
+(3) 为新参数设定要允许的端口或端口范围，如：95</p>
+<h1 id="chrome">Chrome</h1>
+<h2 id="windows下">Windows下：</h2>
+<p>对Chrome的快捷方式右键，属性，在目标对应的文本框最后添加<code>--explicitly-allowed-ports=95</code> 这里的95就是需要访问的非安全端口如：<br>
+<code>“C:\Program Files (x86)\Google\Chrome\Application\chrome.exe” --explicitly-allowed-ports=95</code><br>
+<img src="https://cloud.css0209.cn/2018/09/Windows_chrome.png" alt=""></p>
+<h2 id="macos下">macOS下：</h2>
+<p>打开<code>Terminal</code>(终端) 输入命令：<code>/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --explicitly-allowed-ports=95</code> 这里的95就是需要访问的非安全端口</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">1,    // tcpmux
+7,    // echo
+9,    // discard
+11,   // systat
+13,   // daytime
+15,   // netstat
+17,   // qotd
+19,   // chargen
+20,   // ftp data
+21,   // ftp access
+22,   // ssh
+23,   // telnet
+25,   // smtp
+37,   // time
+42,   // name
+43,   // nicname
+53,   // domain
+77,   // priv-rjs
+79,   // finger
+87,   // ttylink
+95,   // supdup
+101,  // hostriame
+102,  // iso-tsap
+103,  // gppitnp
+104,  // acr-nema
+109,  // pop2
+110,  // pop3
+111,  // sunrpc
+113,  // auth
+115,  // sftp
+117,  // uucp-path
+119,  // nntp
+123,  // NTP
+135,  // loc-srv /epmap
+139,  // netbios
+143,  // imap2
+179,  // BGP
+389,  // ldap
+465,  // smtp+ssl
+512,  // print / exec
+513,  // login
+514,  // shell
+515,  // printer
+526,  // tempo
+530,  // courier
+531,  // chat
+532,  // netnews
+540,  // uucp
+556,  // remotefs
+563,  // nntp+ssl
+587,  // stmp?
+601,  // ??
+636,  // ldap+ssl
+993,  // ldap+ssl
+995,  // pop3+ssl
+2049, // nfs
+3659, // apple-sasl / PasswordServer
+4045, // lockd
+6000, // X11
+6665, // Alternate IRC <span style="color:#ae81ff">\[</span>Apple addition<span style="color:#ae81ff">\]</span>
+6666, // Alternate IRC <span style="color:#ae81ff">\[</span>Apple addition<span style="color:#ae81ff">\]</span>
+6667, // Standard IRC <span style="color:#ae81ff">\[</span>Apple addition<span style="color:#ae81ff">\]</span>
+6668, // Alternate IRC <span style="color:#ae81ff">\[</span>Apple addition<span style="color:#ae81ff">\]</span>
+6669, // Alternate IRC <span style="color:#ae81ff">\[</span>Apple addition<span style="color:#ae81ff">\]</span>
+6669, // Alternate IRC <span style="color:#ae81ff">\[</span>Apple addition<span style="color:#ae81ff">\]</span>
+</code></pre></div><p>当然，你用IE的话应该也是可以进去的，毕竟，你懂得 <img src="https://cloud.css0209.cn/2018/09/chromefirefox.jpg" alt=""></p>
+
+      <div class="postFooter">
+        
+        
+        <small class="tags">
+          <i class="fa fa-tag" aria-hidden="true"></i>Web
+        </small>
+        
+        
+      </div>
+      <div>
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh"><img alt="知识共享许可协议"
+            style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+        <ul class="post-copyright">
+          <li class="post-copyright-link"><strong>本文链接：</strong> <a href="/251.html" title="Chrome/Firefox非安全端口问题 "
+              class="line">Chrome/Firefox非安全端口问题</a></li>
+          <li class="post-copyright-license"><strong>版权声明：</strong> 本<span xmlns:dct="http://purl.org/dc/terms/"
+              href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>由<span
+              xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">PaleBlueYk</span>采用<a
+              rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">知识共享署名-非商业性使用 4.0
+              国际许可协议</a>进行许可。<br />基于<a xmlns:dct="http://purl.org/dc/terms/" href="https://css0209.cn"
+              rel="dct:source">PaleBlueYk&#39;Blog</a>上的作品创作。转载请注明出处！</li>
+        </ul>
+      </div>
+      
+      
+      
+<div class="doc_comments">
+  <div class="comments_block_title">发表评论</div>
+  <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="https://css0209.cn/css/comments.css"/>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='/js/Valine.min.js'></script>
+
+<script type="text/javascript">
+new Valine({
+  el: '#vcomments',
+  appId: '1qw0wI8rRU2aokRUy7A0Hzld-gzGzoHsz',
+  appKey: 'kTlur1J9v6jOExvFIlWM5jbp',
+  placeholder: 'Yo~',
+  visitor: 'true',
+  highlight: 'true'
+})
+</script>
+
+      
+    </div>
+  </div>
+  <footer>
+  <div class="leftBox">
+    <span>Theme Designed by <a href="https://css0209.cn" target="_blank">PaleBlueYk</a></span><br />
+    <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
+  </div>
+  <div class="rightBox">
+    <span>Copyright © 2020-2020.04 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    
+    <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
+    
+    
+    <span>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001557" target="_blank">
+        <img class="beian" src="https://css0209.cn/img/beian.png" alt="">川公网安备 51010702001557号
+      </a>
+    </span>
+    
+  </div>
+</footer>
+</body>
+
+<script src="https://css0209.cn/js/list.js"></script>
+<script src="https://css0209.cn/js/post.js"></script>

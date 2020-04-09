@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaleBlueYk&#39;Blog</title>
+  <meta name="author" content="PaleBlueYk" />
+  
+  <meta name="description" content="paleBlueYk,blog" />
+  
+  <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://css0209.cn/css/white.css">
+  <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://css0209.cn/css/highlight.css">
+  <script src="https://css0209.cn/js/heighlight.min.js"></script>
+  
+  
+  
+  <script src="https://css0209.cn/js/jQuery.min.js"></script>
+  <script src="https://css0209.cn/js/lodash.js"></script>
+  <link rel="stylesheet" href="https://css0209.cn/css/main.css">
+</head>
+<body>
+  <div class="nav">
+  <div class="logoBox">
+    <a href="/posts"><img src="/img/logo.png" alt="" class="logo"></a>
+  </div>
+  <button class="bars" onclick="toggleMenus()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <ul>
+    
+    
+    <li><a class="linkBox" href="/">Welcome</a></li>
+    
+    <li><a class="linkBox" href="/posts">Home</a></li>
+    
+    <li><a class="linkBox" href="/about">About me</a></li>
+    
+    <li><a class="linkBox" href="/links">Links</a></li>
+    
+  </ul>
+</div>
+<div class="header">
+  <div class="subTitle">
+    
+    芝灵生于幽谷,不以无人而不芳
+    
+  </div>
+  <div class="socials">
+    <div class="socialLinks">
+      
+      
+      <a href="mailto:blankyk@css0209.cn" title="envelope-o" target="_blank"><i class="fa fa-envelope-o"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="https://github.com/paleBlueYk" title="github-alt" target="_blank"><i class="fa fa-github-alt"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="tencent://Message/?Uin=917885215&amp;amp;websiteName=q-zone.qq.com&amp;amp;Menu=yes" title="qq" target="_blank"><i class="fa fa-qq"
+          aria-hidden="true"></i></a>
+      
+      
+      
+      <a href="https://space.bilibili.com/10061915" title="television" target="_blank"><i class="fa fa-television"
+          aria-hidden="true"></i></a>
+      
+      
+    </div>
+  </div>
+</div>
+  <div class="main">
+    <div class="postList">
+      
+      
+      <div class="listBox">
+        <h3><a href="/posts/react_actioncreators/">React&amp;Redux actionCreators</a></h3>
+        <p>0x01 创建文件 创建actionCreators.js import {INPUT_VALUE_CHANGE,ADD_TODO_ITEM,DEL_TODO_ITEM} from &#39;./ActionTypes&#39;; export const getInputChangeAction = (value) =&gt;({ type : INPUT_VALUE_CHANGE, value }); export const getAddItemAction = () =&gt;({ type: ADD_TODO_ITEM }); export const getDelItemAction = (index)=&gt;({ type: DEL_TODO_ITEM, index }); 0x02 修改 修改ToDoList.js相关的地方 handleInputChange(e) { const action = getInputChangeAction(e.target.value); store.dispatch(action); } handleBtnClick() { const action = getAddItemAction(); store.dispatch(action); } handleItemClick(index) { const action = getDelItemAction(index);...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>react
+          </span>
+          
+          
+        </div>
+      </div>
+      
+      <div class="listBox">
+        <h3><a href="/posts/react_actiontypes/">React&amp;Redux ActionTypes</a></h3>
+        <p>0x00 前言 ActionTypes是为了防止在大型项目的开发中action中的type出现打错字之类的错误，此时，控制台不会报错，但功能异常。使用ActionTypes后，页面将会出现报错，减少排错时间 0x01 创...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>react
+          </span>
+          
+          
+        </div>
+      </div>
+      
+      <div class="listBox">
+        <h3><a href="/posts/react_reduxflow/">React之Redux工作流程</a></h3>
+        <p>阮一峰 0x00 render函数 render() { return ( &lt;div style={{ width: &#39;500px&#39;, padding: &#39;10px&#39; }}&gt; &lt;Input value={this.state.inputValue} style={{ width: &#34;400px&#34;, marginRight: &#34;15px&#34; }} onChange={this.handleInputChange} /&gt; &lt;Button type=&#34;primary&#34; &gt; 提交 &lt;/Button&gt; &lt;List bordered dataSource={this.state.list} renderItem={item =&gt; ( &lt;List.Item&gt; {item} &lt;/List.Item&gt; )} /&gt; &lt;/div&gt; ) } 0x01 在src下创建store/index.js 这里就创建好了Store import {createStore} from &#39;redux&#39;; import reducer from &#39;./reducer&#39;; const store = createStore(); export...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>react
+          </span>
+          
+          
+        </div>
+      </div>
+      
+      <div class="listBox">
+        <h3><a href="/posts/react_fragment/">React Fragment</a></h3>
+        <p>https://react.docschina.org/docs/fragments.html Fragment相当于占位符吧，正常情况下，React中子组件只能返回一个Dom节点,而Fragment可以让你的子组件返回多个Dom节点 父组件 import React, { Fragment } from &#39;react&#39;; import ToDoItem from &#39;./ToDoItem&#39;; class ToDoList extends React.Component { constructor(props) { super(props); //组价状态 this.state =...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>React
+          </span>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="pagination">
+      
+    </div>
+  </div>
+  <footer>
+  <div class="leftBox">
+    <span>Theme Designed by <a href="https://css0209.cn" target="_blank">PaleBlueYk</a></span><br />
+    <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
+  </div>
+  <div class="rightBox">
+    <span>Copyright © 2020-2020.04 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    
+    <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
+    
+    
+    <span>
+      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001557" target="_blank">
+        <img class="beian" src="https://css0209.cn/img/beian.png" alt="">川公网安备 51010702001557号
+      </a>
+    </span>
+    
+  </div>
+</footer>
+</body>
+
+<script src="https://css0209.cn/js/list.js"></script>

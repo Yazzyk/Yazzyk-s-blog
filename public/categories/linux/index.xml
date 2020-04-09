@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on PaleBlueYk&#39;Blog</title>
+    <link>https://css0209.cn/categories/linux/</link>
+    <description>Recent content in Linux on PaleBlueYk&#39;Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 08 Dec 2018 14:25:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://css0209.cn/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学校Linux，Samba服务器搭建</title>
+      <link>https://css0209.cn/posts/%E5%AD%A6%E6%A0%A1linuxsamba%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sat, 08 Dec 2018 14:25:42 +0000</pubDate>
+      
+      <guid>https://css0209.cn/posts/%E5%AD%A6%E6%A0%A1linuxsamba%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</guid>
+      <description>基于我学院机房搭建的Samba服务器傻瓜式教程 感谢班上学习委员大佬的笔记 一、挂载光盘 mount #查看光盘所在的设备位置 mount -t iso9660 /dev/hdc /mnt #挂载光盘(/dev/hdc)到 /mnt目录 二、软件包安装 所有的软件包都在Ser</description>
+    </item>
+    
+    <item>
+      <title>Linux Vi/Vim笔记</title>
+      <link>https://css0209.cn/posts/linux-vi-vim/</link>
+      <pubDate>Sun, 09 Sep 2018 22:17:13 +0000</pubDate>
+      
+      <guid>https://css0209.cn/posts/linux-vi-vim/</guid>
+      <description>参考来自：维基、 菜鸟教程 Vim是从vi发展出来的一个文本编辑器。其代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。 Vim的</description>
+    </item>
+    
+  </channel>
+</rss>
