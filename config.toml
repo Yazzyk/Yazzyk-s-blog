@@ -6,6 +6,7 @@ defaultContentLanguage = "en-us"
 title = "PaleBlueYk'Blog"
 description = "PaleBlueYk's Blog"
 keywords = "paleblueyk,blog,yangkai,yk,hugo"
+themesDir = "../"
 theme = "White"
 summaryLength = 100
 hasCJKLanguage = true # 如果为true，则自动检测内容中的中文/日语/韩语。这将使.Summary和.WordCount正确行为的CJK语言。
