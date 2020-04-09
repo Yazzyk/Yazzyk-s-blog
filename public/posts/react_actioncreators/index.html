@@ -9,6 +9,7 @@
   
   <meta name="description" content="0x01 创建文件 创建actionCreators.js import {INPUT_VALUE_CHANGE,ADD_TODO_ITEM,DEL_TODO_ITEM} from &amp;#39;./ActionTypes&amp;#39;; export const getInputChangeAction = (value) =&amp;gt;({ type : INPUT_VALUE_CHANGE, value }); export const getAddItemAction = () =&amp;gt;({ type: ADD_TODO_ITEM }); export const getDelItemAction = (index)=&amp;gt;({ type: DEL_TODO_ITEM, index }); 0x02 修改 修改ToDoList.js相关的地方 handleInputChange(e) { const action = getInputChangeAction(e.target.value); store.dispatch(action); } handleBtnClick() { const action = getAddItemAction(); store.dispatch(action); } handleItemClick(index) { const action = getDelItemAction(index);" />
   
+  <meta name="keywords" content="paleblueyk,blog,paleblue,yangkai,yk,hugo">
   <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://css0209.cn/css/white.css">
   <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">

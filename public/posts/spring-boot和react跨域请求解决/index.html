@@ -9,6 +9,7 @@
   
   <meta name="description" content="首先是在React，前端上只需要注意请求是POST请求，因为GET请求会有一个错误，然后就是用fetch传输了 handleSubmit = (e) =&amp;gt; { e.preventDefault(); this.props.form.validateFields((err, values) =&amp;gt; { if (!err) { console.log(&amp;#39;Received values of form: &amp;#39;, values); let data = new FormData(); data.append(&amp;#34;userName&amp;#34;,values.userName); data.append(&amp;#34;password&amp;#34;,values.password); data.append(&amp;#34;remember&amp;#34;,values.remember); fetch(&amp;#34;http://localhost:8080/post&amp;#34;,{ method: &amp;#39;POST&amp;#39;, body : data }).catch(); } }); }; 然后主要是在sp" />
   
+  <meta name="keywords" content="paleblueyk,blog,paleblue,yangkai,yk,hugo">
   <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://css0209.cn/css/white.css">
   <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">
