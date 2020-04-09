@@ -4,7 +4,7 @@ baseURL = "https://css0209.cn" # 注意不要在最后加’/‘如”https://cs
 languageCode = "zh-cn"
 defaultContentLanguage = "en-us"
 title = "PaleBlueYk'Blog"
-# theme = "White"
+theme = "White"
 summaryLength = 100
 hasCJKLanguage = true # 如果为true，则自动检测内容中的中文/日语/韩语。这将使.Summary和.WordCount正确行为的CJK语言。
 paginate = 6 # 分页，没做太多css处理,不建议修改
@@ -19,6 +19,8 @@ enableEmoji = true
   policeRecordProvince = "川" # 公安备案省份简称,如“川公网安备”则填"川"
   policeRecordNumber = "51010702001557" # 公安备案号
   linksFeedback = "交换友链请在下方留言,并将本站添加到贵站的友链中,且确保贵站支持HTTPS协议!"
+[params.seo]
+  baidu = "u4UUwskbhk"
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
