@@ -86,30 +86,30 @@
 </blockquote>
 <h1 id="代码">代码</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">递归全排列</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[</span><span style="color:#f92672">]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 		<span style="color:#75715e">// TODO 自动生成的方法存根
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">char</span><span style="color:#f92672">[</span><span style="color:#f92672">]</span> data <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#39;B&#39;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#39;C&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">;</span>
-		fun<span style="color:#f92672">(</span>data<span style="color:#f92672">,</span> 0<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">char</span><span style="color:#f92672">[]</span> data <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#39;B&#39;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#39;C&#39;</span><span style="color:#f92672">};</span>
+		fun<span style="color:#f92672">(</span>data<span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>
 	<span style="color:#f92672">}</span>
 
-  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fun</span><span style="color:#f92672">(</span><span style="color:#66d9ef">char</span><span style="color:#f92672">[</span><span style="color:#f92672">]</span> data<span style="color:#f92672">,</span><span style="color:#66d9ef">int</span> n<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>n <span style="color:#f92672">=</span><span style="color:#f92672">=</span> data<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-      <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">+</span><span style="color:#f92672">+</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>data<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fun</span><span style="color:#f92672">(</span><span style="color:#66d9ef">char</span><span style="color:#f92672">[]</span> data<span style="color:#f92672">,</span><span style="color:#66d9ef">int</span> n<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> data<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>0<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>data<span style="color:#f92672">[</span>i<span style="color:#f92672">]+</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">);</span>
       <span style="color:#f92672">}</span>
-      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">();</span>
     <span style="color:#f92672">}</span>
   
-      <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>n<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">+</span><span style="color:#f92672">+</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>n<span style="color:#f92672">;</span>i<span style="color:#f92672">&lt;</span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
       <span style="color:#75715e">//试探  
-</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">char</span> t <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span><span style="color:#f92672">;</span>  
-      data<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span><span style="color:#f92672">;</span>  
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">char</span> t <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>n<span style="color:#f92672">];</span>  
+      data<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>i<span style="color:#f92672">];</span>  
       data<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> t<span style="color:#f92672">;</span>  
 
-      fun<span style="color:#f92672">(</span>data<span style="color:#f92672">,</span> n<span style="color:#f92672">+</span>1<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+      fun<span style="color:#f92672">(</span>data<span style="color:#f92672">,</span> n<span style="color:#f92672">+</span>1<span style="color:#f92672">);</span>
       <span style="color:#75715e">//回溯  
-</span><span style="color:#75715e"></span>      t <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span><span style="color:#f92672">;</span>  
-      data<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span><span style="color:#f92672">;</span>
+</span><span style="color:#75715e"></span>      t <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>n<span style="color:#f92672">];</span>  
+      data<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> data<span style="color:#f92672">[</span>i<span style="color:#f92672">];</span>
       data<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> t<span style="color:#f92672">;</span>
     <span style="color:#f92672">}</span>
   <span style="color:#f92672">}</span>
@@ -179,7 +179,7 @@ new Valine({
     <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
   </div>
   <div class="rightBox">
-    <span>Copyright © 2020-2020.04 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    <span>Copyright © 2020-2020.06 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
     
     <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
     
