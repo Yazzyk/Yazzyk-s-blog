@@ -1,7 +1,7 @@
 FROM alpine:3.12.0
 
-WORKDIR /www/blog
 COPY ./ /www/blog
+WORKDIR /www/blog
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
@@ -16,6 +16,7 @@ RUN git clone https://gitee.com/BlankYk/hugo-theme-white.git /www/White \
   && cd /www/blog \
   && hugo
 
+RUN ls /www/blog
 
 CMD cd /www/blog && hugo server --bind 0.0.0.0
 
