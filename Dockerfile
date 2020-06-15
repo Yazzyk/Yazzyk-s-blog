@@ -16,10 +16,13 @@ RUN git clone https://gitee.com/BlankYk/hugo-theme-white.git /www/White \
   && cd /www/blog \
   && hugo
 
-RUN ls /www/blog
+VOLUME [ "/www/html" ]
+
+RUN cp /www/blog/public /www/html
+
+RUN ls /www/html
 
 CMD cd /www/blog && hugo server --bind 0.0.0.0
 
-VOLUME [ "/www/blog" ]
 
 EXPOSE 1313
