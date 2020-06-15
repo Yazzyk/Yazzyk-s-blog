@@ -11,7 +11,7 @@ tags: [Python]
 
 # 本篇文章以我所用教务系统为例
 
-由于学校把课表关闭了，所以我现在先爬取的成绩查询 本项目的完整代码地址：[Github-zhengfang](https://github.com/idoctype/zhengfang) 首先观察学校官网的地址： [![](https://cloud.css0209.cn/2018/08/Xnip2018-08-12_19-57-19.jpg)](https://cloud.css0209.cn/2018/08/Xnip2018-08-12_19-57-19.jpg) 原本的地址是 https://220.167.53.63:95/ 然后变成 https://220.167.53.63:95/(4eggunep4b4jhzfwhk4pva21)/default2.aspx 首先端口使用的95端口，95端口是非安全端口，现在的主流浏览器应该是无法访问的，这里我只提供要用到的Chrome的Mac版的解决方案,具体可以参考我的文章 [Chrome/Firefox非安全端口问题](https://css0209.cn/2018/09/10/251/) 打开终端复制以下命令，最后的`--explicitly-allowed-ports=95`中的95就是你想打开的非安全端口号
+由于学校把课表关闭了，所以我现在先爬取的成绩查询 本项目的完整代码地址：[Github-zhengfang](https://github.com/idoctype/zhengfang) 首先观察学校官网的地址： [![](https://img.css0209.cn/2018/08/Xnip2018-08-12_19-57-19.jpg)](https://img.css0209.cn/2018/08/Xnip2018-08-12_19-57-19.jpg) 原本的地址是 https://220.167.53.63:95/ 然后变成 https://220.167.53.63:95/(4eggunep4b4jhzfwhk4pva21)/default2.aspx 首先端口使用的95端口，95端口是非安全端口，现在的主流浏览器应该是无法访问的，这里我只提供要用到的Chrome的Mac版的解决方案,具体可以参考我的文章 [Chrome/Firefox非安全端口问题](https://css0209.cn/2018/09/10/251/) 打开终端复制以下命令，最后的`--explicitly-allowed-ports=95`中的95就是你想打开的非安全端口号
 
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --explicitly-allowed-ports=95 
 
