@@ -17,7 +17,7 @@ RUN git clone https://gitee.com/BlankYk/hugo-theme-white.git /www/White \
   && hugo
 
 
-CMD hugo server --bind 0.0.0.0
+CMD cd /www/blog && hugo server --bind 0.0.0.0
 
 VOLUME [ "/www/blog" ]
 
