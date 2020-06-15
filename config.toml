@@ -1,4 +1,3 @@
-# 白 主题
 # Theme author: PaleBlueYk https://css0209.cn
 baseURL = "https://css0209.cn" # 注意不要在最后加’/‘如”https://css0209.cn“不要写成"https://css0209.cn/"
 languageCode = "zh-cn"
