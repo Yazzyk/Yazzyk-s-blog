@@ -2,6 +2,7 @@ FROM alpine:3.12.0
 
 COPY ./ /www/blog
 WORKDIR /www/blog
+VOLUME [ "/www/html" ]
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
@@ -15,8 +16,6 @@ ENV VERSION 0.72.0
 RUN git clone https://gitee.com/BlankYk/hugo-theme-white.git /www/White \
   && cd /www/blog \
   && hugo
-
-VOLUME [ "/www/html" ]
 
 RUN cp -rf /www/blog/public /www/html
 
