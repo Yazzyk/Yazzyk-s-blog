@@ -18,7 +18,7 @@ RUN git clone https://gitee.com/BlankYk/hugo-theme-white.git /www/White \
 
 VOLUME [ "/www/html" ]
 
-RUN cp /www/blog/public /www/html
+RUN cp -rf /www/blog/public /www/html
 
 RUN ls /www/html
 
