@@ -230,71 +230,71 @@ var changed     <span style="color:#f92672">=</span> require<span style="color:#
 var gulpif      <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-if&#39;</span><span style="color:#f92672">)</span>         //任务 帮助调用组件
 var plumber     <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-plumber&#39;</span><span style="color:#f92672">)</span>;   //容错组件（发生错误不跳出任务，并报出错误内容）
 var runSequence <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;run-sequence&#39;</span><span style="color:#f92672">)</span>;   //异步执行组件
-var isScriptAll <span style="color:#f92672">=</span> true;  //是否处理所有文件，<span style="color:#f92672">(</span>true|处理所有文件<span style="color:#f92672">)(</span>false|只处理有更改的文件<span style="color:#f92672">)</span>
+var isScriptAll <span style="color:#f92672">=</span> true;  //是否处理所有文件，<span style="color:#f92672">(</span>true|处理所有文件<span style="color:#f92672">)</span><span style="color:#f92672">(</span>false|只处理有更改的文件<span style="color:#f92672">)</span>
 var isDebug     <span style="color:#f92672">=</span> true;  //是否调试显示 编译通过的文件
 var del         <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;del&#39;</span><span style="color:#f92672">)</span>;
 var Hexo        <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;hexo&#39;</span><span style="color:#f92672">)</span>;
-var hexo        <span style="color:#f92672">=</span> new Hexo<span style="color:#f92672">(</span>process.cwd<span style="color:#f92672">()</span>, <span style="color:#f92672">{})</span>; // 初始化一个hexo对象
+var hexo        <span style="color:#f92672">=</span> new Hexo<span style="color:#f92672">(</span>process.cwd<span style="color:#f92672">(</span><span style="color:#f92672">)</span>, <span style="color:#f92672">{</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span>; // 初始化一个hexo对象
 
 // 清除public文件夹
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> del<span style="color:#f92672">([</span><span style="color:#e6db74">&#39;public/**/*&#39;</span><span style="color:#f92672">])</span>;
-<span style="color:#f92672">})</span>;
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> del<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;public/**/*&#39;</span><span style="color:#f92672">]</span><span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
-// 下面几个跟hexo有关的操作，主要通过hexo.call<span style="color:#f92672">()</span>去执行，注意return
+// 下面几个跟hexo有关的操作，主要通过hexo.call<span style="color:#f92672">(</span><span style="color:#f92672">)</span>去执行，注意return
 
 // 创建静态页面 （等同 hexo generate）
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;generate&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">()</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;generate&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">(</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         <span style="color:#66d9ef">return</span> hexo.call<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;generate&#39;</span>, <span style="color:#f92672">{</span>
             watch: false
-        <span style="color:#f92672">})</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">()</span>;
-        <span style="color:#f92672">})</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span><span style="color:#f92672">)</span>;
+        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
             <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span>err<span style="color:#f92672">)</span>;
-        <span style="color:#f92672">})</span>;
-    <span style="color:#f92672">})</span>;
-<span style="color:#f92672">})</span>;
+        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 启动Hexo服务器
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;server&#39;</span>,  <span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">()</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> hexo.call<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;server&#39;</span>, <span style="color:#f92672">{})</span>;
-    <span style="color:#f92672">})</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;server&#39;</span>,  <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">(</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> hexo.call<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;server&#39;</span>, <span style="color:#f92672">{</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         console.log<span style="color:#f92672">(</span>err<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">})</span>;
-<span style="color:#f92672">})</span>;
+    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 部署到服务器
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;deploy&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">()</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;deploy&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">(</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         <span style="color:#66d9ef">return</span> hexo.call<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;deploy&#39;</span>, <span style="color:#f92672">{</span>
             watch: false
-        <span style="color:#f92672">})</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">()</span>;
-        <span style="color:#f92672">})</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span><span style="color:#f92672">)</span>;
+        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
             <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span>err<span style="color:#f92672">)</span>;
-        <span style="color:#f92672">})</span>;
-    <span style="color:#f92672">})</span>;
-<span style="color:#f92672">})</span>;
+        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 压缩public目录下的js文件
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressJs&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressJs&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     var option <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
         // preserveComments: <span style="color:#e6db74">&#39;all&#39;</span>,//保留所有注释
         mangle: true,           //类型：Boolean 默认：true 是否修改变量名
         compress: true          //类型：Boolean 默认：true 是否完全压缩
     <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">([</span><span style="color:#e6db74">&#39;./public/**/*.js&#39;</span>,<span style="color:#e6db74">&#39;!./public/**/*.min.js&#39;</span><span style="color:#f92672">])</span>  //排除的js
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)))</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">({</span>title: <span style="color:#e6db74">&#39;Compress JS:&#39;</span><span style="color:#f92672">})))</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">())</span>
-        .pipe<span style="color:#f92672">(</span>uglify<span style="color:#f92672">(</span>option<span style="color:#f92672">))</span>                //调用压缩组件方法uglify<span style="color:#f92672">()</span>,对合并的文件进行压缩
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">))</span>;         //输出到目标目录
-<span style="color:#f92672">})</span>;
+    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;./public/**/*.js&#39;</span>,<span style="color:#e6db74">&#39;!./public/**/*.min.js&#39;</span><span style="color:#f92672">]</span><span style="color:#f92672">)</span>  //排除的js
+        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress JS:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>uglify<span style="color:#f92672">(</span>option<span style="color:#f92672">)</span><span style="color:#f92672">)</span>                //调用压缩组件方法uglify<span style="color:#f92672">(</span><span style="color:#f92672">)</span>,对合并的文件进行压缩
+        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;         //输出到目标目录
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 压缩public目录下的css文件
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressCss&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressCss&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     var option <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
         rebase: false,
         //advanced: true,               //类型：Boolean 默认：true <span style="color:#f92672">[</span>是否开启高级优化（合并选择器等）<span style="color:#f92672">]</span>
@@ -302,24 +302,24 @@ gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;co
         //keepBreaks: true,             //类型：Boolean 默认：false <span style="color:#f92672">[</span>是否保留换行<span style="color:#f92672">]</span>
         //keepSpecialComments: <span style="color:#e6db74">&#39;*&#39;</span>      //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
     <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">([</span><span style="color:#e6db74">&#39;./public/**/*.css&#39;</span>,<span style="color:#e6db74">&#39;!./public/**/*.min.css&#39;</span><span style="color:#f92672">])</span>  //排除的css
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)))</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">({</span>title: <span style="color:#e6db74">&#39;Compress CSS:&#39;</span><span style="color:#f92672">})))</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">())</span>
-        .pipe<span style="color:#f92672">(</span>cleancss<span style="color:#f92672">(</span>option<span style="color:#f92672">))</span>
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">))</span>;
-<span style="color:#f92672">})</span>;
+    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;./public/**/*.css&#39;</span>,<span style="color:#e6db74">&#39;!./public/**/*.min.css&#39;</span><span style="color:#f92672">]</span><span style="color:#f92672">)</span>  //排除的css
+        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress CSS:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>cleancss<span style="color:#f92672">(</span>option<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 压缩public目录下的html文件
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressHtml&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressHtml&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     var cleanOptions <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
         protect: /&lt;<span style="color:#ae81ff">\!</span>--%fooTemplate<span style="color:#ae81ff">\b</span>.*?%--&gt;/g,             //忽略处理
-        unprotect: /&lt;script <span style="color:#f92672">[</span>^&gt;<span style="color:#f92672">]</span>*<span style="color:#ae81ff">\b</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text\/x-handlebars-template&#34;</span><span style="color:#f92672">[</span><span style="color:#ae81ff">\s\S</span><span style="color:#f92672">]</span>+?&lt;<span style="color:#ae81ff">\/</span>script&gt;/ig //特殊处理
+        unprotect: /&lt;script <span style="color:#f92672">[</span>^&gt;<span style="color:#f92672">]</span>*<span style="color:#ae81ff">\b</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text\/x-handlebars-template&#34;</span><span style="color:#f92672">[</span><span style="color:#ae81ff">\s</span><span style="color:#ae81ff">\S</span><span style="color:#f92672">]</span>+?&lt;<span style="color:#ae81ff">\/</span>script&gt;/ig //特殊处理
     <span style="color:#f92672">}</span>
     var minOption <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
         collapseWhitespace: true,           //压缩HTML
-        collapseBooleanAttributes: true,    //省略布尔属性的值  &lt;input checked<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>/&gt; <span style="color:#f92672">==</span>&gt; &lt;input /&gt;
-        removeEmptyAttributes: true,        //删除所有空格作属性值    &lt;input id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> /&gt; <span style="color:#f92672">==</span>&gt; &lt;input /&gt;
+        collapseBooleanAttributes: true,    //省略布尔属性的值  &lt;input checked<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>/&gt; <span style="color:#f92672">=</span><span style="color:#f92672">=</span>&gt; &lt;input /&gt;
+        removeEmptyAttributes: true,        //删除所有空格作属性值    &lt;input id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> /&gt; <span style="color:#f92672">=</span><span style="color:#f92672">=</span>&gt; &lt;input /&gt;
         removeScriptTypeAttributes: true,   //删除&lt;script&gt;的type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>
         removeStyleLinkTypeAttributes: true,//删除&lt;style&gt;和&lt;link&gt;的type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>
         removeComments: true,               //清除HTML注释
@@ -328,15 +328,15 @@ gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;co
         minifyURLs: true                    //替换页面URL
     <span style="color:#f92672">}</span>;
     <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/**/*.html&#39;</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">({</span>title: <span style="color:#e6db74">&#39;Compress HTML:&#39;</span><span style="color:#f92672">})))</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">())</span>
-        .pipe<span style="color:#f92672">(</span>htmlclean<span style="color:#f92672">(</span>cleanOptions<span style="color:#f92672">))</span>
-        .pipe<span style="color:#f92672">(</span>htmlmin<span style="color:#f92672">(</span>minOption<span style="color:#f92672">))</span>
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">))</span>;
-<span style="color:#f92672">})</span>;
+        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress HTML:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>htmlclean<span style="color:#f92672">(</span>cleanOptions<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>htmlmin<span style="color:#f92672">(</span>minOption<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 压缩 public/uploads 目录内图片
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressImage&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressImage&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     var option <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
         optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
         progressive: true,    //类型：Boolean 默认：false 无损压缩jpg图片
@@ -344,24 +344,24 @@ gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;co
         multipass: false      //类型：Boolean 默认：false 多次优化svg直到完全优化
     <span style="color:#f92672">}</span>
     <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads/**/*.*&#39;</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads&#39;</span><span style="color:#f92672">)))</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">({</span>title: <span style="color:#e6db74">&#39;Compress Images:&#39;</span><span style="color:#f92672">})))</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">())</span>
-        .pipe<span style="color:#f92672">(</span>imagemin<span style="color:#f92672">(</span>option<span style="color:#f92672">))</span>
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads&#39;</span><span style="color:#f92672">))</span>;
-<span style="color:#f92672">})</span>;
+        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress Images:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>imagemin<span style="color:#f92672">(</span>option<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 用run-sequence并发执行，同时处理html，css，js，img
 gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compress&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>cb<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     runSequence.options.ignoreUndefinedTasks <span style="color:#f92672">=</span> true;
-    runSequence<span style="color:#f92672">([</span><span style="color:#e6db74">&#39;compressHtml&#39;</span>, <span style="color:#e6db74">&#39;compressCss&#39;</span>, <span style="color:#e6db74">&#39;compressJs&#39;</span><span style="color:#f92672">]</span>,cb<span style="color:#f92672">)</span>;
-<span style="color:#f92672">})</span>;
+    runSequence<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;compressHtml&#39;</span>, <span style="color:#e6db74">&#39;compressCss&#39;</span>, <span style="color:#e6db74">&#39;compressJs&#39;</span><span style="color:#f92672">]</span>,cb<span style="color:#f92672">)</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆 -&gt; 部署到服务器
 gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;build&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>cb<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     runSequence.options.ignoreUndefinedTasks <span style="color:#f92672">=</span> true;
     runSequence<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#e6db74">&#39;generate&#39;</span>, <span style="color:#e6db74">&#39;compress&#39;</span>, <span style="color:#e6db74">&#39;deploy&#39;</span>, cb<span style="color:#f92672">)</span>;
-<span style="color:#f92672">})</span>;
+<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
 
 // 默认任务
 gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;default&#39;</span>, 

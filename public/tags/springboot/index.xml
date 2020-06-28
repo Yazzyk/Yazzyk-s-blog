@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>@Controller和@RestController的区别</title>
-      <link>https://css0209.cn/posts/controller%E5%92%8Crestcontroller%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Thu, 11 Jul 2019 11:30:09 +0000</pubDate>
-      
-      <guid>https://css0209.cn/posts/controller%E5%92%8Crestcontroller%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-      <description>参考:莫負旅途 如果只是使用@RestController注解Controller，则Controller中的方法无法返回jsp页面，配置的视图解析器InternalResourceViewResolv</description>
-    </item>
-    
-    <item>
       <title>Spring Boot中使用MongoDB</title>
       <link>https://css0209.cn/posts/spring-boot%E4%B8%AD%E4%BD%BF%E7%94%A8mongodb/</link>
       <pubDate>Sun, 14 Apr 2019 15:27:30 +0000</pubDate>

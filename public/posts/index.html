@@ -164,27 +164,6 @@
       </div>
       
       <div class="listBox">
-        <h3><a href="/posts/controller%E5%92%8Crestcontroller%E7%9A%84%E5%8C%BA%E5%88%AB/">@Controller和@RestController的区别</a></h3>
-        <p>参考:莫負旅途 如果只是使用@RestController注解Controller，则Controller中的方法无法返回jsp页面，配置的视图解析器InternalResourceViewResolv...</p>
-        <div class="listFooter">
-          <span class="date">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-07-11
-          </span>
-          
-          
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>Java
-          </span>
-          
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>SpringBoot
-          </span>
-          
-          
-        </div>
-      </div>
-      
-      <div class="listBox">
         <h3><a href="/posts/jdk%E5%A4%9A%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/">JDK多版本管理</a></h3>
         <p>参考：Bobness install-openjdk-versions-on-the-mac 安装jenv brew install jenv 环境配置 echo &#39;export PATH=&#34;$HOME/.jenv/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &#34;$(jenv init -)&#34;&#39; &gt;&gt; ~/.zshrc 查看找到的Java版本 jenv version system (set by /Users/kointernet/.jenv/version) # 反馈信息,不输入该行 安装OpenJDK 添加tap brew tap AdoptOpenJDK/openjdk 查看JDK版本 brew search /adoptopenjdk/ ## 以下为返回信息 ==&gt;...</p>
         <div class="listFooter">
@@ -212,6 +191,23 @@
           
           <span class="tags">
             <i class="fa fa-tag" aria-hidden="true"></i>web
+          </span>
+          
+          
+        </div>
+      </div>
+      
+      <div class="listBox">
+        <h3><a href="/posts/react_actioncreators/">React&amp;Redux actionCreators</a></h3>
+        <p>0x01 创建文件 创建actionCreators.js import {INPUT_VALUE_CHANGE,ADD_TODO_ITEM,DEL_TODO_ITEM} from &#39;./ActionTypes&#39;; export const getInputChangeAction = (value) =&gt;({ type : INPUT_VALUE_CHANGE, value }); export const getAddItemAction = () =&gt;({ type: ADD_TODO_ITEM }); export const getDelItemAction = (index)=&gt;({ type: DEL_TODO_ITEM, index }); 0x02 修改 修改ToDoList.js相关的地方 handleInputChange(e) { const action = getInputChangeAction(e.target.value); store.dispatch(action); } handleBtnClick() { const action = getAddItemAction(); store.dispatch(action); } handleItemClick(index) { const action = getDelItemAction(index);...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>react
           </span>
           
           

@@ -87,8 +87,8 @@
 <h1 id="导包">导包</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.math.BigDecimal<span style="color:#f92672">;</span>
 </code></pre></div><h1 id="构建">构建</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">BigDecimal <span style="color:#a6e22e">BigDecimal</span><span style="color:#f92672">(</span>String s<span style="color:#f92672">);</span>
-<span style="color:#66d9ef">static</span> BigDecimal <span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> d<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">BigDecimal <span style="color:#a6e22e">BigDecimal</span><span style="color:#f92672">(</span>String s<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">static</span> BigDecimal <span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> d<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
 </code></pre></div><h1 id="方法">方法</h1>
 <table>
 <thead>
@@ -138,9 +138,9 @@
 </table>
 <h1 id="格式化和四舍五入">格式化和四舍五入</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// 格式化：保留2为小数
-</span><span style="color:#75715e"></span>DecimalFormat df <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DecimalFormat<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;#.##&#34;</span><span style="color:#f92672">);</span>
+</span><span style="color:#75715e"></span>DecimalFormat df <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DecimalFormat<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;#.##&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
 <span style="color:#75715e">// 四舍五入，默认五舍六入
-</span><span style="color:#75715e"></span>df<span style="color:#f92672">.</span><span style="color:#a6e22e">setRoundingMode</span><span style="color:#f92672">(</span>RoundingMode<span style="color:#f92672">.</span><span style="color:#a6e22e">HALF_UP</span><span style="color:#f92672">);</span>
+</span><span style="color:#75715e"></span>df<span style="color:#f92672">.</span><span style="color:#a6e22e">setRoundingMode</span><span style="color:#f92672">(</span>RoundingMode<span style="color:#f92672">.</span><span style="color:#a6e22e">HALF_UP</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
 </code></pre></div>
       <div class="postFooter">
         
