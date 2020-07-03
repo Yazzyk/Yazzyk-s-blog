@@ -27,7 +27,7 @@ enableEmoji = true
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 [params.valine]
-  enable = true #文章页面下评论是否开启
+  enable = false #文章页面下评论是否开启
   appId = "1qw0wI8rRU2aokRUy7A0Hzld-gzGzoHsz"
   appKey = "kTlur1J9v6jOExvFIlWM5jbp"
   placeholder = "Yo~"
