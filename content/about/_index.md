@@ -20,7 +20,7 @@ Github | [PaleBlueYk](https://github.com/PaleBlueYk)
 
 - 后端语言：Java(主)、Golang(了解)、Python(了解)、PHP(了解)
 - 前端框架：React、Ant Design Pro、LayuiAdmin Pro、JQuery
-- 后端框架：SpringBoot、SpringCloud(了解)、MyBatis、通用Mapper、Gin(了解)、GORM(了解)
+- 后端框架：SpringBoot、SpringCloud(了解)、MyBatis(了解)、通用Mapper(了解)、Gin(了解)、GORM(了解)
 - 操作系统：MacOS、Linux、Windows
 - 其他工具：Jenkins、Git、Jira、Docker、DaoCloud
 
@@ -41,3 +41,9 @@ newsToQZone
 > 技术栈：Python、selenium
 
 - 源码：[https://github.com/PaleBlueYk/newsToQzone](https://github.com/PaleBlueYk/newsToQzone)
+
+---
+
+本博客主题
+
+- 源码：[https://github.com/PaleBlueYk/hugo-theme-white](https://github.com/PaleBlueYk/hugo-theme-white)
