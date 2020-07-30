@@ -17,12 +17,12 @@ enableEmoji = true
   description = "PaleBlueYk's Blog"
   keywords = "paleblueyk,blog,paleblue,yangkai,yk,hugo"
   record = "蜀ICP备17038940号-2" # 备案号
-  googleSiteVerification = "kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges"
   policeRecordProvince = "川" # 公安备案省份简称,如“川公网安备”则填"川"
   policeRecordNumber = "51010702001557" # 公安备案号
   linksFeedback = "交换友链请在下方留言,并将本站添加到贵站的友链中,且确保贵站支持HTTPS协议!"
 [params.seo]
   baidu = "u4UUwskbhk"
+  googleSiteVerification = "kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges"
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
