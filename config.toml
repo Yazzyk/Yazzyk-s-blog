@@ -1,103 +1,113 @@
-# Theme author: PaleBlueYk https://css0209.cn
-baseURL = "https://css0209.cn" # 注意不要在最后加’/‘如”https://css0209.cn“不要写成"https://css0209.cn/"
+baseURL = "https://css0209.cn"
 languageCode = "zh-cn"
 defaultContentLanguage = "en-us"
-title = "PaleBlueYk'Blog"
+title = "PaleBlueYk's Blog"
 themesDir = "../"
 theme = "White"
 summaryLength = 100
-hasCJKLanguage = true # 如果为true，则自动检测内容中的中文/日语/韩语。这将使.Summary和.WordCount正确行为的CJK语言。
-paginate = 6 # 分页，没做太多css处理,不建议修改
+hasCJKLanguage = true
+paginate = 6
 enableEmoji = true
 
 [params]
-  title = "PaleBlueYk's Blog"
+  title = "PaleBLueYk's Blog"
   subTitle = "芝灵生于幽谷,不以无人而不芳"
   author = "PaleBlueYk"
   description = "PaleBlueYk's Blog"
-  keywords = "paleblueyk,blog,paleblue,yangkai,yk,hugo"
-  record = "蜀ICP备17038940号-2" # 备案号
-  policeRecordProvince = "川" # 公安备案省份简称,如“川公网安备”则填"川"
-  policeRecordNumber = "51010702001557" # 公安备案号
+  keyworlds = "paleblueyk,blog,paleblue,yangkai,yk,hugo"
+  record = "蜀ICP备17038940号-2"
+  policeRecordProvince = "川"
+  policeRecordNumber = "51010702001557"
   linksFeedback = "交换友链请在下方留言,并将本站添加到贵站的友链中,且确保贵站支持HTTPS协议!"
-[params.seo]
-  baidu = "u4UUwskbhk"
-  googleSiteVerification = "kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges"
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-[params.valine]
-  enable = false #文章页面下评论是否开启
-  appId = "1qw0wI8rRU2aokRUy7A0Hzld-gzGzoHsz"
-  appKey = "kTlur1J9v6jOExvFIlWM5jbp"
-  placeholder = "Yo~"
-  visitor = true
-  highlight = true
-  linksEnable = true # 友链下评论
+  [params.seo]
+    baidu = "u4UUwskbhk"
+    googleSiteVerification = "kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges"
+  [params.valine]
+    enable = false
+    appId = "1qw0wI8rRU2aokRUy7A0Hzld-gzGzoHsz"
+    appKey = "kTlur1J9v6jOExvFIlWM5jbp"
+    placeholder = "Yo~"
+    visitor = true
+    highlight = true
+    linksEnable = true
 
-# 图标采用fontawesome(http://www.fontawesome.com.cn/faicons/)
-# key = value key与图标名相同
 [social]
+  envelope-o = "mailto:blankyk@css0209.cn"
   github-alt = "https://github.com/paleBlueYk"
   qq = "tencent://Message/?Uin=917885215&amp;websiteName=q-zone.qq.com&amp;Menu=yes"
   television = "https://space.bilibili.com/10061915"
-  envelope-o = "mailto:blankyk@css0209.cn"
 
-[[menu.main]]
-  identifier = "welcome"
-  name = "Welcome"
-  weight = "10"
-  url = "/"
-[[menu.main]]
-  identifier = "home"
-  name = "Home"
-  weight = "20"
-  url = "/posts"
-[[menu.main]]
-  identifier = "about"
-  name = "About me"
-  weight = "30"
-  url = "/about"
-[[menu.main]]
-  identifier = "links"
-  name = "Links"
-  weight = "40"
-  url = "/links"
+[menu]
 
-# 友链
-[[menu.links]]
- identifier = "Bamboo Sticks"
- name = "Bamboo Sticks"
- url = "https://haowei.ch/"
-[[menu.links]]
- identifier = "IUblog"
- name = "IUblog"
- url = "https://blog.iucode.cn/"
-[[menu.links]]
- identifier = "蠢黑通行"
- name = "蠢黑通行"
- url = "https://blackyau.cc/"
-[[menu.links]]
- identifier = "徐AB"
- name = "徐AB"
- url = "https://www.xuab.net/"
-[[menu.links]]
- identifier = "Water"
- name = "Water"
- url = "https://water1127.github.io"
-[[menu.links]]
- identifier = "CanYe"
- name = "CanYe"
- url = "http://blog.canye365.cn"
-[[menu.links]]
- identifier = "玄儿"
- name = "玄儿"
- url = "http://blogs.kiyori.icu/"
-[[menu.links]]
- identifier= "Tmiracle"
- name = "Tmiracle"
- url = "https://texthub.cn/"
- [[menu.links]]
- identifier = "冰峰"
- name = "冰峰"
- url = "https://www.ad-s.cn/"
+  [[menu.main]]
+    url = "/"
+    name = "Welcome"
+    weight = "10"
+    identifier = "welcome"
+
+  [[menu.main]]
+    url = "/posts"
+    name = "Home"
+    weight = "20"
+    identifier = "home"
+
+  [[menu.main]]
+    url = "/about"
+    name = "About"
+    weight = "30"
+    identifier = "about"
+  [[menu.main]]
+    url = "/tags"
+    name = "Tags"
+    weight = "40"
+    identifier = "tags"
+  [[menu.main]]
+    url = "/links"
+    name = "Links"
+    weight = "50"
+    identifier = "links"
+
+  [[menu.links]]
+    identifier = "Bamboo Sticks"
+    name = "Bamboo Sticks"
+    url = "https://haowei.ch/"
+
+  [[menu.links]]
+    identifier = "IUblog"
+    name = "IUblog"
+    url = "https://blog.iucode.cn/"
+
+  [[menu.links]]
+    identifier = "蠢黑通行"
+    name = "蠢黑通行"
+    url = "https://blackyau.cc/"
+
+  [[menu.links]]
+    identifier = "徐AB"
+    name = "徐AB"
+    url = "https://www.xuab.net/"
+
+  [[menu.links]]
+    identifier = "Water"
+    name = "Water"
+    url = "https://water1127.github.io"
+
+  [[menu.links]]
+    identifier = "CanYe"
+    name = "CanYe"
+    url = "http://blog.canye365.cn"
+
+  [[menu.links]]
+    identifier = "玄儿"
+    name = "玄儿"
+    url = "http://blogs.kiyori.icu/"
+
+  [[menu.links]]
+    identifier = "Tmiracle"
+    name = "Tmiracle"
+    url = "https://texthub.cn/"
+
+  [[menu.links]]
+    identifier = "冰峰"
+    name = "冰峰"
+    url = "https://www.ad-s.cn/"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on PaleBlueYk&#39;Blog</title>
+    <title>Tags on PaleBlueYk&#39;s Blog</title>
     <link>https://css0209.cn/tags/</link>
-    <description>Recent content in Tags on PaleBlueYk&#39;Blog</description>
+    <description>Recent content in Tags on PaleBlueYk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 19 Mar 2020 02:15:47 +0800</lastBuildDate>
@@ -120,7 +120,7 @@
     </item>
     
     <item>
-      <title>React</title>
+      <title>react</title>
       <link>https://css0209.cn/tags/react/</link>
       <pubDate>Mon, 27 May 2019 23:20:12 +0800</pubDate>
       

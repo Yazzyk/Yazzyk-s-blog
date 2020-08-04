@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaleBlueYk&#39;Blog</title>
+  <title>PaleBlueYk&#39;s Blog</title>
   <meta name="author" content="PaleBlueYk" />
   
   <meta name="description" content="PaleBlueYk&#39;s Blog" />
   
-  <meta name="keywords" content="paleblueyk,blog,paleblue,yangkai,yk,hugo">
+  <meta name="keywords" content="">
   <meta name="baidu-site-verification" content="u4UUwskbhk" />
   <meta name="google-site-verification" content="kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges" />
   <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
@@ -24,7 +24,9 @@
   <script src="https://css0209.cn/js/lodash.js"></script>
   <script src="https://css0209.cn/js/baidu.js"></script>
   <link rel="stylesheet" href="https://css0209.cn/css/main.css">
+<link rel="stylesheet" href="/css/default_list.css">
 </head>
+
 <body>
   <div class="nav">
   <div class="logoBox">
@@ -38,7 +40,9 @@
     
     <li><a class="linkBox" href="/posts">Home</a></li>
     
-    <li><a class="linkBox" href="/about">About me</a></li>
+    <li><a class="linkBox" href="/about">About</a></li>
+    
+    <li><a class="linkBox" href="/tags">Tags</a></li>
     
     <li><a class="linkBox" href="/links">Links</a></li>
     
@@ -77,80 +81,48 @@
   </div>
 </div>
   <div class="main">
-    <div class="postList">
-      
-      
-      <div class="listBox">
-        <h3><a href="/posts/react_actioncreators/">React&amp;Redux actionCreators</a></h3>
-        <p>0x01 创建文件 创建actionCreators.js import {INPUT_VALUE_CHANGE,ADD_TODO_ITEM,DEL_TODO_ITEM} from &#39;./ActionTypes&#39;; export const getInputChangeAction = (value) =&gt;({ type : INPUT_VALUE_CHANGE, value }); export const getAddItemAction = () =&gt;({ type: ADD_TODO_ITEM }); export const getDelItemAction = (index)=&gt;({ type: DEL_TODO_ITEM, index }); 0x02 修改 修改ToDoList.js相关的地方 handleInputChange(e) { const action = getInputChangeAction(e.target.value); store.dispatch(action); } handleBtnClick() { const action = getAddItemAction(); store.dispatch(action); } handleItemClick(index) { const action = getDelItemAction(index);...</p>
-        <div class="listFooter">
-          <span class="date">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
-          </span>
+    <div class="tagsContent">
+      <div class="page_tags">
+        
+        <div class="listing_title">2019</div>
+        <div class="listing">
           
+          <div class="listing_item">
+            <div class="listing_post">
+              <a href="/posts/react_actioncreators/">React&amp;Redux actionCreators
+                <div class="post_time"><span class="date">05-27</span></div>
+              </a>
+            </div>
+          </div>
           
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>react
-          </span>
+          <div class="listing_item">
+            <div class="listing_post">
+              <a href="/posts/react_actiontypes/">React&amp;Redux ActionTypes
+                <div class="post_time"><span class="date">05-27</span></div>
+              </a>
+            </div>
+          </div>
           
+          <div class="listing_item">
+            <div class="listing_post">
+              <a href="/posts/react_reduxflow/">React之Redux工作流程
+                <div class="post_time"><span class="date">05-27</span></div>
+              </a>
+            </div>
+          </div>
           
-        </div>
-      </div>
-      
-      <div class="listBox">
-        <h3><a href="/posts/react_actiontypes/">React&amp;Redux ActionTypes</a></h3>
-        <p>0x00 前言 ActionTypes是为了防止在大型项目的开发中action中的type出现打错字之类的错误，此时，控制台不会报错，但功能异常。使用ActionTypes后，页面将会出现报错，减少排错时间 0x01 创...</p>
-        <div class="listFooter">
-          <span class="date">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
-          </span>
-          
-          
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>react
-          </span>
-          
-          
-        </div>
-      </div>
-      
-      <div class="listBox">
-        <h3><a href="/posts/react_reduxflow/">React之Redux工作流程</a></h3>
-        <p>阮一峰 0x00 render函数 render() { return ( &lt;div style={{ width: &#39;500px&#39;, padding: &#39;10px&#39; }}&gt; &lt;Input value={this.state.inputValue} style={{ width: &#34;400px&#34;, marginRight: &#34;15px&#34; }} onChange={this.handleInputChange} /&gt; &lt;Button type=&#34;primary&#34; &gt; 提交 &lt;/Button&gt; &lt;List bordered dataSource={this.state.list} renderItem={item =&gt; ( &lt;List.Item&gt; {item} &lt;/List.Item&gt; )} /&gt; &lt;/div&gt; ) } 0x01 在src下创建store/index.js 这里就创建好了Store import {createStore} from &#39;redux&#39;; import reducer from &#39;./reducer&#39;; const store = createStore(); export...</p>
-        <div class="listFooter">
-          <span class="date">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
-          </span>
-          
-          
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>react
-          </span>
-          
+          <div class="listing_item">
+            <div class="listing_post">
+              <a href="/posts/react_fragment/">React Fragment
+                <div class="post_time"><span class="date">05-27</span></div>
+              </a>
+            </div>
+          </div>
           
         </div>
+        
       </div>
-      
-      <div class="listBox">
-        <h3><a href="/posts/react_fragment/">React Fragment</a></h3>
-        <p>https://react.docschina.org/docs/fragments.html Fragment相当于占位符吧，正常情况下，React中子组件只能返回一个Dom节点,而Fragment可以让你的子组件返回多个Dom节点 父组件 import React, { Fragment } from &#39;react&#39;; import ToDoItem from &#39;./ToDoItem&#39;; class ToDoList extends React.Component { constructor(props) { super(props); //组价状态 this.state =...</p>
-        <div class="listFooter">
-          <span class="date">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
-          </span>
-          
-          
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>React
-          </span>
-          
-          
-        </div>
-      </div>
-      
-    </div>
-    <div class="pagination">
-      
+
     </div>
   </div>
   <footer>
@@ -159,7 +131,7 @@
     <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
   </div>
   <div class="rightBox">
-    <span>Copyright © 2020-2020.07 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    <span>Copyright © 2020-2020.08 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
     
     <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
     
