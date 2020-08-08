@@ -13,9 +13,9 @@ tags: [Web]
 
 # Firefox:(Windows和Linux、macOS通用)
 
-   (1) about:config进入参数设置界面  
+   (1) 地址栏输入`about:config`进入参数设置界面  
    (2) 鼠标右键新建新的字符串设置项，名称为：`network.security.ports.banned.override`  
-   (3) 为新参数设定要允许的端口或端口范围，如：95  
+   (3) 为新参数设定要允许的端口或端口范围，如：`95`  
 
 # Chrome
 
