@@ -6,10 +6,19 @@
     <description>Recent content in Posts on PaleBlueYk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Mar 2020 02:15:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 16:30:50 +0800</lastBuildDate>
     
 	<atom:link href="https://css0209.cn/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Golang枚举实现，并制成字典反给前端使用</title>
+      <link>https://css0209.cn/posts/go_enum/</link>
+      <pubDate>Sun, 18 Oct 2020 16:30:50 +0800</pubDate>
+      
+      <guid>https://css0209.cn/posts/go_enum/</guid>
+      <description>方法 package t import ( &amp;#34;reflect&amp;#34; &amp;#34;strconv&amp;#34; ) type EnumType int8 func GetEnumMap(obj interface{}) (statusMap map[EnumType]string) { ta := reflect.TypeOf(obj) statusMap = make(map[EnumType]string) for i := 0; i &amp;lt; ta.NumField(); i++ { fl := ta.Field(i) statusNum, _ := strconv.Atoi(fl.Tag.Get(&amp;#34;enum&amp;#34;)) statusMap[EnumType(statusNum)] = fl.Tag.Get(&amp;#34;desc&amp;#34;) } return } func GetEnumByDesc(obj interface{}, desc string) EnumType { ta := reflect.TypeOf(obj) statusMap := make(map[string]EnumType) for i := 0; i &amp;lt; ta.NumField(); i++ { fl := ta.Field(i) statusNum, _ := strconv.Atoi(fl.Tag.Get(&amp;#34;enum&amp;#34;)) statusMap[fl.Tag.Get(&amp;#34;desc&amp;#34;)] = EnumType(statusNum) } return statusMap[desc] } func GetAllStatus() (statusList map[string]interface{}) { statusList = make(map[string]interface{}) for _, v := range GetStatusObj() { statusList[reflect.TypeOf(v).Name()] = GetEnumMap(v)</description>
+    </item>
     
     <item>
       <title>Mysql连接失败(61)</title>

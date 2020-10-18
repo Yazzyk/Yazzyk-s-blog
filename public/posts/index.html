@@ -83,6 +83,23 @@
       
       
       <div class="listBox">
+        <h3><a href="/posts/go_enum/">Golang枚举实现，并制成字典反给前端使用</a></h3>
+        <p>方法 package t import ( &#34;reflect&#34; &#34;strconv&#34; ) type EnumType int8 func GetEnumMap(obj interface{}) (statusMap map[EnumType]string) { ta := reflect.TypeOf(obj) statusMap = make(map[EnumType]string) for i := 0; i &lt; ta.NumField(); i++ { fl := ta.Field(i) statusNum, _ := strconv.Atoi(fl.Tag.Get(&#34;enum&#34;)) statusMap[EnumType(statusNum)] = fl.Tag.Get(&#34;desc&#34;) } return } func GetEnumByDesc(obj interface{}, desc string) EnumType { ta := reflect.TypeOf(obj) statusMap := make(map[string]EnumType) for i := 0; i &lt; ta.NumField(); i++ { fl := ta.Field(i) statusNum, _ := strconv.Atoi(fl.Tag.Get(&#34;enum&#34;)) statusMap[fl.Tag.Get(&#34;desc&#34;)] = EnumType(statusNum) } return statusMap[desc] } func GetAllStatus() (statusList map[string]interface{}) { statusList = make(map[string]interface{}) for _, v := range GetStatusObj() { statusList[reflect.TypeOf(v).Name()] = GetEnumMap(v)...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2020-10-18
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>Golang
+          </span>
+          
+          
+        </div>
+      </div>
+      
+      <div class="listBox">
         <h3><a href="/posts/mysql-connect-error-61/">Mysql连接失败(61)</a></h3>
         <p>0x01 这个问题已经存在很久了,首先排除掉一些已存在的可能性: 用户没有远程登录权限 端口不是3306 配置文件中注释bind-address 0x02 排除以上信息后,我在一片文章中找到答案MySQL 连接错误Can&rs...</p>
         <div class="listFooter">
@@ -199,23 +216,6 @@
         </div>
       </div>
       
-      <div class="listBox">
-        <h3><a href="/posts/react_actioncreators/">React&amp;Redux actionCreators</a></h3>
-        <p>0x01 创建文件 创建actionCreators.js import {INPUT_VALUE_CHANGE,ADD_TODO_ITEM,DEL_TODO_ITEM} from &#39;./ActionTypes&#39;; export const getInputChangeAction = (value) =&gt;({ type : INPUT_VALUE_CHANGE, value }); export const getAddItemAction = () =&gt;({ type: ADD_TODO_ITEM }); export const getDelItemAction = (index)=&gt;({ type: DEL_TODO_ITEM, index }); 0x02 修改 修改ToDoList.js相关的地方 handleInputChange(e) { const action = getInputChangeAction(e.target.value); store.dispatch(action); } handleBtnClick() { const action = getAddItemAction(); store.dispatch(action); } handleItemClick(index) { const action = getDelItemAction(index);...</p>
-        <div class="listFooter">
-          <span class="date">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
-          </span>
-          
-          
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>react
-          </span>
-          
-          
-        </div>
-      </div>
-      
     </div>
     <div class="pagination">
       
@@ -234,7 +234,7 @@
     <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
   </div>
   <div class="rightBox">
-    <span>Copyright © 2020-2020.08 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    <span>Copyright © 2020-2020.10 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
     
     <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
     

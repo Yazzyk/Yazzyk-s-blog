@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://css0209.cn/tags/golang/</loc>
+    <lastmod>2020-10-18T16:30:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://css0209.cn/posts/go_enum/</loc>
+    <lastmod>2020-10-18T16:30:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://css0209.cn/</loc>
+    <lastmod>2020-10-18T16:30:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://css0209.cn/posts/</loc>
+    <lastmod>2020-10-18T16:30:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://css0209.cn/tags/</loc>
+    <lastmod>2020-10-18T16:30:50+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://css0209.cn/tags/linux/</loc>
     <lastmod>2020-03-19T02:15:47+08:00</lastmod>
   </url>
@@ -14,21 +39,6 @@
   
   <url>
     <loc>https://css0209.cn/posts/mysql-connect-error-61/</loc>
-    <lastmod>2020-03-19T02:15:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://css0209.cn/</loc>
-    <lastmod>2020-03-19T02:15:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://css0209.cn/posts/</loc>
-    <lastmod>2020-03-19T02:15:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://css0209.cn/tags/</loc>
     <lastmod>2020-03-19T02:15:47+08:00</lastmod>
   </url>
   
@@ -273,12 +283,12 @@
   </url>
   
   <url>
-    <loc>https://css0209.cn/categories/git/</loc>
+    <loc>https://css0209.cn/tags/git/</loc>
     <lastmod>2018-09-14T20:37:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://css0209.cn/tags/git/</loc>
+    <loc>https://css0209.cn/categories/git/</loc>
     <lastmod>2018-09-14T20:37:04+00:00</lastmod>
   </url>
   
@@ -298,12 +308,12 @@
   </url>
   
   <url>
-    <loc>https://css0209.cn/categories/python/</loc>
+    <loc>https://css0209.cn/tags/python/</loc>
     <lastmod>2018-09-10T22:05:33+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://css0209.cn/tags/python/</loc>
+    <loc>https://css0209.cn/categories/python/</loc>
     <lastmod>2018-09-10T22:05:33+00:00</lastmod>
   </url>
   

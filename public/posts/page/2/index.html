@@ -83,6 +83,23 @@
       
       
       <div class="listBox">
+        <h3><a href="/posts/react_actioncreators/">React&amp;Redux actionCreators</a></h3>
+        <p>0x01 创建文件 创建actionCreators.js import {INPUT_VALUE_CHANGE,ADD_TODO_ITEM,DEL_TODO_ITEM} from &#39;./ActionTypes&#39;; export const getInputChangeAction = (value) =&gt;({ type : INPUT_VALUE_CHANGE, value }); export const getAddItemAction = () =&gt;({ type: ADD_TODO_ITEM }); export const getDelItemAction = (index)=&gt;({ type: DEL_TODO_ITEM, index }); 0x02 修改 修改ToDoList.js相关的地方 handleInputChange(e) { const action = getInputChangeAction(e.target.value); store.dispatch(action); } handleBtnClick() { const action = getAddItemAction(); store.dispatch(action); } handleItemClick(index) { const action = getDelItemAction(index);...</p>
+        <div class="listFooter">
+          <span class="date">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-05-27
+          </span>
+          
+          
+          <span class="tags">
+            <i class="fa fa-tag" aria-hidden="true"></i>react
+          </span>
+          
+          
+        </div>
+      </div>
+      
+      <div class="listBox">
         <h3><a href="/posts/react_actiontypes/">React&amp;Redux ActionTypes</a></h3>
         <p>0x00 前言 ActionTypes是为了防止在大型项目的开发中action中的type出现打错字之类的错误，此时，控制台不会报错，但功能异常。使用ActionTypes后，页面将会出现报错，减少排错时间 0x01 创...</p>
         <div class="listFooter">
@@ -167,23 +184,6 @@
         </div>
       </div>
       
-      <div class="listBox">
-        <h3><a href="/posts/spring-boot%E5%92%8Creact%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E8%A7%A3%E5%86%B3/">spring boot和React跨域请求解决</a></h3>
-        <p>首先是在React，前端上只需要注意请求是POST请求，因为GET请求会有一个错误，然后就是用fetch传输了 handleSubmit = (e) =&gt; { e.preventDefault(); this.props.form.validateFields((err, values) =&gt; { if (!err) { console.log(&#39;Received values of form: &#39;, values); let data = new FormData(); data.append(&#34;userName&#34;,values.userName); data.append(&#34;password&#34;,values.password); data.append(&#34;remember&#34;,values.remember); fetch(&#34;http://localhost:8080/post&#34;,{ method: &#39;POST&#39;, body : data }).catch(); } }); }; 然后主要是在sp...</p>
-        <div class="listFooter">
-          <span class="date">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>2019-04-10
-          </span>
-          
-          
-          <span class="tags">
-            <i class="fa fa-tag" aria-hidden="true"></i>SpringBoot
-          </span>
-          
-          
-        </div>
-      </div>
-      
     </div>
     <div class="pagination">
       
@@ -206,7 +206,7 @@
     <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
   </div>
   <div class="rightBox">
-    <span>Copyright © 2020-2020.08 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    <span>Copyright © 2020-2020.10 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
     
     <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
     
