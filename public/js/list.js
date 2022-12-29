@@ -1,3 +1,0 @@
-function toggleMenus(){
-  $("ul").toggle();
-}
