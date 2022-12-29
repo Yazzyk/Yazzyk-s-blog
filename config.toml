@@ -1,26 +1,35 @@
-baseURL = "https://css0209.cn"
+baseURL = "https://shroot.dev"
 languageCode = "zh-cn"
-defaultContentLanguage = "en-us"
-title = "PaleBlueYk's Blog"
-themesDir = "../"
+defaultContentLanguage = "zh-cn"
+title = "Yazzyk's Blog"
+themesDir = "themes"
 theme = "White"
 summaryLength = 100
 hasCJKLanguage = true
 paginate = 6
 enableEmoji = true
+enableRobotsTXT = true
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  style = 'doom-one2'
+  lineNos = true
+  lineNumbersInTable = true
+  noClasses = true
 
 [params]
-  title = "PaleBLueYk's Blog"
+  title = "Yazzyk's Blog"
   subTitle = "芝灵生于幽谷,不以无人而不芳"
-  author = "PaleBlueYk"
-  description = "PaleBlueYk's Blog"
-  keyworlds = "paleblueyk,blog,paleblue,yangkai,yk,hugo"
-  record = "蜀ICP备17038940号-2"
-  policeRecordProvince = "川"
-  policeRecordNumber = "51010702001557"
+  author = "Yazzyk"
+  description = "Yazzyk's Blog"
+  keyworlds = "Yazzyk,blog,paleblue,yk,hugo"
+  record = ""
+  policeRecordProvince = ""
+  policeRecordNumber = ""
   linksFeedback = "交换友链请在下方留言,并将本站添加到贵站的友链中,且确保贵站支持HTTPS协议!"
   [params.seo]
-    baidu = "u4UUwskbhk"
+    baidu = "code-TtzfDaB45q"
     googleSiteVerification = "kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges"
   [params.valine]
     enable = false
@@ -30,40 +39,48 @@ enableEmoji = true
     visitor = true
     highlight = true
     linksEnable = true
+  [[params.social]]
+    Icon = "fa-solid fa-envelope"
+    Link = "mailto:917885215@qq.com"
+  [[params.social]]
+    Icon = "fa-brands fa-github"
+    Link = "https://github.com/Yazzyk"
+  [[params.social]]
+    Icon = "fa-brands fa-qq"
+    Link = "tencent://Message/?Uin=917885215&amp;websiteName=q-zone.qq.com&amp;Menu=yes"
+  [[params.social]]
+    Icon = "fa-solid fa-tv"
+    Link = "https://space.bilibili.com/10061915"
 
-[social]
-  envelope-o = "mailto:blankyk@css0209.cn"
-  github-alt = "https://github.com/paleBlueYk"
-  qq = "tencent://Message/?Uin=917885215&amp;websiteName=q-zone.qq.com&amp;Menu=yes"
-  television = "https://space.bilibili.com/10061915"
+
 
 [menu]
 
   [[menu.main]]
     url = "/"
-    name = "Welcome"
+    name = "欢迎页"
     weight = "10"
     identifier = "welcome"
 
   [[menu.main]]
     url = "/posts"
-    name = "Home"
+    name = "文章"
     weight = "20"
     identifier = "home"
 
   [[menu.main]]
     url = "/about"
-    name = "About"
+    name = "关于我"
     weight = "30"
     identifier = "about"
   [[menu.main]]
     url = "/tags"
-    name = "Tags"
+    name = "分类"
     weight = "40"
     identifier = "tags"
   [[menu.main]]
     url = "/links"
-    name = "Links"
+    name = "友链"
     weight = "50"
     identifier = "links"
 
@@ -100,7 +117,7 @@ enableEmoji = true
   [[menu.links]]
     identifier = "玄儿"
     name = "玄儿"
-    url = "http://blogs.kiyori.icu/"
+    url = "http://kirigayakazima.github.io"
 
   [[menu.links]]
     identifier = "Tmiracle"

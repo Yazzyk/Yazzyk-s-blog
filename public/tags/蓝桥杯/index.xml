@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>蓝桥杯 on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</link>
-    <description>Recent content in 蓝桥杯 on PaleBlueYk&#39;s Blog</description>
+    <title>蓝桥杯 on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</link>
+    <description>Recent content in 蓝桥杯 on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 18 Mar 2019 17:58:38 +0000</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 18 Mar 2019 17:58:38 +0000</lastBuildDate><atom:link href="https://shroot.dev/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java 全排列</title>
-      <link>https://css0209.cn/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</link>
+      <link>https://shroot.dev/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</link>
       <pubDate>Mon, 18 Mar 2019 17:58:38 +0000</pubDate>
       
-      <guid>https://css0209.cn/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</guid>
-      <description>学习视频：bilibilip2 代码 public class 递归全排列 { public static void main(String[] args) { // TODO 自动生成的方法存根 char[] data = {&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;C&amp;#39;}; fun(data, 0); } public static void fun(char[] data,int n) { if(n == data.length) { for(int i=0;i&amp;lt;data.length;i++) { System.out.print(data[i]+&amp;#34; &amp;#34;); } System.out.println(); } for(int i=n;i&amp;lt;data.length;i++) { //试探 char t = data[n]; data[n] = data[i]; data[i] = t; fun(data, n+1); //回溯 t = data[n]; data[n] = data[i]; data[i] = t;</description>
+      <guid>https://shroot.dev/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</guid>
+      <description>学习视频：bilibilip2 代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 public class 递归全排列 { public static void main(String[] args) { // TODO 自动生成的方法存根 char[] data = {&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;C&amp;#39;}; fun(data, 0); } public static void fun(char[] data,int n) { if(n == data.length) { for(int i=0;i&amp;lt;data.length;i++) { System.out.print(data[i]+&amp;#34; &amp;#34;); } System.out.println(); } for(int i=n;i&amp;lt;data.length;i++)</description>
     </item>
     
     <item>
       <title>学校Linux，Samba服务器搭建</title>
-      <link>https://css0209.cn/posts/%E5%AD%A6%E6%A0%A1linuxsamba%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</link>
+      <link>https://shroot.dev/posts/%E5%AD%A6%E6%A0%A1linuxsamba%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sat, 08 Dec 2018 14:25:42 +0000</pubDate>
       
-      <guid>https://css0209.cn/posts/%E5%AD%A6%E6%A0%A1linuxsamba%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</guid>
-      <description>基于我学院机房搭建的Samba服务器傻瓜式教程 感谢班上学习委员大佬的笔记 一、挂载光盘 mount #查看光盘所在的设备位置 mount -t iso9660 /dev/hdc /mnt #挂载光盘(/dev/hdc)到 /mnt目录 二、软件包安装 所有的软件包都在Ser</description>
+      <guid>https://shroot.dev/posts/%E5%AD%A6%E6%A0%A1linuxsamba%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</guid>
+      <description>基于我学院机房搭建的Samba服务器傻瓜式教程 感谢班上学习委员大佬的笔记 一、挂载光盘 1 2 mount #查看光盘所在的设备位置 mount -t iso9660 /dev/hdc /mnt #挂载光盘(/dev/hdc)到 /mnt目录 二、软件包安装 所有的软件包都在S</description>
     </item>
     
   </channel>

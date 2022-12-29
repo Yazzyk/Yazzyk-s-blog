@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mysql on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/tags/mysql/</link>
-    <description>Recent content in mysql on PaleBlueYk&#39;s Blog</description>
+    <title>mysql on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/tags/mysql/</link>
+    <description>Recent content in mysql on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Mar 2020 02:15:47 +0800</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 19 Mar 2020 02:15:47 +0800</lastBuildDate><atom:link href="https://shroot.dev/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mysql连接失败(61)</title>
-      <link>https://css0209.cn/posts/mysql-connect-error-61/</link>
+      <link>https://shroot.dev/posts/mysql-connect-error-61/</link>
       <pubDate>Thu, 19 Mar 2020 02:15:47 +0800</pubDate>
       
-      <guid>https://css0209.cn/posts/mysql-connect-error-61/</guid>
+      <guid>https://shroot.dev/posts/mysql-connect-error-61/</guid>
       <description>0x01 这个问题已经存在很久了,首先排除掉一些已存在的可能性: 用户没有远程登录权限 端口不是3306 配置文件中注释bind-address 0x02 排除以上信息后,我在一片文章中找到答案MySQL 连接错误Can&amp;rs</description>
     </item>
     

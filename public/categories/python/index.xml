@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/categories/python/</link>
-    <description>Recent content in Python on PaleBlueYk&#39;s Blog</description>
+    <title>Python on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/categories/python/</link>
+    <description>Recent content in Python on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 Sep 2018 22:05:33 +0000</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/categories/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 10 Sep 2018 22:05:33 +0000</lastBuildDate><atom:link href="https://shroot.dev/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sudo pip install mysqlclient报错</title>
-      <link>https://css0209.cn/247.html</link>
+      <link>https://shroot.dev/247.html</link>
       <pubDate>Mon, 10 Sep 2018 22:05:33 +0000</pubDate>
       
-      <guid>https://css0209.cn/247.html</guid>
-      <description>今天在学习Django时遇到一个问题 # 首先安装Mysql驱动 brew install mysql-connector-c # 第一条到没什么问题，但是第二条命令。。。 sudo pip install mysqlclient 当我按下Enter键后，出现了以下的报错： Password: The directory &amp;#39;/Users/blankyk/Library/Caches/pip/http&amp;#39; or its parent directory is not owned by the current user and the cache has been disabled.</description>
+      <guid>https://shroot.dev/247.html</guid>
+      <description>今天在学习Django时遇到一个问题 # 首先安装Mysql驱动 brew install mysql-connector-c # 第一条到没什么问题，但是第二条命令。。。 sudo pip install mysqlclient 当我按下Enter键后，出现了以下的报错： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21</description>
     </item>
     
     <item>
       <title>Python3 正方爬虫</title>
-      <link>https://css0209.cn/103.html</link>
+      <link>https://shroot.dev/103.html</link>
       <pubDate>Sat, 11 Aug 2018 19:52:13 +0000</pubDate>
       
-      <guid>https://css0209.cn/103.html</guid>
+      <guid>https://shroot.dev/103.html</guid>
       <description>本篇文章以我所用教务系统为例 由于学校把课表关闭了，所以我现在先爬取的成绩查询 本项目的完整代码地址：Github-zhengfang 首先观察学校官网的地址： 原本的地址是 https://220.167.53.63:95/ 然后变成 https://220.167.53.63:95/(4eggunep4b4jhzfwhk4pva21)/default2.aspx 首先端口使用的95端</description>
     </item>
     

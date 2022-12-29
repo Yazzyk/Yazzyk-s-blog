@@ -1,193 +1,198 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/tags/</link>
-    <description>Recent content in Tags on PaleBlueYk&#39;s Blog</description>
+    <title>Tags on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/tags/</link>
+    <description>Recent content in Tags on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Oct 2020 16:30:50 +0800</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 11 Dec 2022 21:21:31 +0800</lastBuildDate><atom:link href="https://shroot.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Golang</title>
-      <link>https://css0209.cn/tags/golang/</link>
-      <pubDate>Sun, 18 Oct 2020 16:30:50 +0800</pubDate>
+      <title>caddy</title>
+      <link>https://shroot.dev/tags/caddy/</link>
+      <pubDate>Sun, 11 Dec 2022 21:21:31 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/golang/</guid>
+      <guid>https://shroot.dev/tags/caddy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://css0209.cn/tags/linux/</link>
+      <title>web</title>
+      <link>https://shroot.dev/tags/web/</link>
+      <pubDate>Sun, 11 Dec 2022 21:21:31 +0800</pubDate>
+      
+      <guid>https://shroot.dev/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://shroot.dev/tags/golang/</link>
+      <pubDate>Sun, 18 Oct 2020 16:30:50 +0800</pubDate>
+      
+      <guid>https://shroot.dev/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://shroot.dev/tags/linux/</link>
       <pubDate>Thu, 19 Mar 2020 02:15:47 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/linux/</guid>
+      <guid>https://shroot.dev/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>https://css0209.cn/tags/mysql/</link>
+      <link>https://shroot.dev/tags/mysql/</link>
       <pubDate>Thu, 19 Mar 2020 02:15:47 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/mysql/</guid>
+      <guid>https://shroot.dev/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://css0209.cn/tags/blog/</link>
+      <link>https://shroot.dev/tags/blog/</link>
       <pubDate>Mon, 24 Feb 2020 22:36:47 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/blog/</guid>
+      <guid>https://shroot.dev/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://css0209.cn/tags/hugo/</link>
+      <link>https://shroot.dev/tags/hugo/</link>
       <pubDate>Mon, 24 Feb 2020 22:36:47 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/hugo/</guid>
+      <guid>https://shroot.dev/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jenkins</title>
-      <link>https://css0209.cn/tags/jenkins/</link>
+      <link>https://shroot.dev/tags/jenkins/</link>
       <pubDate>Mon, 24 Feb 2020 22:36:47 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/jenkins/</guid>
+      <guid>https://shroot.dev/tags/jenkins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://css0209.cn/tags/java/</link>
+      <link>https://shroot.dev/tags/java/</link>
       <pubDate>Wed, 25 Dec 2019 20:18:14 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/java/</guid>
+      <guid>https://shroot.dev/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MyBatis</title>
-      <link>https://css0209.cn/tags/mybatis/</link>
+      <link>https://shroot.dev/tags/mybatis/</link>
       <pubDate>Wed, 25 Dec 2019 20:18:14 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/mybatis/</guid>
+      <guid>https://shroot.dev/tags/mybatis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ngrok</title>
-      <link>https://css0209.cn/tags/ngrok/</link>
+      <link>https://shroot.dev/tags/ngrok/</link>
       <pubDate>Wed, 25 Dec 2019 20:18:14 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/ngrok/</guid>
+      <guid>https://shroot.dev/tags/ngrok/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SpringBoot</title>
-      <link>https://css0209.cn/tags/springboot/</link>
+      <link>https://shroot.dev/tags/springboot/</link>
       <pubDate>Wed, 25 Dec 2019 20:18:14 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/springboot/</guid>
+      <guid>https://shroot.dev/tags/springboot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WebFlux</title>
-      <link>https://css0209.cn/tags/webflux/</link>
+      <link>https://shroot.dev/tags/webflux/</link>
       <pubDate>Wed, 25 Dec 2019 20:18:14 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/webflux/</guid>
+      <guid>https://shroot.dev/tags/webflux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wechat</title>
-      <link>https://css0209.cn/tags/wechat/</link>
+      <link>https://shroot.dev/tags/wechat/</link>
       <pubDate>Wed, 25 Dec 2019 20:18:14 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/wechat/</guid>
+      <guid>https://shroot.dev/tags/wechat/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Web</title>
-      <link>https://css0209.cn/tags/web/</link>
-      <pubDate>Sat, 15 Jun 2019 20:05:13 +0800</pubDate>
-      
-      <guid>https://css0209.cn/tags/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>React</title>
-      <link>https://css0209.cn/tags/react/</link>
+      <title>react</title>
+      <link>https://shroot.dev/tags/react/</link>
       <pubDate>Mon, 27 May 2019 23:20:12 +0800</pubDate>
       
-      <guid>https://css0209.cn/tags/react/</guid>
+      <guid>https://shroot.dev/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>蓝桥杯</title>
-      <link>https://css0209.cn/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</link>
+      <link>https://shroot.dev/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</link>
       <pubDate>Mon, 18 Mar 2019 17:58:38 +0000</pubDate>
       
-      <guid>https://css0209.cn/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</guid>
+      <guid>https://shroot.dev/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>网络</title>
-      <link>https://css0209.cn/tags/%E7%BD%91%E7%BB%9C/</link>
+      <link>https://shroot.dev/tags/%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Sat, 16 Feb 2019 19:28:24 +0000</pubDate>
       
-      <guid>https://css0209.cn/tags/%E7%BD%91%E7%BB%9C/</guid>
+      <guid>https://shroot.dev/tags/%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>树莓派</title>
-      <link>https://css0209.cn/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
+      <link>https://shroot.dev/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
       <pubDate>Wed, 30 Jan 2019 11:53:50 +0000</pubDate>
       
-      <guid>https://css0209.cn/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</guid>
+      <guid>https://shroot.dev/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>解决问题</title>
-      <link>https://css0209.cn/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</link>
+      <link>https://shroot.dev/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sat, 26 Jan 2019 02:15:09 +0000</pubDate>
       
-      <guid>https://css0209.cn/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://shroot.dev/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://css0209.cn/tags/git/</link>
+      <link>https://shroot.dev/tags/git/</link>
       <pubDate>Fri, 14 Sep 2018 20:37:04 +0000</pubDate>
       
-      <guid>https://css0209.cn/tags/git/</guid>
+      <guid>https://shroot.dev/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://css0209.cn/tags/python/</link>
+      <link>https://shroot.dev/tags/python/</link>
       <pubDate>Mon, 10 Sep 2018 22:05:33 +0000</pubDate>
       
-      <guid>https://css0209.cn/tags/python/</guid>
+      <guid>https://shroot.dev/tags/python/</guid>
       <description></description>
     </item>
     

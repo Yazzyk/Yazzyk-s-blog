@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>蓝桥杯,经验 on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%BB%8F%E9%AA%8C/</link>
-    <description>Recent content in 蓝桥杯,经验 on PaleBlueYk&#39;s Blog</description>
+    <title>蓝桥杯,经验 on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%BB%8F%E9%AA%8C/</link>
+    <description>Recent content in 蓝桥杯,经验 on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 18 Mar 2019 17:58:38 +0000</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 18 Mar 2019 17:58:38 +0000</lastBuildDate><atom:link href="https://shroot.dev/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java 全排列</title>
-      <link>https://css0209.cn/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</link>
+      <link>https://shroot.dev/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</link>
       <pubDate>Mon, 18 Mar 2019 17:58:38 +0000</pubDate>
       
-      <guid>https://css0209.cn/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</guid>
-      <description>学习视频：bilibilip2 代码 public class 递归全排列 { public static void main(String[] args) { // TODO 自动生成的方法存根 char[] data = {&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;C&amp;#39;}; fun(data, 0); } public static void fun(char[] data,int n) { if(n == data.length) { for(int i=0;i&amp;lt;data.length;i++) { System.out.print(data[i]+&amp;#34; &amp;#34;); } System.out.println(); } for(int i=n;i&amp;lt;data.length;i++) { //试探 char t = data[n]; data[n] = data[i]; data[i] = t; fun(data, n+1); //回溯 t = data[n]; data[n] = data[i]; data[i] = t;</description>
+      <guid>https://shroot.dev/posts/java-%E5%85%A8%E6%8E%92%E5%88%97/</guid>
+      <description>学习视频：bilibilip2 代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 public class 递归全排列 { public static void main(String[] args) { // TODO 自动生成的方法存根 char[] data = {&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;,&amp;#39;C&amp;#39;}; fun(data, 0); } public static void fun(char[] data,int n) { if(n == data.length) { for(int i=0;i&amp;lt;data.length;i++) { System.out.print(data[i]+&amp;#34; &amp;#34;); } System.out.println(); } for(int i=n;i&amp;lt;data.length;i++)</description>
     </item>
     
   </channel>

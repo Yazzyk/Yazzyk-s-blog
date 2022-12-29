@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/categories/git/</link>
-    <description>Recent content in Git on PaleBlueYk&#39;s Blog</description>
+    <title>Git on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/categories/git/</link>
+    <description>Recent content in Git on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Sep 2018 20:37:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/categories/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 14 Sep 2018 20:37:04 +0000</lastBuildDate><atom:link href="https://shroot.dev/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git相关笔记</title>
-      <link>https://css0209.cn/301.html</link>
+      <link>https://shroot.dev/301.html</link>
       <pubDate>Fri, 14 Sep 2018 20:37:04 +0000</pubDate>
       
-      <guid>https://css0209.cn/301.html</guid>
-      <description>参考文章：菜鸟教程 配置 用户信息 配置个人的用户信息和电子邮箱： git config &amp;ndash;global user.name &amp;quot;&amp;rdquo; git config &amp;ndash;global user.email 文档编辑器 一般会是vi/vim git config &amp;ndash;global core.editor vim 查看配置信息 git config &amp;ndash;list Git工作流 工作流程： 克隆 Git 资源作为工作目录。 在克隆的资源上添加</description>
+      <guid>https://shroot.dev/301.html</guid>
+      <description>参考文章：菜鸟教程 配置 用户信息 配置个人的用户信息和电子邮箱： git config &amp;ndash;global user.name &amp;quot;&amp;quot; git config &amp;ndash;global user.email 文档编辑器 一般会是vi/vim git config &amp;ndash;global core.editor vim 查看配置信息 git config &amp;ndash;list Git工作流 工作流程： 克隆 Git 资源作为工作目录。 在克隆的资源上添加</description>
     </item>
     
   </channel>

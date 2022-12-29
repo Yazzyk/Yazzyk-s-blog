@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ngrok on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/tags/ngrok/</link>
-    <description>Recent content in ngrok on PaleBlueYk&#39;s Blog</description>
+    <title>ngrok on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/tags/ngrok/</link>
+    <description>Recent content in ngrok on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Dec 2019 20:18:14 +0800</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/tags/ngrok/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Dec 2019 20:18:14 +0800</lastBuildDate><atom:link href="https://shroot.dev/tags/ngrok/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>微信开发 - 环境搭建</title>
-      <link>https://css0209.cn/posts/wechat01/</link>
+      <link>https://shroot.dev/posts/wechat01/</link>
       <pubDate>Wed, 25 Dec 2019 20:18:14 +0800</pubDate>
       
-      <guid>https://css0209.cn/posts/wechat01/</guid>
-      <description>环境搭建 前往ngrok下载指定客户端到本地 注册并登陆,开通一个隧道 到隧道管理可编辑自定义域名,复制隧道id 通过客户端启动隧道即可,以MacOS为例,在下载的客户端目录下,终端输入 ./sunny clientid 隧道id 文档 输入后</description>
+      <guid>https://shroot.dev/posts/wechat01/</guid>
+      <description>环境搭建 前往ngrok下载指定客户端到本地 注册并登陆,开通一个隧道 到隧道管理可编辑自定义域名,复制隧道id 通过客户端启动隧道即可,以MacOS为例,在下载的客户端目录下,终端输入 1 ./sunny clientid 隧道id 文档 输入</description>
     </item>
     
   </channel>

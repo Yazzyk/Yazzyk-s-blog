@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on PaleBlueYk&#39;s Blog</title>
-    <link>https://css0209.cn/categories/java/</link>
-    <description>Recent content in Java on PaleBlueYk&#39;s Blog</description>
+    <title>Java on Yazzyk&#39;s Blog</title>
+    <link>https://shroot.dev/categories/java/</link>
+    <description>Recent content in Java on Yazzyk&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Mar 2019 19:35:34 +0000</lastBuildDate>
-    
-	<atom:link href="https://css0209.cn/categories/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 12 Mar 2019 19:35:34 +0000</lastBuildDate><atom:link href="https://shroot.dev/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigDecimal总结</title>
-      <link>https://css0209.cn/posts/bigdecimal/</link>
+      <link>https://shroot.dev/posts/bigdecimal/</link>
       <pubDate>Tue, 12 Mar 2019 19:35:34 +0000</pubDate>
       
-      <guid>https://css0209.cn/posts/bigdecimal/</guid>
-      <description>参考：https://www.jianshu.com/p/2947868d76eb 导包 import java.math.BigDecimal; 构建 BigDecimal BigDecimal(String s); static BigDecimal valueOf(double d); 方法 方法 描述 add(BigDecimal) BigDecimal对象中的值相加，然后返回这个对象 subtract(BigDecimal) BigDecimal对象</description>
+      <guid>https://shroot.dev/posts/bigdecimal/</guid>
+      <description>参考：https://www.jianshu.com/p/2947868d76eb 导包 1 import java.math.BigDecimal; 构建 1 2 BigDecimal BigDecimal(String s); static BigDecimal valueOf(double d); 方法 方法 描述 add(BigDecimal) BigDecimal对象中的值相加，然后返回这个对象 subtract(BigDecimal) BigDecima</description>
     </item>
     
     <item>
       <title>问题解决：java.lang.ClassNotFoundException: com.mysql.jdbc.Driver</title>
-      <link>https://css0209.cn/posts/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3java-lang-classnotfoundexception-com-mysql-jdbc-driver/</link>
+      <link>https://shroot.dev/posts/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3java-lang-classnotfoundexception-com-mysql-jdbc-driver/</link>
       <pubDate>Wed, 05 Dec 2018 15:21:40 +0000</pubDate>
       
-      <guid>https://css0209.cn/posts/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3java-lang-classnotfoundexception-com-mysql-jdbc-driver/</guid>
+      <guid>https://shroot.dev/posts/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3java-lang-classnotfoundexception-com-mysql-jdbc-driver/</guid>
       <description>遇到问题是的环境： jdk1.8 远程连接服务器mysql macOS High Sierra idea 解决： 前往MySQL官网下载所需的jar 下载完解压到一个位置 idea点击file-&amp;gt;Project Structure-&amp;gt;Modules-&amp;gt;Dependencies 点击“+”选择&amp;quot;JARs or d</description>
     </item>
     
     <item>
       <title>Eclipse安装和汉化</title>
-      <link>https://css0209.cn/71.html</link>
+      <link>https://shroot.dev/71.html</link>
       <pubDate>Sat, 24 Mar 2018 07:38:42 +0000</pubDate>
       
-      <guid>https://css0209.cn/71.html</guid>
+      <guid>https://shroot.dev/71.html</guid>
       <description>Eclipse下载及汉化 下载Eclipse 官网的下载地址下载地址 小声bb：由于中国防火墙，访问会很慢很慢 所以我上传了百度网盘٩(๑&amp;gt;◡&amp;lt;๑)۶ 链接: https://pan.baidu.com/s/1L-YsV1j1FjED92W5Qsin5Q 密码: dpfv 下载完成后打开选择要安装的工具</description>
     </item>
     
     <item>
       <title>安装JAVA</title>
-      <link>https://css0209.cn/68.html</link>
+      <link>https://shroot.dev/68.html</link>
       <pubDate>Sat, 24 Mar 2018 07:37:22 +0000</pubDate>
       
-      <guid>https://css0209.cn/68.html</guid>
+      <guid>https://shroot.dev/68.html</guid>
       <description>参考来自菜鸟教程 下载JDK包 前往官网下载 JDK 然后选择你的安装包的位置，点击保存,下载可能比较慢，请耐心等待 下一步,如果你要安装到其它地方也可以 安装JDK，安装过程中可以自定义安装目录等信息，例如我们选择</description>
     </item>
     

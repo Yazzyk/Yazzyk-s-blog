@@ -4,45 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaleBlueYk&#39;s Blog</title>
-  <meta name="author" content="PaleBlueYk" />
+  <title>Yazzyk&#39;s Blog</title>
+  <meta name="author" content="Yazzyk" />
   
   <meta name="description" content="搭建 搭建直接看官方文档 本文就直接写搭建后的美化啊，部署什么的 部署到服务器 我看了不少文章，但是总是有什么权限之类的问题，要不然创建的git账号无法访问，要不然宝塔的www账号无法访问，最后自己还是按照那" />
   
   <meta name="keywords" content="">
-  <meta name="baidu-site-verification" content="u4UUwskbhk" />
+  <meta name="baidu-site-verification" content="code-TtzfDaB45q" />
   <meta name="google-site-verification" content="kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges" />
-  <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://css0209.cn/css/white.css">
-  <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://css0209.cn/css/highlight.css">
-  <script src="https://css0209.cn/js/heighlight.min.js"></script>
+  <link rel="shortcut icon" href="https://shroot.dev/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://shroot.dev/css/white.css">
+  
+  
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
   
   
   
-  <script src="https://css0209.cn/js/jQuery.min.js"></script>
-  <script src="https://css0209.cn/js/lodash.js"></script>
-  <script src="https://css0209.cn/js/baidu.js"></script>
-  <link rel="stylesheet" href="https://css0209.cn/css/main.css">
+  <script src="https://shroot.dev/js/jQuery.min.js" async="async"></script>
+  <script src="https://shroot.dev/js/lodash.js" async="async"></script>
+  <script src="https://shroot.dev/js/baidu.js" async="async"></script>
+  
+  <link rel="stylesheet" href="https://shroot.dev/css/main.css">
+  
 </head>
 <body>
   <div class="nav">
   <div class="logoBox">
     <a href="/posts"><img src="/img/logo.png" alt="" class="logo"></a>
   </div>
-  <button class="bars" onclick="toggleMenus()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  
   <ul>
     
     
-    <li><a class="linkBox" href="/">Welcome</a></li>
+    <li><a class="linkBox" href="/">欢迎页</a></li>
     
-    <li><a class="linkBox" href="/posts">Home</a></li>
+    <li><a class="linkBox" href="/posts">文章</a></li>
     
-    <li><a class="linkBox" href="/about">About</a></li>
+    <li><a class="linkBox" href="/about">关于我</a></li>
     
-    <li><a class="linkBox" href="/tags">Tags</a></li>
+    <li><a class="linkBox" href="/tags">分类</a></li>
     
-    <li><a class="linkBox" href="/links">Links</a></li>
+    <li><a class="linkBox" href="/links">友链</a></li>
     
   </ul>
 </div>
@@ -55,25 +57,13 @@
   <div class="socials">
     <div class="socialLinks">
       
+      <a href="mailto:917885215@qq.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
       
-      <a href="mailto:blankyk@css0209.cn" title="envelope-o" target="_blank"><i class="fa fa-envelope-o"
-          aria-hidden="true"></i></a>
+      <a href="https://github.com/Yazzyk" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
       
+      <a href="#ZgotmplZ" target="_blank"><i class="fa-brands fa-qq" aria-hidden="true"></i></a>
       
-      
-      <a href="https://github.com/paleBlueYk" title="github-alt" target="_blank"><i class="fa fa-github-alt"
-          aria-hidden="true"></i></a>
-      
-      
-      
-      <a href="tencent://Message/?Uin=917885215&amp;amp;websiteName=q-zone.qq.com&amp;amp;Menu=yes" title="qq" target="_blank"><i class="fa fa-qq"
-          aria-hidden="true"></i></a>
-      
-      
-      
-      <a href="https://space.bilibili.com/10061915" title="television" target="_blank"><i class="fa fa-television"
-          aria-hidden="true"></i></a>
-      
+      <a href="https://space.bilibili.com/10061915" target="_blank"><i class="fa-solid fa-tv" aria-hidden="true"></i></a>
       
     </div>
   </div>
@@ -82,7 +72,7 @@
     <div class="postContent">
       <h1>博客船新改版 hexo&#43;NexT</h1>
       <small><i class="fa fa-clock-o" aria-hidden="true"></i>2018-09-19
-        PaleBlueYk</small>
+        Yazzyk</small>
       <h1 id="搭建">搭建</h1>
 <p>搭建直接看<a href="https://hexo.io/zh-cn/docs/">官方文档</a><br>
 本文就直接写搭建后的美化啊，部署什么的</p>
@@ -92,65 +82,146 @@
 <h2 id="服务器上操作">服务器上操作</h2>
 <p>我的服务器环境：
 使用宝塔面板搭建的网站</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">screenfetch
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">screenfetch
                   ..                    ****
                 .PLTJ.                  OS: CentOS 7.5.1804 Core
                &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;                 Kernel: x86_64 Linux 3.10.0-693.21.1.el7.x86_64
-      KKSSV<span style="color:#e6db74">&#39; 4KKK LJ KKKL.&#39;</span>VSSKK        Uptime: 4d 15h 13m
-      KKV<span style="color:#e6db74">&#39; 4KKKKK LJ KKKKAL &#39;</span>VKK        Packages: <span style="color:#ae81ff">597</span>
-      V<span style="color:#e6db74">&#39; &#39;</span> <span style="color:#e6db74">&#39;VKKKK LJ KKKKV&#39;</span> <span style="color:#e6db74">&#39; &#39;</span>V        Shell: zsh 5.0.2
-      .4MA.<span style="color:#e6db74">&#39; &#39;</span>VKK LJ KKV<span style="color:#e6db74">&#39; &#39;</span>.4Mb.        CPU: Intel Xeon Platinum <span style="color:#ae81ff">8163</span> @ 2.494GHz
-    . KKKKKA.<span style="color:#e6db74">&#39; &#39;</span>V LJ V<span style="color:#e6db74">&#39; &#39;</span>.4KKKKK .      GPU: cirrusdrmfb
-  .4D KKKKKKKA.<span style="color:#e6db74">&#39;&#39;</span> LJ <span style="color:#e6db74">&#39;&#39;</span>.4KKKKKKK FA.    RAM: 533MiB / 1839MiB
+      KKSSV<span style="color:#98c379">&#39; 4KKK LJ KKKL.&#39;</span>VSSKK        Uptime: 4d 15h 13m
+      KKV<span style="color:#98c379">&#39; 4KKKKK LJ KKKKAL &#39;</span>VKK        Packages: <span style="color:#d19a66">597</span>
+      V<span style="color:#98c379">&#39; &#39;</span> <span style="color:#98c379">&#39;VKKKK LJ KKKKV&#39;</span> <span style="color:#98c379">&#39; &#39;</span>V        Shell: zsh 5.0.2
+      .4MA.<span style="color:#98c379">&#39; &#39;</span>VKK LJ KKV<span style="color:#98c379">&#39; &#39;</span>.4Mb.        CPU: Intel Xeon Platinum <span style="color:#d19a66">8163</span> @ 2.494GHz
+    . KKKKKA.<span style="color:#98c379">&#39; &#39;</span>V LJ V<span style="color:#98c379">&#39; &#39;</span>.4KKKKK .      GPU: cirrusdrmfb
+  .4D KKKKKKKA.<span style="color:#98c379">&#39;&#39;</span> LJ <span style="color:#98c379">&#39;&#39;</span>.4KKKKKKK FA.    RAM: 533MiB / 1839MiB
  &lt;QDD ++++++++++++  ++++++++++++ GFD&gt;  
-  <span style="color:#e6db74">&#39;VD KKKKKKKK&#39;</span>.. LJ ..<span style="color:#e6db74">&#39;KKKKKKKK FV    
-</span><span style="color:#e6db74">    &#39;</span> VKKKKK<span style="color:#e6db74">&#39;. .4 LJ K. .&#39;</span>KKKKKV <span style="color:#e6db74">&#39;     
-</span><span style="color:#e6db74">       &#39;</span>VK<span style="color:#e6db74">&#39;. .4KK LJ KKA. .&#39;</span>KV<span style="color:#e6db74">&#39;        
-</span><span style="color:#e6db74">      A. . .4KKKK LJ KKKKA. . .4       
-</span><span style="color:#e6db74">      KKA. &#39;</span>KKKKK LJ KKKKK<span style="color:#e6db74">&#39; .4KK       
-</span><span style="color:#e6db74">      KKSSA. VKKK LJ KKKV .4SSKK       
-</span><span style="color:#e6db74">               &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;                
-</span><span style="color:#e6db74">                &#39;</span>MKKM<span style="color:#e6db74">&#39;                 
-</span><span style="color:#e6db74">                  &#39;</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># 先找到服务器上宝塔存网站的位置</span>
-cd ../www/wwwroot/
-<span style="color:#75715e"># 然后创建一个文件夹</span>
+  <span style="color:#98c379">&#39;VD KKKKKKKK&#39;</span>.. LJ ..<span style="color:#98c379">&#39;KKKKKKKK FV    
+</span><span style="color:#98c379">    &#39;</span> VKKKKK<span style="color:#98c379">&#39;. .4 LJ K. .&#39;</span>KKKKKV <span style="color:#98c379">&#39;     
+</span><span style="color:#98c379">       &#39;</span>VK<span style="color:#98c379">&#39;. .4KK LJ KKA. .&#39;</span>KV<span style="color:#98c379">&#39;        
+</span><span style="color:#98c379">      A. . .4KKKK LJ KKKKA. . .4       
+</span><span style="color:#98c379">      KKA. &#39;</span>KKKKK LJ KKKKK<span style="color:#98c379">&#39; .4KK       
+</span><span style="color:#98c379">      KKSSA. VKKK LJ KKKV .4SSKK       
+</span><span style="color:#98c379">               &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;                
+</span><span style="color:#98c379">                &#39;</span>MKKM<span style="color:#98c379">&#39;                 
+</span><span style="color:#98c379">                  &#39;</span>&#39;
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># 先找到服务器上宝塔存网站的位置</span>
+<span style="color:#e5c07b">cd</span> ../www/wwwroot/
+<span style="color:#8a93a5;font-style:italic"># 然后创建一个文件夹</span>
 mkdir blogName
-<span style="color:#75715e"># 进入文件夹初始化裸库</span>
-cd blogName
+<span style="color:#8a93a5;font-style:italic"># 进入文件夹初始化裸库</span>
+<span style="color:#e5c07b">cd</span> blogName
 $ git init --bare hexo.git
 Initialized empty Git repository in /www/wwwroot/hexo.git/
-<span style="color:#75715e"># 创建Git钩子(hook)</span>
+<span style="color:#8a93a5;font-style:italic"># 创建Git钩子(hook)</span>
 vim ./hexo.git/hook/post-receive
-</code></pre></div><p>接下来输入一下内容：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">GIT_REPO<span style="color:#f92672">=</span>/www/wwwroot/blogName/hexo.git
-TMP_GIT_CLONE<span style="color:#f92672">=</span>/tmp/HexoBlog
-PUBLIC_WWW<span style="color:#f92672">=</span>/www/wwwroot/blogName/www
-rm -rf <span style="color:#e6db74">${</span>TMP_GIT_CLONE<span style="color:#e6db74">}</span>
-git clone $GIT_REPO $TMP_GIT_CLONE
-rm -rf <span style="color:#e6db74">${</span>PUBLIC_WWW<span style="color:#e6db74">}</span>/*
-cp -rf <span style="color:#e6db74">${</span>TMP_GIT_CLONE<span style="color:#e6db74">}</span>/* <span style="color:#e6db74">${</span>PUBLIC_WWW<span style="color:#e6db74">}</span>
-</code></pre></div><p>保存退出后：执行
+</code></pre></td></tr></table>
+</div>
+</div><p>接下来输入一下内容：</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#dcaeea">GIT_REPO</span><span style="color:#54b1c7">=</span>/www/wwwroot/blogName/hexo.git
+<span style="color:#dcaeea">TMP_GIT_CLONE</span><span style="color:#54b1c7">=</span>/tmp/HexoBlog
+<span style="color:#dcaeea">PUBLIC_WWW</span><span style="color:#54b1c7">=</span>/www/wwwroot/blogName/www
+rm -rf <span style="color:#98c379">${</span><span style="color:#dcaeea">TMP_GIT_CLONE</span><span style="color:#98c379">}</span>
+git clone <span style="color:#dcaeea">$GIT_REPO</span> <span style="color:#dcaeea">$TMP_GIT_CLONE</span>
+rm -rf <span style="color:#98c379">${</span><span style="color:#dcaeea">PUBLIC_WWW</span><span style="color:#98c379">}</span>/*
+cp -rf <span style="color:#98c379">${</span><span style="color:#dcaeea">TMP_GIT_CLONE</span><span style="color:#98c379">}</span>/* <span style="color:#98c379">${</span><span style="color:#dcaeea">PUBLIC_WWW</span><span style="color:#98c379">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>保存退出后：执行
 <code>chmod +x /data/GitLibrary/hexo.git/hooks/post-receive</code>
 赋予执行权限</p>
 <h2 id="本地操作">本地操作</h2>
 <p>在最后找到<code>deploy</code>，修改如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"> <span style="color:#75715e"># Deployment</span>
-    <span style="color:#75715e">## Docs: https://hexo.io/docs/deployment.html</span>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"> <span style="color:#8a93a5;font-style:italic"># Deployment</span>
+    <span style="color:#8a93a5;font-style:italic">## Docs: https://hexo.io/docs/deployment.html</span>
     deploy:
       type: git
       repo: &lt;你服务器的用户名&gt;@服务器ip:/www/wwwroot/blogName/hexo.git
       branch: master
-</code></pre></div><h2 id="免去密码验证20190126更新">免去密码验证(2019.01.26更新)</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="免去密码验证20190126更新">免去密码验证(2019.01.26更新)</h2>
 <blockquote>
 <p>参考：<a href="https://blog.yizhilee.com/post/deploy-hexo-to-vps/">荔枝</a></p>
 </blockquote>
 <p>之前的登陆每次都要验证服务器的密码，真的是麻烦,然后参考了一下，找到了免去验证的方法<br>
 首先要在本地生成一个公钥</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;email@example.com&#34;</span>
-</code></pre></div><p>然后将你的公钥复制到服务器上</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id -i ~/.ssh/id_rsa.pub git@服务器ip地址
-</code></pre></div><p>这里注意一下你自己的公钥的位置，以及服务器的用户名，ip地址</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -C <span style="color:#63c381">&#34;email@example.com&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>然后将你的公钥复制到服务器上</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id -i ~/.ssh/id_rsa.pub git@服务器ip地址
+</code></pre></td></tr></table>
+</div>
+</div><p>这里注意一下你自己的公钥的位置，以及服务器的用户名，ip地址</p>
 <h2 id="常用操作">常用操作</h2>
 <blockquote>
 <p>具体请参考<a href="https://hexo.io/zh-cn/docs/commands">hexo官方文档</a></p>
@@ -158,12 +229,33 @@ cp -rf <span style="color:#e6db74">${</span>TMP_GIT_CLONE<span style="color:#e6d
 <h3 id="新建一篇文章">新建一篇文章</h3>
 <p>如果没有设置 layout 的话，默认使用 _config.yml 中的
 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo new <span style="color:#f92672">[</span>layout<span style="color:#f92672">]</span> &lt;title&gt;
-</code></pre></div><h3 id="生成静态文件">生成静态文件</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo generate
-</code></pre></div><p>可简写为</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo g
-</code></pre></div><table>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo new <span style="color:#54b1c7">[</span>layout<span style="color:#54b1c7">]</span> &lt;title&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="生成静态文件">生成静态文件</h3>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo generate
+</code></pre></td></tr></table>
+</div>
+</div><p>可简写为</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo g
+</code></pre></td></tr></table>
+</div>
+</div><table>
 <thead>
 <tr>
 <th>选项</th>
@@ -183,8 +275,15 @@ default_layout 参数代替。如果标题包含空格的话，请使用引号�
 </table>
 <h3 id="启动服务器">启动服务器</h3>
 <p>访问网址为：http://localhost:4000/</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo s
-</code></pre></div><table>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">hexo s
+</code></pre></td></tr></table>
+</div>
+</div><table>
 <thead>
 <tr>
 <th>选项</th>
@@ -217,189 +316,389 @@ default_layout 参数代替。如果标题包含空格的话，请使用引号�
 还有就是<code>xxx.js</code>和<code>xxx.min.js</code></p>
 <h1 id="安装gulp">安装gulp</h1>
 <p>博客目录下使用 <code>npm install xxx --save</code>命令安装如下工具</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install gulp@next              <span style="color:#75715e"># gulp4.0 因为 gulp-debug 需要 gulp 版本大于等于 4.0</span>  
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install gulp@next              <span style="color:#8a93a5;font-style:italic"># gulp4.0 因为 gulp-debug 需要 gulp 版本大于等于 4.0  </span>
 npm install -–save-dev gulp-debug  gulp-clean-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp-imagemin gulp-changed 
 gulp-if gulp-plumber run-sequence del
-</code></pre></div><p>建立<code>gulpfile.js</code> 文件 在<code>Hexo</code>的根目录建立<code>gulpfile.js</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">var gulp        <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp&#39;</span><span style="color:#f92672">)</span>;
-var debug       <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-debug&#39;</span><span style="color:#f92672">)</span>;
-var cleancss    <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-clean-css&#39;</span><span style="color:#f92672">)</span>; //css压缩组件
-var uglify      <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-uglify&#39;</span><span style="color:#f92672">)</span>;    //js压缩组件
-var htmlmin     <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-htmlmin&#39;</span><span style="color:#f92672">)</span>;   //html压缩组件
-var htmlclean   <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-htmlclean&#39;</span><span style="color:#f92672">)</span>; //html清理组件
-var imagemin    <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-imagemin&#39;</span><span style="color:#f92672">)</span>;  //图片压缩组件
-var changed     <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-changed&#39;</span><span style="color:#f92672">)</span>;   //文件更改校验组件
-var gulpif      <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-if&#39;</span><span style="color:#f92672">)</span>         //任务 帮助调用组件
-var plumber     <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;gulp-plumber&#39;</span><span style="color:#f92672">)</span>;   //容错组件（发生错误不跳出任务，并报出错误内容）
-var runSequence <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;run-sequence&#39;</span><span style="color:#f92672">)</span>;   //异步执行组件
-var isScriptAll <span style="color:#f92672">=</span> true;  //是否处理所有文件，<span style="color:#f92672">(</span>true|处理所有文件<span style="color:#f92672">)</span><span style="color:#f92672">(</span>false|只处理有更改的文件<span style="color:#f92672">)</span>
-var isDebug     <span style="color:#f92672">=</span> true;  //是否调试显示 编译通过的文件
-var del         <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;del&#39;</span><span style="color:#f92672">)</span>;
-var Hexo        <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;hexo&#39;</span><span style="color:#f92672">)</span>;
-var hexo        <span style="color:#f92672">=</span> new Hexo<span style="color:#f92672">(</span>process.cwd<span style="color:#f92672">(</span><span style="color:#f92672">)</span>, <span style="color:#f92672">{</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span>; // 初始化一个hexo对象
+</code></pre></td></tr></table>
+</div>
+</div><p>建立<code>gulpfile.js</code> 文件 在<code>Hexo</code>的根目录建立<code>gulpfile.js</code></p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">  9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 47
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 48
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 49
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 50
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 51
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 52
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 53
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 54
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 55
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 56
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 57
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 58
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 59
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 60
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 61
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 62
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 63
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 64
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 65
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 66
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 67
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 68
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 69
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 70
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 71
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 72
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 73
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 74
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 75
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 76
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 77
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 78
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 79
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 80
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 81
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 82
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 83
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 84
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 85
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 86
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 87
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 88
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 89
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 90
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 91
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 92
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 93
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 94
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 95
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 96
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 97
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 98
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 99
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">100
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">101
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">102
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">103
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">104
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">105
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">106
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">107
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">108
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">109
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">110
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">111
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">112
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">113
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">114
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">115
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">116
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">117
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">118
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">119
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">120
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">121
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">122
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">123
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">124
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">125
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">126
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">127
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">128
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">129
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">130
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">131
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">132
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">133
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">134
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">135
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">136
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">137
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">138
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">139
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">140
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">141
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">142
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">143
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">144
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">145
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">146
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">147
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">148
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">149
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">150
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">151
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">var <span style="color:#dcaeea">gulp</span>        <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+var <span style="color:#dcaeea">debug</span>       <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-debug&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+var <span style="color:#dcaeea">cleancss</span>    <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-clean-css&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span> //css压缩组件
+var <span style="color:#dcaeea">uglify</span>      <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-uglify&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>    //js压缩组件
+var <span style="color:#dcaeea">htmlmin</span>     <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-htmlmin&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>   //html压缩组件
+var <span style="color:#dcaeea">htmlclean</span>   <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-htmlclean&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span> //html清理组件
+var <span style="color:#dcaeea">imagemin</span>    <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-imagemin&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>  //图片压缩组件
+var <span style="color:#dcaeea">changed</span>     <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-changed&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>   //文件更改校验组件
+var <span style="color:#dcaeea">gulpif</span>      <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-if&#39;</span><span style="color:#54b1c7">)</span>         //任务 帮助调用组件
+var <span style="color:#dcaeea">plumber</span>     <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;gulp-plumber&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>   //容错组件（发生错误不跳出任务，并报出错误内容）
+var <span style="color:#dcaeea">runSequence</span> <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;run-sequence&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>   //异步执行组件
+var <span style="color:#dcaeea">isScriptAll</span> <span style="color:#54b1c7">=</span> true<span style="color:#abb2bf">;</span>  //是否处理所有文件，<span style="color:#54b1c7">(</span>true<span style="color:#abb2bf">|</span>处理所有文件<span style="color:#54b1c7">)(</span>false<span style="color:#abb2bf">|</span>只处理有更改的文件<span style="color:#54b1c7">)</span>
+var <span style="color:#dcaeea">isDebug</span>     <span style="color:#54b1c7">=</span> true<span style="color:#abb2bf">;</span>  //是否调试显示 编译通过的文件
+var <span style="color:#dcaeea">del</span>         <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;del&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+var <span style="color:#dcaeea">Hexo</span>        <span style="color:#54b1c7">=</span> require<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;hexo&#39;</span><span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+var <span style="color:#dcaeea">hexo</span>        <span style="color:#54b1c7">=</span> new Hexo<span style="color:#54b1c7">(</span>process.cwd<span style="color:#54b1c7">()</span>, <span style="color:#54b1c7">{})</span><span style="color:#abb2bf">;</span> // 初始化一个hexo对象
 
 // 清除public文件夹
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> del<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;public/**/*&#39;</span><span style="color:#f92672">]</span><span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;clean&#39;</span>, <span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    <span style="color:#76a9f9">return</span> del<span style="color:#54b1c7">([</span><span style="color:#98c379">&#39;public/**/*&#39;</span><span style="color:#54b1c7">])</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
-// 下面几个跟hexo有关的操作，主要通过hexo.call<span style="color:#f92672">(</span><span style="color:#f92672">)</span>去执行，注意return
+// 下面几个跟hexo有关的操作，主要通过hexo.call<span style="color:#54b1c7">()</span>去执行，注意return
 
 // 创建静态页面 （等同 hexo generate）
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;generate&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">(</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> hexo.call<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;generate&#39;</span>, <span style="color:#f92672">{</span>
-            watch: false
-        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span><span style="color:#f92672">)</span>;
-        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span>err<span style="color:#f92672">)</span>;
-        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;generate&#39;</span>, <span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    <span style="color:#76a9f9">return</span> hexo.init<span style="color:#54b1c7">()</span>.then<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+        <span style="color:#76a9f9">return</span> hexo.call<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;generate&#39;</span>, <span style="color:#54b1c7">{</span>
+            watch: <span style="color:#e5c07b">false</span>
+        <span style="color:#54b1c7">})</span>.then<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+            <span style="color:#76a9f9">return</span> hexo.exit<span style="color:#54b1c7">()</span><span style="color:#abb2bf">;</span>
+        <span style="color:#54b1c7">})</span>.catch<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">(</span>err<span style="color:#54b1c7">)</span> <span style="color:#54b1c7">{</span>
+            <span style="color:#76a9f9">return</span> hexo.exit<span style="color:#54b1c7">(</span>err<span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+        <span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
+    <span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 启动Hexo服务器
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;server&#39;</span>,  <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">(</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> hexo.call<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;server&#39;</span>, <span style="color:#f92672">{</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        console.log<span style="color:#f92672">(</span>err<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;server&#39;</span>,  <span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    <span style="color:#76a9f9">return</span> hexo.init<span style="color:#54b1c7">()</span>.then<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+        <span style="color:#76a9f9">return</span> hexo.call<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;server&#39;</span>, <span style="color:#54b1c7">{})</span><span style="color:#abb2bf">;</span>
+    <span style="color:#54b1c7">})</span>.catch<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">(</span>err<span style="color:#54b1c7">)</span> <span style="color:#54b1c7">{</span>
+        console.log<span style="color:#54b1c7">(</span>err<span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+    <span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 部署到服务器
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;deploy&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> hexo.init<span style="color:#f92672">(</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> hexo.call<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;deploy&#39;</span>, <span style="color:#f92672">{</span>
-            watch: false
-        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.then<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span><span style="color:#f92672">)</span>;
-        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>.catch<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>err<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> hexo.exit<span style="color:#f92672">(</span>err<span style="color:#f92672">)</span>;
-        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;deploy&#39;</span>, <span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    <span style="color:#76a9f9">return</span> hexo.init<span style="color:#54b1c7">()</span>.then<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+        <span style="color:#76a9f9">return</span> hexo.call<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;deploy&#39;</span>, <span style="color:#54b1c7">{</span>
+            watch: <span style="color:#e5c07b">false</span>
+        <span style="color:#54b1c7">})</span>.then<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+            <span style="color:#76a9f9">return</span> hexo.exit<span style="color:#54b1c7">()</span><span style="color:#abb2bf">;</span>
+        <span style="color:#54b1c7">})</span>.catch<span style="color:#54b1c7">(</span><span style="color:#76a9f9">function</span><span style="color:#54b1c7">(</span>err<span style="color:#54b1c7">)</span> <span style="color:#54b1c7">{</span>
+            <span style="color:#76a9f9">return</span> hexo.exit<span style="color:#54b1c7">(</span>err<span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+        <span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
+    <span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 压缩public目录下的js文件
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressJs&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    var option <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
-        // preserveComments: <span style="color:#e6db74">&#39;all&#39;</span>,//保留所有注释
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;compressJs&#39;</span>, <span style="color:#76a9f9">function</span> <span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    var <span style="color:#dcaeea">option</span> <span style="color:#54b1c7">=</span> <span style="color:#54b1c7">{</span>
+        // preserveComments: <span style="color:#98c379">&#39;all&#39;</span>,//保留所有注释
         mangle: true,           //类型：Boolean 默认：true 是否修改变量名
-        compress: true          //类型：Boolean 默认：true 是否完全压缩
-    <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;./public/**/*.js&#39;</span>,<span style="color:#e6db74">&#39;!./public/**/*.min.js&#39;</span><span style="color:#f92672">]</span><span style="color:#f92672">)</span>  //排除的js
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress JS:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>uglify<span style="color:#f92672">(</span>option<span style="color:#f92672">)</span><span style="color:#f92672">)</span>                //调用压缩组件方法uglify<span style="color:#f92672">(</span><span style="color:#f92672">)</span>,对合并的文件进行压缩
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;         //输出到目标目录
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+        compress: <span style="color:#e5c07b">true</span>          //类型：Boolean 默认：true 是否完全压缩
+    <span style="color:#54b1c7">}</span>
+    <span style="color:#76a9f9">return</span> gulp.src<span style="color:#54b1c7">([</span><span style="color:#98c379">&#39;./public/**/*.js&#39;</span>,<span style="color:#98c379">&#39;!./public/**/*.min.js&#39;</span><span style="color:#54b1c7">])</span>  //排除的js
+        .pipe<span style="color:#54b1c7">(</span>gulpif<span style="color:#54b1c7">(</span>!isScriptAll, changed<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public&#39;</span><span style="color:#54b1c7">)))</span>
+        .pipe<span style="color:#54b1c7">(</span>gulpif<span style="color:#54b1c7">(</span>isDebug,debug<span style="color:#54b1c7">({</span>title: <span style="color:#98c379">&#39;Compress JS:&#39;</span><span style="color:#54b1c7">})))</span>
+        .pipe<span style="color:#54b1c7">(</span>plumber<span style="color:#54b1c7">())</span>
+        .pipe<span style="color:#54b1c7">(</span>uglify<span style="color:#54b1c7">(</span>option<span style="color:#54b1c7">))</span>                //调用压缩组件方法uglify<span style="color:#54b1c7">()</span>,对合并的文件进行压缩
+        .pipe<span style="color:#54b1c7">(</span>gulp.dest<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public&#39;</span><span style="color:#54b1c7">))</span><span style="color:#abb2bf">;</span>         //输出到目标目录
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 压缩public目录下的css文件
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressCss&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    var option <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;compressCss&#39;</span>, <span style="color:#76a9f9">function</span> <span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    var <span style="color:#dcaeea">option</span> <span style="color:#54b1c7">=</span> <span style="color:#54b1c7">{</span>
         rebase: false,
-        //advanced: true,               //类型：Boolean 默认：true <span style="color:#f92672">[</span>是否开启高级优化（合并选择器等）<span style="color:#f92672">]</span>
-        compatibility: <span style="color:#e6db74">&#39;ie7&#39;</span>,         //保留ie7及以下兼容写法 类型：String 默认：<span style="color:#e6db74">&#39;&#39;</span>or<span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#f92672">[</span>启用兼容模式； <span style="color:#e6db74">&#39;ie7&#39;</span>：IE7兼容模式，<span style="color:#e6db74">&#39;ie8&#39;</span>：IE8兼容模式，<span style="color:#e6db74">&#39;*&#39;</span>：IE9+兼容模式<span style="color:#f92672">]</span>
-        //keepBreaks: true,             //类型：Boolean 默认：false <span style="color:#f92672">[</span>是否保留换行<span style="color:#f92672">]</span>
-        //keepSpecialComments: <span style="color:#e6db74">&#39;*&#39;</span>      //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
-    <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;./public/**/*.css&#39;</span>,<span style="color:#e6db74">&#39;!./public/**/*.min.css&#39;</span><span style="color:#f92672">]</span><span style="color:#f92672">)</span>  //排除的css
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress CSS:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>cleancss<span style="color:#f92672">(</span>option<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+        //advanced: true,               //类型：Boolean 默认：true <span style="color:#54b1c7">[</span>是否开启高级优化（合并选择器等）<span style="color:#54b1c7">]</span>
+        compatibility: <span style="color:#98c379">&#39;ie7&#39;</span>,         //保留ie7及以下兼容写法 类型：String 默认：<span style="color:#98c379">&#39;&#39;</span>or<span style="color:#98c379">&#39;*&#39;</span> <span style="color:#54b1c7">[</span>启用兼容模式； <span style="color:#98c379">&#39;ie7&#39;</span>：IE7兼容模式，<span style="color:#98c379">&#39;ie8&#39;</span>：IE8兼容模式，<span style="color:#98c379">&#39;*&#39;</span>：IE9+兼容模式<span style="color:#54b1c7">]</span>
+        //keepBreaks: true,             //类型：Boolean 默认：false <span style="color:#54b1c7">[</span>是否保留换行<span style="color:#54b1c7">]</span>
+        //keepSpecialComments: <span style="color:#98c379">&#39;*&#39;</span>      //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
+    <span style="color:#54b1c7">}</span>
+    <span style="color:#76a9f9">return</span> gulp.src<span style="color:#54b1c7">([</span><span style="color:#98c379">&#39;./public/**/*.css&#39;</span>,<span style="color:#98c379">&#39;!./public/**/*.min.css&#39;</span><span style="color:#54b1c7">])</span>  //排除的css
+        .pipe<span style="color:#54b1c7">(</span>gulpif<span style="color:#54b1c7">(</span>!isScriptAll, changed<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public&#39;</span><span style="color:#54b1c7">)))</span>
+        .pipe<span style="color:#54b1c7">(</span>gulpif<span style="color:#54b1c7">(</span>isDebug,debug<span style="color:#54b1c7">({</span>title: <span style="color:#98c379">&#39;Compress CSS:&#39;</span><span style="color:#54b1c7">})))</span>
+        .pipe<span style="color:#54b1c7">(</span>plumber<span style="color:#54b1c7">())</span>
+        .pipe<span style="color:#54b1c7">(</span>cleancss<span style="color:#54b1c7">(</span>option<span style="color:#54b1c7">))</span>
+        .pipe<span style="color:#54b1c7">(</span>gulp.dest<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public&#39;</span><span style="color:#54b1c7">))</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 压缩public目录下的html文件
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressHtml&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    var cleanOptions <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
-        protect: /&lt;<span style="color:#ae81ff">\!</span>--%fooTemplate<span style="color:#ae81ff">\b</span>.*?%--&gt;/g,             //忽略处理
-        unprotect: /&lt;script <span style="color:#f92672">[</span>^&gt;<span style="color:#f92672">]</span>*<span style="color:#ae81ff">\b</span>type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text\/x-handlebars-template&#34;</span><span style="color:#f92672">[</span><span style="color:#ae81ff">\s</span><span style="color:#ae81ff">\S</span><span style="color:#f92672">]</span>+?&lt;<span style="color:#ae81ff">\/</span>script&gt;/ig //特殊处理
-    <span style="color:#f92672">}</span>
-    var minOption <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;compressHtml&#39;</span>, <span style="color:#76a9f9">function</span> <span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    var <span style="color:#dcaeea">cleanOptions</span> <span style="color:#54b1c7">=</span> <span style="color:#54b1c7">{</span>
+        protect: /&lt;<span style="color:#d26464;font-weight:bold">\!</span>--%fooTemplate<span style="color:#d26464;font-weight:bold">\b</span>.*?%--&gt;/g,             //忽略处理
+        unprotect: /&lt;script <span style="color:#54b1c7">[</span>^&gt;<span style="color:#54b1c7">]</span>*<span style="color:#d26464;font-weight:bold">\b</span>type<span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;text\/x-handlebars-template&#34;</span><span style="color:#54b1c7">[</span><span style="color:#d26464;font-weight:bold">\s\S</span><span style="color:#54b1c7">]</span>+?&lt;<span style="color:#d26464;font-weight:bold">\/</span>script&gt;/ig //特殊处理
+    <span style="color:#54b1c7">}</span>
+    var <span style="color:#dcaeea">minOption</span> <span style="color:#54b1c7">=</span> <span style="color:#54b1c7">{</span>
         collapseWhitespace: true,           //压缩HTML
-        collapseBooleanAttributes: true,    //省略布尔属性的值  &lt;input checked<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>/&gt; <span style="color:#f92672">=</span><span style="color:#f92672">=</span>&gt; &lt;input /&gt;
-        removeEmptyAttributes: true,        //删除所有空格作属性值    &lt;input id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> /&gt; <span style="color:#f92672">=</span><span style="color:#f92672">=</span>&gt; &lt;input /&gt;
-        removeScriptTypeAttributes: true,   //删除&lt;script&gt;的type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>
-        removeStyleLinkTypeAttributes: true,//删除&lt;style&gt;和&lt;link&gt;的type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>
+        collapseBooleanAttributes: true,    //省略布尔属性的值  &lt;input <span style="color:#dcaeea">checked</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;true&#34;</span>/&gt; <span style="color:#54b1c7">==</span>&gt; &lt;input /&gt;
+        removeEmptyAttributes: true,        //删除所有空格作属性值    &lt;input <span style="color:#dcaeea">id</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;&#34;</span> /&gt; <span style="color:#54b1c7">==</span>&gt; &lt;input /&gt;
+        removeScriptTypeAttributes: true,   //删除&lt;script&gt;的type<span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;text/javascript&#34;</span>
+        removeStyleLinkTypeAttributes: true,//删除&lt;style&gt;和&lt;link&gt;的type<span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;text/css&#34;</span>
         removeComments: true,               //清除HTML注释
         minifyJS: true,                     //压缩页面JS
         minifyCSS: true,                    //压缩页面CSS
-        minifyURLs: true                    //替换页面URL
-    <span style="color:#f92672">}</span>;
-    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/**/*.html&#39;</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress HTML:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>htmlclean<span style="color:#f92672">(</span>cleanOptions<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>htmlmin<span style="color:#f92672">(</span>minOption<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+        minifyURLs: <span style="color:#e5c07b">true</span>                    //替换页面URL
+    <span style="color:#54b1c7">}</span><span style="color:#abb2bf">;</span>
+    <span style="color:#76a9f9">return</span> gulp.src<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public/**/*.html&#39;</span><span style="color:#54b1c7">)</span>
+        .pipe<span style="color:#54b1c7">(</span>gulpif<span style="color:#54b1c7">(</span>isDebug,debug<span style="color:#54b1c7">({</span>title: <span style="color:#98c379">&#39;Compress HTML:&#39;</span><span style="color:#54b1c7">})))</span>
+        .pipe<span style="color:#54b1c7">(</span>plumber<span style="color:#54b1c7">())</span>
+        .pipe<span style="color:#54b1c7">(</span>htmlclean<span style="color:#54b1c7">(</span>cleanOptions<span style="color:#54b1c7">))</span>
+        .pipe<span style="color:#54b1c7">(</span>htmlmin<span style="color:#54b1c7">(</span>minOption<span style="color:#54b1c7">))</span>
+        .pipe<span style="color:#54b1c7">(</span>gulp.dest<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public&#39;</span><span style="color:#54b1c7">))</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 压缩 public/uploads 目录内图片
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressImage&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    var option <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;compressImage&#39;</span>, <span style="color:#76a9f9">function</span><span style="color:#54b1c7">()</span> <span style="color:#54b1c7">{</span>
+    var <span style="color:#dcaeea">option</span> <span style="color:#54b1c7">=</span> <span style="color:#54b1c7">{</span>
         optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
         progressive: true,    //类型：Boolean 默认：false 无损压缩jpg图片
         interlaced: false,    //类型：Boolean 默认：false 隔行扫描gif进行渲染
-        multipass: false      //类型：Boolean 默认：false 多次优化svg直到完全优化
-    <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">return</span> gulp.src<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads/**/*.*&#39;</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>!isScriptAll, changed<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulpif<span style="color:#f92672">(</span>isDebug,debug<span style="color:#f92672">(</span><span style="color:#f92672">{</span>title: <span style="color:#e6db74">&#39;Compress Images:&#39;</span><span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>plumber<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>imagemin<span style="color:#f92672">(</span>option<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        .pipe<span style="color:#f92672">(</span>gulp.dest<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;./public/uploads&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+        multipass: <span style="color:#e5c07b">false</span>      //类型：Boolean 默认：false 多次优化svg直到完全优化
+    <span style="color:#54b1c7">}</span>
+    <span style="color:#76a9f9">return</span> gulp.src<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public/uploads/**/*.*&#39;</span><span style="color:#54b1c7">)</span>
+        .pipe<span style="color:#54b1c7">(</span>gulpif<span style="color:#54b1c7">(</span>!isScriptAll, changed<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public/uploads&#39;</span><span style="color:#54b1c7">)))</span>
+        .pipe<span style="color:#54b1c7">(</span>gulpif<span style="color:#54b1c7">(</span>isDebug,debug<span style="color:#54b1c7">({</span>title: <span style="color:#98c379">&#39;Compress Images:&#39;</span><span style="color:#54b1c7">})))</span>
+        .pipe<span style="color:#54b1c7">(</span>plumber<span style="color:#54b1c7">())</span>
+        .pipe<span style="color:#54b1c7">(</span>imagemin<span style="color:#54b1c7">(</span>option<span style="color:#54b1c7">))</span>
+        .pipe<span style="color:#54b1c7">(</span>gulp.dest<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;./public/uploads&#39;</span><span style="color:#54b1c7">))</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 用run-sequence并发执行，同时处理html，css，js，img
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compress&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>cb<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    runSequence.options.ignoreUndefinedTasks <span style="color:#f92672">=</span> true;
-    runSequence<span style="color:#f92672">(</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;compressHtml&#39;</span>, <span style="color:#e6db74">&#39;compressCss&#39;</span>, <span style="color:#e6db74">&#39;compressJs&#39;</span><span style="color:#f92672">]</span>,cb<span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;compress&#39;</span>, <span style="color:#76a9f9">function</span><span style="color:#54b1c7">(</span>cb<span style="color:#54b1c7">)</span> <span style="color:#54b1c7">{</span>
+    runSequence.options.ignoreUndefinedTasks <span style="color:#54b1c7">=</span> true<span style="color:#abb2bf">;</span>
+    runSequence<span style="color:#54b1c7">([</span><span style="color:#98c379">&#39;compressHtml&#39;</span>, <span style="color:#98c379">&#39;compressCss&#39;</span>, <span style="color:#98c379">&#39;compressJs&#39;</span><span style="color:#54b1c7">]</span>,cb<span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆 -&gt; 部署到服务器
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;build&#39;</span>, <span style="color:#66d9ef">function</span><span style="color:#f92672">(</span>cb<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    runSequence.options.ignoreUndefinedTasks <span style="color:#f92672">=</span> true;
-    runSequence<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#e6db74">&#39;generate&#39;</span>, <span style="color:#e6db74">&#39;compress&#39;</span>, <span style="color:#e6db74">&#39;deploy&#39;</span>, cb<span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span><span style="color:#f92672">)</span>;
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;build&#39;</span>, <span style="color:#76a9f9">function</span><span style="color:#54b1c7">(</span>cb<span style="color:#54b1c7">)</span> <span style="color:#54b1c7">{</span>
+    runSequence.options.ignoreUndefinedTasks <span style="color:#54b1c7">=</span> true<span style="color:#abb2bf">;</span>
+    runSequence<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;clean&#39;</span>, <span style="color:#98c379">&#39;generate&#39;</span>, <span style="color:#98c379">&#39;compress&#39;</span>, <span style="color:#98c379">&#39;deploy&#39;</span>, cb<span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
+<span style="color:#54b1c7">})</span><span style="color:#abb2bf">;</span>
 
 // 默认任务
-gulp.task<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;default&#39;</span>, 
-	gulp.series<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;clean&#39;</span>,<span style="color:#e6db74">&#39;generate&#39;</span>,
-		gulp.parallel<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;compressHtml&#39;</span>,<span style="color:#e6db74">&#39;compressCss&#39;</span>,<span style="color:#e6db74">&#39;compressImage&#39;</span><span style="color:#f92672">)</span>
-	<span style="color:#f92672">)</span>
-<span style="color:#f92672">)</span>;
+gulp.task<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;default&#39;</span>, 
+	gulp.series<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;clean&#39;</span>,<span style="color:#98c379">&#39;generate&#39;</span>,
+		gulp.parallel<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;compressHtml&#39;</span>,<span style="color:#98c379">&#39;compressCss&#39;</span>,<span style="color:#98c379">&#39;compressImage&#39;</span><span style="color:#54b1c7">)</span>
+	<span style="color:#54b1c7">)</span>
+<span style="color:#54b1c7">)</span><span style="color:#abb2bf">;</span>
 //Gulp4最大的一个改变就是gulp.task函数现在只支持两个参数，分别是任务名和运行任务的函数
-</code></pre></div><h2 id="压缩生成代码">压缩生成代码</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="压缩生成代码">压缩生成代码</h2>
 <p>使用<code>hexo g &amp;&amp; gulp</code>压缩生成代码
 生成的代码会在<code>public</code>文件夹下</p>
 <h1 id="优化篇">优化篇</h1>
 <h2 id="安装next主题">安装NexT主题</h2>
 <p>这个其实NexT官方文档也有，我这里只说安装过程</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">cd your-hexo-site
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#e5c07b">cd</span> your-hexo-site
 git clone https://github.com/iissnan/hexo-theme-next themes/next
-</code></pre></div><p>然后到<code>你的站点文件夹/_config.yml</code>文件找到<code>theme</code>修改如下</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># Extensions</span>
-<span style="color:#75715e">## Plugins: https://hexo.io/plugins/</span>
-<span style="color:#75715e">## Themes: https://hexo.io/themes/</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>然后到<code>你的站点文件夹/_config.yml</code>文件找到<code>theme</code>修改如下</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># Extensions</span>
+<span style="color:#8a93a5;font-style:italic">## Plugins: https://hexo.io/plugins/</span>
+<span style="color:#8a93a5;font-style:italic">## Themes: https://hexo.io/themes/</span>
 theme: next
-<span style="color:#75715e"># 注意，这里的next即是主题的名字</span>
-</code></pre></div><h2 id="next的主题切换">NexT的主题切换</h2>
+<span style="color:#8a93a5;font-style:italic"># 注意，这里的next即是主题的名字</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="next的主题切换">NexT的主题切换</h2>
 <p>搜索关键词：<code>scheme</code>
 这里有4个主题，自己试吧
 要用的主题直接去掉前面的<code>#</code>号即可</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># ---------------------------------------------------------------</span>
-<span style="color:#75715e"># Scheme Settings</span>
-<span style="color:#75715e"># ---------------------------------------------------------------</span>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># ---------------------------------------------------------------</span>
+<span style="color:#8a93a5;font-style:italic"># Scheme Settings</span>
+<span style="color:#8a93a5;font-style:italic"># ---------------------------------------------------------------</span>
 
-<span style="color:#75715e"># Schemes</span>
-<span style="color:#75715e">#scheme: Muse</span>
-<span style="color:#75715e">#scheme: Mist</span>
+<span style="color:#8a93a5;font-style:italic"># Schemes</span>
+<span style="color:#8a93a5;font-style:italic">#scheme: Muse</span>
+<span style="color:#8a93a5;font-style:italic">#scheme: Mist</span>
 scheme: Pisces
-<span style="color:#75715e">#scheme: Gemini</span>
-</code></pre></div><h2 id="语言切换">语言切换</h2>
+<span style="color:#8a93a5;font-style:italic">#scheme: Gemini</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="语言切换">语言切换</h2>
 <blockquote>
 <p>参考： <a href="https://haowei.ch/2018/03/01/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2-20180301/">Bamboo Sticks</a></p>
 </blockquote>
@@ -412,51 +711,120 @@ scheme: Pisces
 如果想修改，可以找到<code>themes/next/layout/_macro/post-copyright.swig</code>修改</p>
 <h2 id="打开字数统计">打开字数统计</h2>
 <p>首先博客目录下执行命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install hexo-symbols-count-time --save
-</code></pre></div><p>然后在<code>hexo</code>的<code>_config.yml</code>中修改：
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install hexo-symbols-count-time --save
+</code></pre></td></tr></table>
+</div>
+</div><p>然后在<code>hexo</code>的<code>_config.yml</code>中修改：
 修改此文件需要重启服务</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># 字数统计</span>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># 字数统计</span>
 symbols_count_time:
-  symbols: true <span style="color:#75715e"># 文章字数</span>
-  time: false <span style="color:#75715e"># 阅读时长</span>
-  total_symbols: true <span style="color:#75715e"># 所有文章总字数</span>
-  total_time: false <span style="color:#75715e"># 所有文章阅读中时长</span>
-</code></pre></div><p>在next的_config.yml中修改
+  symbols: <span style="color:#e5c07b">true</span> <span style="color:#8a93a5;font-style:italic"># 文章字数</span>
+  time: <span style="color:#e5c07b">false</span> <span style="color:#8a93a5;font-style:italic"># 阅读时长</span>
+  total_symbols: <span style="color:#e5c07b">true</span> <span style="color:#8a93a5;font-style:italic"># 所有文章总字数</span>
+  total_time: <span style="color:#e5c07b">false</span> <span style="color:#8a93a5;font-style:italic"># 所有文章阅读中时长</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在next的_config.yml中修改
 修改此文件不需要重启，只需刷新</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># Post wordcount display settings</span>
-<span style="color:#75715e"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># Post wordcount display settings</span>
+<span style="color:#8a93a5;font-style:italic"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span>
 symbols_count_time:
-  separated_meta: false <span style="color:#75715e"># 是否换行显示 字数统计 及 阅读时长</span>
-  item_text_post: true  <span style="color:#75715e"># 文章 字数统计 阅读时长 使用图标 还是 文本表示</span>
-  item_text_total: true <span style="color:#75715e"># 博客底部统计 字数统计 阅读时长 使用图标 还是 文本表示</span>
-  awl: <span style="color:#ae81ff">4</span>
-  wpm: <span style="color:#ae81ff">275</span>
-</code></pre></div><h2 id="开启动态背景">开启动态背景</h2>
+  separated_meta: <span style="color:#e5c07b">false</span> <span style="color:#8a93a5;font-style:italic"># 是否换行显示 字数统计 及 阅读时长</span>
+  item_text_post: <span style="color:#e5c07b">true</span>  <span style="color:#8a93a5;font-style:italic"># 文章 字数统计 阅读时长 使用图标 还是 文本表示</span>
+  item_text_total: <span style="color:#e5c07b">true</span> <span style="color:#8a93a5;font-style:italic"># 博客底部统计 字数统计 阅读时长 使用图标 还是 文本表示</span>
+  awl: <span style="color:#d19a66">4</span>
+  wpm: <span style="color:#d19a66">275</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="开启动态背景">开启动态背景</h2>
 <p>关键字：<code>canvas_nest</code>
 根据自己的需要开启</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># Canvas-nest</span>
-<span style="color:#75715e"># Dependencies: https://github.com/theme-next/theme-next-canvas-nest</span>
-<span style="color:#75715e"># 这个是2D</span>
-canvas_nest: false
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># Canvas-nest</span>
+<span style="color:#8a93a5;font-style:italic"># Dependencies: https://github.com/theme-next/theme-next-canvas-nest</span>
+<span style="color:#8a93a5;font-style:italic"># 这个是2D</span>
+canvas_nest: <span style="color:#e5c07b">false</span>
 
-<span style="color:#75715e"># JavaScript 3D library.</span>
-<span style="color:#75715e"># Dependencies: https://github.com/theme-next/theme-next-three</span>
-<span style="color:#75715e"># three_waves</span>
-<span style="color:#75715e"># 这个是3D，有三种</span>
-three_waves: false
-<span style="color:#75715e"># canvas_lines</span>
-canvas_lines: true
-<span style="color:#75715e"># canvas_sphere</span>
-canvas_sphere: false
-</code></pre></div><h3 id="2d背景安装">2D背景安装</h3>
+<span style="color:#8a93a5;font-style:italic"># JavaScript 3D library.</span>
+<span style="color:#8a93a5;font-style:italic"># Dependencies: https://github.com/theme-next/theme-next-three</span>
+<span style="color:#8a93a5;font-style:italic"># three_waves</span>
+<span style="color:#8a93a5;font-style:italic"># 这个是3D，有三种</span>
+three_waves: <span style="color:#e5c07b">false</span>
+<span style="color:#8a93a5;font-style:italic"># canvas_lines</span>
+canvas_lines: <span style="color:#e5c07b">true</span>
+<span style="color:#8a93a5;font-style:italic"># canvas_sphere</span>
+canvas_sphere: <span style="color:#e5c07b">false</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2d背景安装">2D背景安装</h3>
 <p>在博客根目录下进行以下操作</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">cd themes/next
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#e5c07b">cd</span> themes/next
 git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
-</code></pre></div><h3 id="3d背景安装">3D背景安装</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3d背景安装">3D背景安装</h3>
 <p>在博客根目录下进行以下操作</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">cd themes/next
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#e5c07b">cd</span> themes/next
 git clone https://github.com/theme-next/theme-next-three source/lib/three
-</code></pre></div><h3 id="关闭google字体">关闭Google字体</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="关闭google字体">关闭Google字体</h3>
 <p>国内访问的话由于谷歌字体无法加载，会在那加载半天打不开
 关键字:<code>font</code>
 将<code>enable</code>后面改为<code>false</code>即可，或者修改为其他国内可访问的资源</p>
@@ -466,20 +834,58 @@ git clone https://github.com/theme-next/theme-next-three source/lib/three
 </blockquote>
 <h4 id="安装插件">安装插件</h4>
 <p>在blog目录下执行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install hexo-generator-sitemap --save
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install hexo-generator-sitemap --save
 npm install hexo-generator-baidu-sitemap --save
-</code></pre></div><h4 id="修改配置文件">修改配置文件</h4>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="修改配置文件">修改配置文件</h4>
 <p>在hexo的_config.yml中添加：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># sitemap</span>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># sitemap</span>
 sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
-</code></pre></div><p>安装完成后执行<code>hexo g</code>即可在<code>public</code>目录下生成<code>sitemap.xml</code>文件和<code>baidusitemap.xml</code></p>
+</code></pre></td></tr></table>
+</div>
+</div><p>安装完成后执行<code>hexo g</code>即可在<code>public</code>目录下生成<code>sitemap.xml</code>文件和<code>baidusitemap.xml</code></p>
 <h4 id="robots协议">robots协议</h4>
 <p>爬虫协议
 在<code>source</code>目录下新建<code>robots.txt</code>文件，内容为：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">User-agent: *
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
@@ -494,71 +900,155 @@ Disallow: /fancybox/
 
 Sitemap: yoururl/sitemap.xml
 Sitemap: yoururl/baidusitemap.xml
-</code></pre></div><p>具体的seo优化请看参考的博客</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>具体的seo优化请看参考的博客</p>
 <h2 id="开启打赏">开启打赏</h2>
 <p>next下<code>_config.yml</code><br>
 关键字：<code>Reward</code>
 修改如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># Reward</span>
-reward_comment: 支持我就赏点小钱钱吧~  <span style="color:#75715e"># 文字</span> 
-wechatpay: /images/wechat_qcode.png  <span style="color:#75715e"># 微信收款二维码</span>
-alipay: /images/alipay.jpg  <span style="color:#75715e"># 支付宝收款二维码</span>
-<span style="color:#75715e">#bitcoin: /images/bitcoin.png # 比特币</span>
-</code></pre></div><h2 id="favicon">favicon</h2>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># Reward</span>
+reward_comment: 支持我就赏点小钱钱吧~  <span style="color:#8a93a5;font-style:italic"># 文字 </span>
+wechatpay: /images/wechat_qcode.png  <span style="color:#8a93a5;font-style:italic"># 微信收款二维码</span>
+alipay: /images/alipay.jpg  <span style="color:#8a93a5;font-style:italic"># 支付宝收款二维码</span>
+<span style="color:#8a93a5;font-style:italic">#bitcoin: /images/bitcoin.png # 比特币</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="favicon">favicon</h2>
 <p>关键字：<code>favicon</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">favicon:
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">favicon:
   small: /images/logo.png
   medium: /images/logo.png
   apple_touch_icon: http://cloud.css0209.cn/css0209img/logo.png
   safari_pinned_tab: /images/logo.svg
-</code></pre></div><h2 id="rss">RSS</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="rss">RSS</h2>
 <p>安装插件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install hexo-generator-feed --save
-</code></pre></div><p>在博客目录下的<code>_config.yml</code>添加</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># rss</span>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm install hexo-generator-feed --save
+</code></pre></td></tr></table>
+</div>
+</div><p>在博客目录下的<code>_config.yml</code>添加</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># rss</span>
 feed:
   type: atom
   path: atom.xml
-  limit: <span style="color:#ae81ff">20</span>
+  limit: <span style="color:#d19a66">20</span>
   hub:
   content:
-  content_limit: <span style="color:#ae81ff">140</span>
-  content_limit_delim: <span style="color:#e6db74">&#39; &#39;</span>
+  content_limit: <span style="color:#d19a66">140</span>
+  content_limit_delim: <span style="color:#98c379">&#39; &#39;</span>
   order_by: -date
-</code></pre></div><p>在主题目录下<code>_config.yml</code>找到关键字：<code>rss</code>
+</code></pre></td></tr></table>
+</div>
+</div><p>在主题目录下<code>_config.yml</code>找到关键字：<code>rss</code>
 修改为：<code>rss: /atom.xml</code></p>
 <h1 id="侧边栏">侧边栏</h1>
 <h2 id="导航菜单">导航，菜单</h2>
 <p>关键字: <code>menu</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">menu:
-  home: / <span style="color:#f92672">||</span> home
-  about: /about/ <span style="color:#f92672">||</span> user
-  <span style="color:#75715e">#tags: /tags/ || tags</span>
-  <span style="color:#75715e">#categories: /categories/ || th</span>
-  archives: /archives/ <span style="color:#f92672">||</span> archive
-  <span style="color:#75715e">#schedule: /schedule/ || calendar</span>
-  <span style="color:#75715e">#sitemap: /sitemap.xml || sitemap</span>
-  <span style="color:#75715e">#commonweal: /404/ || heartbeat</span>
-  本站的404: 404.html <span style="color:#f92672">||</span> exclamation-triangle
-</code></pre></div><p>这里的home什么的可以在language文件夹下对应语言中修改<br>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">menu:
+  home: / <span style="color:#54b1c7">||</span> home
+  about: /about/ <span style="color:#54b1c7">||</span> user
+  <span style="color:#8a93a5;font-style:italic">#tags: /tags/ || tags</span>
+  <span style="color:#8a93a5;font-style:italic">#categories: /categories/ || th</span>
+  archives: /archives/ <span style="color:#54b1c7">||</span> archive
+  <span style="color:#8a93a5;font-style:italic">#schedule: /schedule/ || calendar</span>
+  <span style="color:#8a93a5;font-style:italic">#sitemap: /sitemap.xml || sitemap</span>
+  <span style="color:#8a93a5;font-style:italic">#commonweal: /404/ || heartbeat</span>
+  本站的404: 404.html <span style="color:#54b1c7">||</span> exclamation-triangle
+</code></pre></td></tr></table>
+</div>
+</div><p>这里的home什么的可以在language文件夹下对应语言中修改<br>
 <code>/about/</code>是指页面所在文件夹<br>
 <code>||</code> 后面 是图标的名字，NexT的图标名字可以从<a href="https://fontawesome.com/">Font Awesome</a>找找到</p>
 <h2 id="社交链接">社交链接</h2>
 <p>关键字: <code>social</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">social:
-  GitHub: https://github.com/idoctype <span style="color:#f92672">||</span> github
-  E-Mail: mailto:917885215@qq.com <span style="color:#f92672">||</span> envelope
-  Bilibili: https://space.bilibili.com/10061915/#/ <span style="color:#f92672">||</span> tv
-  Bitbucket: https://bitbucket.org/blankyk/ <span style="color:#f92672">||</span> bitbucket
-  Music163: https://music.163.com/#/user/home?id<span style="color:#f92672">=</span><span style="color:#ae81ff">311066699</span> <span style="color:#f92672">||</span> music
-  Steam: http://s.team/p/khn-cnmp/KBHFMFJN <span style="color:#f92672">||</span> steam
-</code></pre></div><p>改法和菜单导航差不多</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">social:
+  GitHub: https://github.com/idoctype <span style="color:#54b1c7">||</span> github
+  E-Mail: mailto:917885215@qq.com <span style="color:#54b1c7">||</span> envelope
+  Bilibili: https://space.bilibili.com/10061915/#/ <span style="color:#54b1c7">||</span> tv
+  Bitbucket: https://bitbucket.org/blankyk/ <span style="color:#54b1c7">||</span> bitbucket
+  Music163: https://music.163.com/#/user/home?id<span style="color:#54b1c7">=</span><span style="color:#d19a66">311066699</span> <span style="color:#54b1c7">||</span> music
+  Steam: http://s.team/p/khn-cnmp/KBHFMFJN <span style="color:#54b1c7">||</span> steam
+</code></pre></td></tr></table>
+</div>
+</div><p>改法和菜单导航差不多</p>
 <h2 id="友情链接">友情链接</h2>
 <p>关键字:<code>links</code><br>
 修改格式为：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">links:
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">links:
   name: url
-</code></pre></div><h2 id="头像">头像</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="头像">头像</h2>
 <p>关键字： <code>avatar</code><br>
 <code>url</code>后面改为你的头像的地址</p>
 <h2 id="颜色修改">颜色修改</h2>
@@ -580,50 +1070,106 @@ feed:
 </blockquote>
 <p>这个404是我参考的别人的
 这里要注意的是在HTML页面导入这两个js</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">&lt;script src<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js&#34;</span>&gt;&lt;/script&gt;
-&lt;script src<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js&#34;</span>&gt;&lt;/script&gt;
-</code></pre></div><p>不然会报错</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">&lt;script <span style="color:#dcaeea">src</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js&#34;</span>&gt;&lt;/script&gt;
+&lt;script <span style="color:#dcaeea">src</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js&#34;</span>&gt;&lt;/script&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>不然会报错</p>
 <h1 id="zsh简化命令">zsh简化命令</h1>
 <p>用vim打开zsh的配置文件
 <code>vim ~/.zshrc</code>
 添加内容</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># hexo清缓存，生成，压缩，部署</span>
-alias hexopush<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d&#34;</span>
-<span style="color:#75715e"># hexo清缓存，生成，压缩，开启本地服务器测试</span>
-alias hexotest<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo s&#34;</span>
-</code></pre></div><h1 id="让markdown支持emoji表情">让markdown支持emoji表情</h1>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># hexo清缓存，生成，压缩，部署</span>
+<span style="color:#e5c07b">alias</span> <span style="color:#dcaeea">hexopush</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo d&#34;</span>
+<span style="color:#8a93a5;font-style:italic"># hexo清缓存，生成，压缩，开启本地服务器测试</span>
+<span style="color:#e5c07b">alias</span> <span style="color:#dcaeea">hexotest</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;hexo clean &amp;&amp; hexo g &amp;&amp; gulp &amp;&amp; hexo s&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="让markdown支持emoji表情">让markdown支持emoji表情</h1>
 <blockquote>
 <p>参考：<a href="https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Getting-Started">hexo-renderer-markdown-it</a></p>
 </blockquote>
 <p>说白了就是换个markdown的渲染引擎</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm i hexo-renderer-markdown-it --save
-</code></pre></div><p>然后进入<code>hexo</code>的<code>_config.yml</code>加入以下内容：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># Markdown-it config</span>
-<span style="color:#75715e">## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki</span>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">npm i hexo-renderer-markdown-it --save
+</code></pre></td></tr></table>
+</div>
+</div><p>然后进入<code>hexo</code>的<code>_config.yml</code>加入以下内容：</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">25
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#8a93a5;font-style:italic"># Markdown-it config</span>
+<span style="color:#8a93a5;font-style:italic">## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki</span>
 markdown:
   render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: <span style="color:#e6db74">&#39;“”‘’&#39;</span>
+    html: <span style="color:#e5c07b">true</span>
+    xhtmlOut: <span style="color:#e5c07b">false</span>
+    breaks: <span style="color:#e5c07b">true</span>
+    linkify: <span style="color:#e5c07b">true</span>
+    typographer: <span style="color:#e5c07b">true</span>
+    quotes: <span style="color:#98c379">&#39;“”‘’&#39;</span>
   plugins:
     - markdown-it-abbr
     - markdown-it-footnote
     - markdown-it-ins
     - markdown-it-sub
     - markdown-it-sup
-    - markdown-it-emoji  <span style="color:#75715e">## add emoji</span>
+    - markdown-it-emoji  <span style="color:#8a93a5;font-style:italic">## add emoji</span>
   anchors:
-    level: <span style="color:#ae81ff">2</span>
-    collisionSuffix: <span style="color:#e6db74">&#39;v&#39;</span>
-    <span style="color:#75715e"># If `true`, creates an anchor tag with a permalink besides the heading.</span>
-    permalink: false
+    level: <span style="color:#d19a66">2</span>
+    collisionSuffix: <span style="color:#98c379">&#39;v&#39;</span>
+    <span style="color:#8a93a5;font-style:italic"># If `true`, creates an anchor tag with a permalink besides the heading.</span>
+    permalink: <span style="color:#e5c07b">false</span>
     permalinkClass: header-anchor
-    <span style="color:#75715e"># The symbol used to make the permalink</span>
+    <span style="color:#8a93a5;font-style:italic"># The symbol used to make the permalink</span>
     permalinkSymbol: ¶
-</code></pre></div><p>这里面也有一些其他插件<br>
+</code></pre></td></tr></table>
+</div>
+</div><p>这里面也有一些其他插件<br>
 如果感兴趣可以到<a href="https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration">hexo-renderer-markdown-it</a><br>
 去了解，反正我是谷歌浏览器翻译着看的</p>
 
@@ -642,10 +1188,10 @@ markdown:
               class="line">博客船新改版 hexo&#43;NexT</a></li>
           <li class="post-copyright-license"><strong>版权声明：</strong> 本<span xmlns:dct="http://purl.org/dc/terms/"
               href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>由<span
-              xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">PaleBlueYk</span>采用<a
+              xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Yazzyk</span>采用<a
               rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">知识共享署名-非商业性使用 4.0
               国际许可协议</a>进行许可。<br />基于<a xmlns:dct="http://purl.org/dc/terms/" href="https://css0209.cn"
-              rel="dct:source">PaleBlueYk&#39;s Blog</a>上的作品创作。转载请注明出处！</li>
+              rel="dct:source">Yazzyk&#39;s Blog</a>上的作品创作。转载请注明出处！</li>
         </ul>
       </div>
       
@@ -654,24 +1200,16 @@ markdown:
   </div>
   <footer>
   <div class="leftBox">
-    <span>Theme Designed by <a href="https://css0209.cn" target="_blank">PaleBlueYk</a></span><br />
+    <span>Theme Designed by <a href="https://shroot.dev" target="_blank">Yazzyk</a></span><br />
     <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
   </div>
   <div class="rightBox">
-    <span>Copyright © 2020-2020.10 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    <span>Copyright © 2020-2022.12 <a href="https://shroot.dev">Yazzyk</a> All Rights Reserved</span><br />
     
-    <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
-    
-    
-    <span>
-      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001557" target="_blank">
-        <img class="beian" src="https://css0209.cn/img/beian.png" alt="">川公网安备 51010702001557号
-      </a>
-    </span>
     
   </div>
 </footer>
 </body>
 
-<script src="https://css0209.cn/js/list.js"></script>
-<script src="https://css0209.cn/js/post.js"></script>
+<script src="https://shroot.dev/js/list.js"></script>
+<script src="https://shroot.dev/js/post.js"></script>

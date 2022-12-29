@@ -4,45 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaleBlueYk&#39;s Blog</title>
-  <meta name="author" content="PaleBlueYk" />
+  <title>Yazzyk&#39;s Blog</title>
+  <meta name="author" content="Yazzyk" />
   
-  <meta name="description" content="今天在学习Django时遇到一个问题 # 首先安装Mysql驱动 brew install mysql-connector-c # 第一条到没什么问题，但是第二条命令。。。 sudo pip install mysqlclient 当我按下Enter键后，出现了以下的报错： Password: The directory &amp;#39;/Users/blankyk/Library/Caches/pip/http&amp;#39; or its parent directory is not owned by the current user and the cache has been disabled." />
+  <meta name="description" content="今天在学习Django时遇到一个问题 # 首先安装Mysql驱动 brew install mysql-connector-c # 第一条到没什么问题，但是第二条命令。。。 sudo pip install mysqlclient 当我按下Enter键后，出现了以下的报错： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" />
   
   <meta name="keywords" content="">
-  <meta name="baidu-site-verification" content="u4UUwskbhk" />
+  <meta name="baidu-site-verification" content="code-TtzfDaB45q" />
   <meta name="google-site-verification" content="kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges" />
-  <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://css0209.cn/css/white.css">
-  <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://css0209.cn/css/highlight.css">
-  <script src="https://css0209.cn/js/heighlight.min.js"></script>
+  <link rel="shortcut icon" href="https://shroot.dev/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://shroot.dev/css/white.css">
+  
+  
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
   
   
   
-  <script src="https://css0209.cn/js/jQuery.min.js"></script>
-  <script src="https://css0209.cn/js/lodash.js"></script>
-  <script src="https://css0209.cn/js/baidu.js"></script>
-  <link rel="stylesheet" href="https://css0209.cn/css/main.css">
+  <script src="https://shroot.dev/js/jQuery.min.js" async="async"></script>
+  <script src="https://shroot.dev/js/lodash.js" async="async"></script>
+  <script src="https://shroot.dev/js/baidu.js" async="async"></script>
+  
+  <link rel="stylesheet" href="https://shroot.dev/css/main.css">
+  
 </head>
 <body>
   <div class="nav">
   <div class="logoBox">
     <a href="/posts"><img src="/img/logo.png" alt="" class="logo"></a>
   </div>
-  <button class="bars" onclick="toggleMenus()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  
   <ul>
     
     
-    <li><a class="linkBox" href="/">Welcome</a></li>
+    <li><a class="linkBox" href="/">欢迎页</a></li>
     
-    <li><a class="linkBox" href="/posts">Home</a></li>
+    <li><a class="linkBox" href="/posts">文章</a></li>
     
-    <li><a class="linkBox" href="/about">About</a></li>
+    <li><a class="linkBox" href="/about">关于我</a></li>
     
-    <li><a class="linkBox" href="/tags">Tags</a></li>
+    <li><a class="linkBox" href="/tags">分类</a></li>
     
-    <li><a class="linkBox" href="/links">Links</a></li>
+    <li><a class="linkBox" href="/links">友链</a></li>
     
   </ul>
 </div>
@@ -55,25 +57,13 @@
   <div class="socials">
     <div class="socialLinks">
       
+      <a href="mailto:917885215@qq.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
       
-      <a href="mailto:blankyk@css0209.cn" title="envelope-o" target="_blank"><i class="fa fa-envelope-o"
-          aria-hidden="true"></i></a>
+      <a href="https://github.com/Yazzyk" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
       
+      <a href="#ZgotmplZ" target="_blank"><i class="fa-brands fa-qq" aria-hidden="true"></i></a>
       
-      
-      <a href="https://github.com/paleBlueYk" title="github-alt" target="_blank"><i class="fa fa-github-alt"
-          aria-hidden="true"></i></a>
-      
-      
-      
-      <a href="tencent://Message/?Uin=917885215&amp;amp;websiteName=q-zone.qq.com&amp;amp;Menu=yes" title="qq" target="_blank"><i class="fa fa-qq"
-          aria-hidden="true"></i></a>
-      
-      
-      
-      <a href="https://space.bilibili.com/10061915" title="television" target="_blank"><i class="fa fa-television"
-          aria-hidden="true"></i></a>
-      
+      <a href="https://space.bilibili.com/10061915" target="_blank"><i class="fa-solid fa-tv" aria-hidden="true"></i></a>
       
     </div>
   </div>
@@ -82,56 +72,117 @@
     <div class="postContent">
       <h1>sudo pip install mysqlclient报错</h1>
       <small><i class="fa fa-clock-o" aria-hidden="true"></i>2018-09-10
-        PaleBlueYk</small>
+        Yazzyk</small>
       <h1 id="今天在学习django时遇到一个问题">今天在学习Django时遇到一个问题</h1>
 <p># 首先安装Mysql驱动
 <code>brew install mysql-connector-c</code>
 # 第一条到没什么问题，但是第二条命令。。。
 <code>sudo pip install mysqlclient</code></p>
 <p>当我按下<code>Enter</code>键后，出现了以下的报错：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Password:
-The directory <span style="color:#e6db74">&#39;/Users/blankyk/Library/Caches/pip/http&#39;</span> or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo<span style="color:#e6db74">&#39;s -H flag.
-</span><span style="color:#e6db74">The directory &#39;</span>/Users/blankyk/Library/Caches/pip<span style="color:#e6db74">&#39; or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&#39;</span>s -H flag.
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Password:
+The directory <span style="color:#98c379">&#39;/Users/blankyk/Library/Caches/pip/http&#39;</span> or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo<span style="color:#98c379">&#39;s -H flag.
+</span><span style="color:#98c379">The directory &#39;</span>/Users/blankyk/Library/Caches/pip<span style="color:#98c379">&#39; or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&#39;</span>s -H flag.
 Collecting mysqlclient
-  Downloading https://files.pythonhosted.org/packages/ec/fd/83329b9d3e14f7344d1cb31f128e6dbba70c5975c9e57896815dbb1988ad/mysqlclient-1.3.13.tar.gz <span style="color:#f92672">(</span>90kB<span style="color:#f92672">)</span>
-    100% |████████████████████████████████| 92kB 147kB/s 
-    Complete output from command python setup.py egg_info:
-    Traceback <span style="color:#f92672">(</span>most recent call last<span style="color:#f92672">)</span>:
-      File <span style="color:#e6db74">&#34;&#34;</span>, line 1, in 
-      File <span style="color:#e6db74">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup.py&#34;</span>, line 18, in 
-        metadata, options <span style="color:#f92672">=</span> get_config<span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-      File <span style="color:#e6db74">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup\_posix.py&#34;</span>, line 60, in get<span style="color:#ae81ff">\_</span>config
-        libraries <span style="color:#f92672">=</span> <span style="color:#ae81ff">\[</span>dequote<span style="color:#f92672">(</span>i<span style="color:#ae81ff">\[</span>2:<span style="color:#ae81ff">\]</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">for</span> i in libs <span style="color:#66d9ef">if</span> i.startswith<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;-l&#39;</span><span style="color:#f92672">)</span><span style="color:#ae81ff">\]</span>
-      File <span style="color:#e6db74">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup_posix.py&#34;</span>, line 60, in 
-        libraries <span style="color:#f92672">=</span> <span style="color:#ae81ff">\[</span>dequote<span style="color:#f92672">(</span>i<span style="color:#ae81ff">\[</span>2:<span style="color:#ae81ff">\]</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">for</span> i in libs <span style="color:#66d9ef">if</span> i.startswith<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;-l&#39;</span><span style="color:#f92672">)</span><span style="color:#ae81ff">\]</span>
-      File <span style="color:#e6db74">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup_posix.py&#34;</span>, line 13, in dequote
-        raise Exception<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Wrong MySQL configuration: maybe https://bugs.mysql.com/bug.php?id=86971 ?&#34;</span><span style="color:#f92672">)</span>
-    Exception: Wrong MySQL configuration: maybe https://bugs.mysql.com/bug.php?id<span style="color:#f92672">=</span><span style="color:#ae81ff">86971</span> ?
+  Downloading https://files.pythonhosted.org/packages/ec/fd/83329b9d3e14f7344d1cb31f128e6dbba70c5975c9e57896815dbb1988ad/mysqlclient-1.3.13.tar.gz <span style="color:#54b1c7">(</span>90kB<span style="color:#54b1c7">)</span>
+    100% <span style="color:#abb2bf">|</span>████████████████████████████████<span style="color:#abb2bf">|</span> 92kB 147kB/s 
+    Complete output from <span style="color:#e5c07b">command</span> python setup.py egg_info:
+    Traceback <span style="color:#54b1c7">(</span>most recent call last<span style="color:#54b1c7">)</span>:
+      File <span style="color:#63c381">&#34;&#34;</span>, line 1, in 
+      File <span style="color:#63c381">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup.py&#34;</span>, line 18, in 
+        metadata, <span style="color:#dcaeea">options</span> <span style="color:#54b1c7">=</span> get_config<span style="color:#54b1c7">()</span>
+      File <span style="color:#63c381">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup\_posix.py&#34;</span>, line 60, in get<span style="color:#d26464;font-weight:bold">\_</span>config
+        <span style="color:#dcaeea">libraries</span> <span style="color:#54b1c7">=</span> <span style="color:#d26464;font-weight:bold">\[</span>dequote<span style="color:#54b1c7">(</span>i<span style="color:#d26464;font-weight:bold">\[</span>2:<span style="color:#d26464;font-weight:bold">\]</span><span style="color:#54b1c7">)</span> <span style="color:#76a9f9">for</span> i in libs <span style="color:#76a9f9">if</span> i.startswith<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;-l&#39;</span><span style="color:#54b1c7">)</span><span style="color:#d26464;font-weight:bold">\]</span>
+      File <span style="color:#63c381">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup_posix.py&#34;</span>, line 60, in 
+        <span style="color:#dcaeea">libraries</span> <span style="color:#54b1c7">=</span> <span style="color:#d26464;font-weight:bold">\[</span>dequote<span style="color:#54b1c7">(</span>i<span style="color:#d26464;font-weight:bold">\[</span>2:<span style="color:#d26464;font-weight:bold">\]</span><span style="color:#54b1c7">)</span> <span style="color:#76a9f9">for</span> i in libs <span style="color:#76a9f9">if</span> i.startswith<span style="color:#54b1c7">(</span><span style="color:#98c379">&#39;-l&#39;</span><span style="color:#54b1c7">)</span><span style="color:#d26464;font-weight:bold">\]</span>
+      File <span style="color:#63c381">&#34;/private/tmp/pip-install-2m1bow3w/mysqlclient/setup_posix.py&#34;</span>, line 13, in dequote
+        raise Exception<span style="color:#54b1c7">(</span><span style="color:#63c381">&#34;Wrong MySQL configuration: maybe https://bugs.mysql.com/bug.php?id=86971 ?&#34;</span><span style="color:#54b1c7">)</span>
+    Exception: Wrong MySQL configuration: maybe https://bugs.mysql.com/bug.php?id<span style="color:#54b1c7">=</span><span style="color:#d19a66">86971</span> ?
     
     ----------------------------------------
-Command <span style="color:#e6db74">&#34;python setup.py egg_info&#34;</span> failed with error code <span style="color:#ae81ff">1</span> in /private/tmp/pip-install-2m1bow3w/mysqlclient/
-</code></pre></div><p>首先我用的是macOS Height Sierra 10.13.6(黑苹果) 然后，我就日常Google了，然后在<a href="https://www.easegamer.com/?p=545">www.easegamer.com/?p=545</a>找到了解决方案和答案 这个问题出现的原因是mysql-connector-c中配置项有误 mysqlclient开发小组的核心成员，来自日本的大神INADA Naoki给出了临时性的解决办法，具体可以去看<a href="https://github.com/PyMySQL/mysqlclient-python/issues/169#issuecomment-299778504">GitHub上mysqlclient的issue</a> 针对于Mac的话我参照<a href="https://www.easegamer.com/?p=545">此博客</a>中的方法解决如下：</p>
+Command <span style="color:#63c381">&#34;python setup.py egg_info&#34;</span> failed with error code <span style="color:#d19a66">1</span> in /private/tmp/pip-install-2m1bow3w/mysqlclient/
+</code></pre></td></tr></table>
+</div>
+</div><p>首先我用的是macOS Height Sierra 10.13.6(黑苹果) 然后，我就日常Google了，然后在<a href="https://www.easegamer.com/?p=545">www.easegamer.com/?p=545</a>找到了解决方案和答案 这个问题出现的原因是mysql-connector-c中配置项有误 mysqlclient开发小组的核心成员，来自日本的大神INADA Naoki给出了临时性的解决办法，具体可以去看<a href="https://github.com/PyMySQL/mysqlclient-python/issues/169#issuecomment-299778504">GitHub上mysqlclient的issue</a> 针对于Mac的话我参照<a href="https://www.easegamer.com/?p=545">此博客</a>中的方法解决如下：</p>
 <p># 找到mysql_config文件，我的电脑上地址为：/usr/local/Cellar/mysql-connector-c/6.1.11/bin/mysql_config
 # 然后我是用vscode打开的文件，不知道为什么，就算我用<code>sudo vim</code>打开这个文件，也只有只读权限，打开后找到114行：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Create options 
-libs<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">-L</span>$pkglibdir<span style="color:#e6db74">&#34;</span>
-libs<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$libs<span style="color:#e6db74"> -l</span><span style="color:#e6db74">&#34;</span>
-</code></pre></div><p># 修改为：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Create options 
-libs<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">-L</span>$pkglibdir<span style="color:#e6db74">&#34;</span>
-libs<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$libs<span style="color:#e6db74"> -lmysqlclient -lssl -lcrypto</span><span style="color:#e6db74">&#34;</span>
-</code></pre></div><p>保存，然后提示只读，点击覆盖即可，退出 再次执行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#f92672">(</span>venv<span style="color:#f92672">)</span> ➜  curriculum sudo pip install mysqlclient
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Create options 
+<span style="color:#dcaeea">libs</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;-L</span><span style="color:#dcaeea">$pkglibdir</span><span style="color:#63c381">&#34;</span>
+<span style="color:#dcaeea">libs</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;</span><span style="color:#dcaeea">$libs</span><span style="color:#63c381"> -l&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p># 修改为：</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Create options 
+<span style="color:#dcaeea">libs</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;-L</span><span style="color:#dcaeea">$pkglibdir</span><span style="color:#63c381">&#34;</span>
+<span style="color:#dcaeea">libs</span><span style="color:#54b1c7">=</span><span style="color:#63c381">&#34;</span><span style="color:#dcaeea">$libs</span><span style="color:#63c381"> -lmysqlclient -lssl -lcrypto&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>保存，然后提示只读，点击覆盖即可，退出 再次执行</p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh"><span style="color:#54b1c7">(</span>venv<span style="color:#54b1c7">)</span> ➜  curriculum sudo pip install mysqlclient
 Password:
-The directory <span style="color:#e6db74">&#39;/Users/blankyk/Library/Caches/pip/http&#39;</span> or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo<span style="color:#e6db74">&#39;s -H flag.
-</span><span style="color:#e6db74">The directory &#39;</span>/Users/blankyk/Library/Caches/pip<span style="color:#e6db74">&#39; or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&#39;</span>s -H flag.
+The directory <span style="color:#98c379">&#39;/Users/blankyk/Library/Caches/pip/http&#39;</span> or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo<span style="color:#98c379">&#39;s -H flag.
+</span><span style="color:#98c379">The directory &#39;</span>/Users/blankyk/Library/Caches/pip<span style="color:#98c379">&#39; or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&#39;</span>s -H flag.
 Collecting mysqlclient
-  Downloading https://files.pythonhosted.org/packages/ec/fd/83329b9d3e14f7344d1cb31f128e6dbba70c5975c9e57896815dbb1988ad/mysqlclient-1.3.13.tar.gz <span style="color:#f92672">(</span>90kB<span style="color:#f92672">)</span>
-    100% |████████████████████████████████| 92kB 124kB/s 
+  Downloading https://files.pythonhosted.org/packages/ec/fd/83329b9d3e14f7344d1cb31f128e6dbba70c5975c9e57896815dbb1988ad/mysqlclient-1.3.13.tar.gz <span style="color:#54b1c7">(</span>90kB<span style="color:#54b1c7">)</span>
+    100% <span style="color:#abb2bf">|</span>████████████████████████████████<span style="color:#abb2bf">|</span> 92kB 124kB/s 
 Installing collected packages: mysqlclient
-  Running setup.py install <span style="color:#66d9ef">for</span> mysqlclient ... <span style="color:#66d9ef">done</span>
+  Running setup.py install <span style="color:#76a9f9">for</span> mysqlclient ... <span style="color:#76a9f9">done</span>
 Successfully installed mysqlclient-1.3.13
-</code></pre></div><p>大概就是这么肥事。[](<a href="https://cloud.css0209.cn/2018/09/9150e4e5ly1fkzc8c405bj20e80cjaab.jpg">https://cloud.css0209.cn/2018/09/9150e4e5ly1fkzc8c405bj20e80cjaab.jpg</a>)</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>大概就是这么肥事。<a href="https://cloud.css0209.cn/2018/09/9150e4e5ly1fkzc8c405bj20e80cjaab.jpg"></a></p>
 
       <div class="postFooter">
         
@@ -148,10 +199,10 @@ Successfully installed mysqlclient-1.3.13
               class="line">sudo pip install mysqlclient报错</a></li>
           <li class="post-copyright-license"><strong>版权声明：</strong> 本<span xmlns:dct="http://purl.org/dc/terms/"
               href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>由<span
-              xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">PaleBlueYk</span>采用<a
+              xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Yazzyk</span>采用<a
               rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">知识共享署名-非商业性使用 4.0
               国际许可协议</a>进行许可。<br />基于<a xmlns:dct="http://purl.org/dc/terms/" href="https://css0209.cn"
-              rel="dct:source">PaleBlueYk&#39;s Blog</a>上的作品创作。转载请注明出处！</li>
+              rel="dct:source">Yazzyk&#39;s Blog</a>上的作品创作。转载请注明出处！</li>
         </ul>
       </div>
       
@@ -160,24 +211,16 @@ Successfully installed mysqlclient-1.3.13
   </div>
   <footer>
   <div class="leftBox">
-    <span>Theme Designed by <a href="https://css0209.cn" target="_blank">PaleBlueYk</a></span><br />
+    <span>Theme Designed by <a href="https://shroot.dev" target="_blank">Yazzyk</a></span><br />
     <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
   </div>
   <div class="rightBox">
-    <span>Copyright © 2020-2020.10 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    <span>Copyright © 2020-2022.12 <a href="https://shroot.dev">Yazzyk</a> All Rights Reserved</span><br />
     
-    <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
-    
-    
-    <span>
-      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001557" target="_blank">
-        <img class="beian" src="https://css0209.cn/img/beian.png" alt="">川公网安备 51010702001557号
-      </a>
-    </span>
     
   </div>
 </footer>
 </body>
 
-<script src="https://css0209.cn/js/list.js"></script>
-<script src="https://css0209.cn/js/post.js"></script>
+<script src="https://shroot.dev/js/list.js"></script>
+<script src="https://shroot.dev/js/post.js"></script>

@@ -4,45 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaleBlueYk&#39;s Blog</title>
-  <meta name="author" content="PaleBlueYk" />
+  <title>Yazzyk&#39;s Blog</title>
+  <meta name="author" content="Yazzyk" />
   
-  <meta name="description" content="基于我学院机房搭建的Samba服务器傻瓜式教程 感谢班上学习委员大佬的笔记 一、挂载光盘 mount #查看光盘所在的设备位置 mount -t iso9660 /dev/hdc /mnt #挂载光盘(/dev/hdc)到 /mnt目录 二、软件包安装 所有的软件包都在Ser" />
+  <meta name="description" content="基于我学院机房搭建的Samba服务器傻瓜式教程 感谢班上学习委员大佬的笔记 一、挂载光盘 1 2 mount #查看光盘所在的设备位置 mount -t iso9660 /dev/hdc /mnt #挂载光盘(/dev/hdc)到 /mnt目录 二、软件包安装 所有的软件包都在S" />
   
   <meta name="keywords" content="">
-  <meta name="baidu-site-verification" content="u4UUwskbhk" />
+  <meta name="baidu-site-verification" content="code-TtzfDaB45q" />
   <meta name="google-site-verification" content="kAjz9Ic_7Hir1rNUQtXSxTydJTryAv8JMelb2Qvnges" />
-  <link rel="shortcut icon" href="https://css0209.cn/img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://css0209.cn/css/white.css">
-  <link rel="stylesheet" href="https://css0209.cn/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://css0209.cn/css/highlight.css">
-  <script src="https://css0209.cn/js/heighlight.min.js"></script>
+  <link rel="shortcut icon" href="https://shroot.dev/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://shroot.dev/css/white.css">
+  
+  
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
   
   
   
-  <script src="https://css0209.cn/js/jQuery.min.js"></script>
-  <script src="https://css0209.cn/js/lodash.js"></script>
-  <script src="https://css0209.cn/js/baidu.js"></script>
-  <link rel="stylesheet" href="https://css0209.cn/css/main.css">
+  <script src="https://shroot.dev/js/jQuery.min.js" async="async"></script>
+  <script src="https://shroot.dev/js/lodash.js" async="async"></script>
+  <script src="https://shroot.dev/js/baidu.js" async="async"></script>
+  
+  <link rel="stylesheet" href="https://shroot.dev/css/main.css">
+  
 </head>
 <body>
   <div class="nav">
   <div class="logoBox">
     <a href="/posts"><img src="/img/logo.png" alt="" class="logo"></a>
   </div>
-  <button class="bars" onclick="toggleMenus()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  
   <ul>
     
     
-    <li><a class="linkBox" href="/">Welcome</a></li>
+    <li><a class="linkBox" href="/">欢迎页</a></li>
     
-    <li><a class="linkBox" href="/posts">Home</a></li>
+    <li><a class="linkBox" href="/posts">文章</a></li>
     
-    <li><a class="linkBox" href="/about">About</a></li>
+    <li><a class="linkBox" href="/about">关于我</a></li>
     
-    <li><a class="linkBox" href="/tags">Tags</a></li>
+    <li><a class="linkBox" href="/tags">分类</a></li>
     
-    <li><a class="linkBox" href="/links">Links</a></li>
+    <li><a class="linkBox" href="/links">友链</a></li>
     
   </ul>
 </div>
@@ -55,25 +57,13 @@
   <div class="socials">
     <div class="socialLinks">
       
+      <a href="mailto:917885215@qq.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
       
-      <a href="mailto:blankyk@css0209.cn" title="envelope-o" target="_blank"><i class="fa fa-envelope-o"
-          aria-hidden="true"></i></a>
+      <a href="https://github.com/Yazzyk" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
       
+      <a href="#ZgotmplZ" target="_blank"><i class="fa-brands fa-qq" aria-hidden="true"></i></a>
       
-      
-      <a href="https://github.com/paleBlueYk" title="github-alt" target="_blank"><i class="fa fa-github-alt"
-          aria-hidden="true"></i></a>
-      
-      
-      
-      <a href="tencent://Message/?Uin=917885215&amp;amp;websiteName=q-zone.qq.com&amp;amp;Menu=yes" title="qq" target="_blank"><i class="fa fa-qq"
-          aria-hidden="true"></i></a>
-      
-      
-      
-      <a href="https://space.bilibili.com/10061915" title="television" target="_blank"><i class="fa fa-television"
-          aria-hidden="true"></i></a>
-      
+      <a href="https://space.bilibili.com/10061915" target="_blank"><i class="fa-solid fa-tv" aria-hidden="true"></i></a>
       
     </div>
   </div>
@@ -82,21 +72,37 @@
     <div class="postContent">
       <h1>学校Linux，Samba服务器搭建</h1>
       <small><i class="fa fa-clock-o" aria-hidden="true"></i>2018-12-08
-        PaleBlueYk</small>
+        Yazzyk</small>
       <h1 id="基于我学院机房搭建的samba服务器傻瓜式教程">基于我学院机房搭建的Samba服务器傻瓜式教程</h1>
 <p>感谢班上学习委员大佬的笔记</p>
 <h1 id="一挂载光盘">一、挂载光盘</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mount <span style="color:#75715e">#查看光盘所在的设备位置</span>
-mount -t iso9660 /dev/hdc /mnt  <span style="color:#75715e">#挂载光盘(/dev/hdc)到 /mnt目录</span>
-</code></pre></div><h1 id="二软件包安装">二、软件包安装</h1>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mount <span style="color:#8a93a5;font-style:italic">#查看光盘所在的设备位置</span>
+mount -t iso9660 /dev/hdc /mnt  <span style="color:#8a93a5;font-style:italic">#挂载光盘(/dev/hdc)到 /mnt目录</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="二软件包安装">二、软件包安装</h1>
 <ul>
 <li>所有的软件包都在Server目录(<code>/mnt/Server</code>)</li>
 <li><code>rpm -ivh</code> (<code>-i</code>安装、<code>-v</code>显示安装过程、<code>-h</code>以“#”符号表示安装进度）</li>
 <li>samba服务器需要安装两个软件包：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm -ivh /mnt/Server/perl-Convert-ASNI-0.20-1.1.noarch.rpm
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm -ivh /mnt/Server/perl-Convert-ASNI-0.20-1.1.noarch.rpm
 rpm -ivh /mnt/Server/samba-3.0.33-3.14.e15.i386.rpm
-</code></pre></div><blockquote>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>注：使用tab键自动补全，更方便</p>
 </blockquote>
 <p>检查是否安装成功：<code>service smb start</code>（<code>Samba</code>服务器使用<code>smb</code>协议）</p>
@@ -107,62 +113,151 @@ rpm -ivh /mnt/Server/samba-3.0.33-3.14.e15.i386.rpm
 <li>VMWARE软件 虚拟机设置：<code>虚拟机</code>-<code>设置</code>-<code>适配器</code>-自定义<code>VMNET1</code></li>
 <li>关闭虚拟机自带的<code>DHCP</code>:<code>编辑</code>-<code>虚拟机网络编辑器</code>-<code>VMNET1</code>，<code>关闭DHCP</code>选项</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ifconfig eth0  <span style="color:#75715e">#查看网卡接口etho的IP</span>
-ifconfig eth0 10.10.10.10  <span style="color:#75715e">#设置虚拟机eth0的IP地址，Linux</span>
-<span style="color:#75715e">#（主机地址这时一般为10.10.10.1，为了便捷可以不进行修改）</span>
-</code></pre></div><h2 id="检查是否设置成功">检查是否设置成功</h2>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ifconfig eth0  <span style="color:#8a93a5;font-style:italic">#查看网卡接口etho的IP</span>
+ifconfig eth0 10.10.10.10  <span style="color:#8a93a5;font-style:italic">#设置虚拟机eth0的IP地址，Linux</span>
+<span style="color:#8a93a5;font-style:italic">#（主机地址这时一般为10.10.10.1，为了便捷可以不进行修改）</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="检查是否设置成功">检查是否设置成功</h2>
 <ul>
 <li>物理机：(Windows+R运行)cmd (调出命令提示符)<br>
 进行ping测试</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        ping 10.10.10.10  
-</code></pre></div><ul>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">        ping 10.10.10.10  
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>虚拟机：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ping 10.10.10.10 <span style="color:#75715e"># 按ctrl+C终止ping命令，不然会一直运行</span>
-</code></pre></div><p>五、配置文件：<code>/etc/samba/smb.conf</code><br>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ping 10.10.10.10 <span style="color:#8a93a5;font-style:italic"># 按ctrl+C终止ping命令，不然会一直运行</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>五、配置文件：<code>/etc/samba/smb.conf</code><br>
 共享文件自己创建，这里我创建的是<code>book</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /etc/book <span style="color:#75715e">#在根目录下etc目录下创建book文件夹</span>
-</code></pre></div><h3 id="1配置共享级别global和自定义目录名必须有">（1）配置共享级别:<code>[global]</code>和<code>[自定义目录名]</code>必须有</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /etc/samba/smb.conf <span style="color:#75715e">#利用vi编辑器打开配置文件</span>
-</code></pre></div><p>命令模式下输入<code>/global</code>快速查找关键字&rsquo;global&rsquo;(<code>vi/vim</code>的部分使用：<a href="../linux-vi-vim/">Linux vi/vim笔记</a>)
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /etc/book <span style="color:#8a93a5;font-style:italic">#在根目录下etc目录下创建book文件夹</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="1配置共享级别global和自定义目录名必须有">（1）配置共享级别:<code>[global]</code>和<code>[自定义目录名]</code>必须有</h3>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /etc/samba/smb.conf <span style="color:#8a93a5;font-style:italic">#利用vi编辑器打开配置文件</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>命令模式下输入<code>/global</code>快速查找关键字&rsquo;global'(<code>vi/vim</code>的部分使用：<a href="../linux-vi-vim/">Linux vi/vim笔记</a>)
 按<code>i</code>切换到文本编辑模式</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>global<span style="color:#f92672">]</span>
-   workgroup<span style="color:#f92672">=</span>workgroup
-   netbios name<span style="color:#f92672">=</span>centos
-   security<span style="color:#f92672">=</span>share
-<span style="color:#f92672">[</span>book<span style="color:#f92672">]</span>
-   path<span style="color:#f92672">=</span>/etc/book
-   writable<span style="color:#f92672">=</span>yes
-   guest ok<span style="color:#f92672">=</span>yes
-</code></pre></div><p>按<code>esc</code>切换到命令模式<br>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#54b1c7">[</span>global<span style="color:#54b1c7">]</span>
+   <span style="color:#dcaeea">workgroup</span><span style="color:#54b1c7">=</span>workgroup
+   netbios <span style="color:#dcaeea">name</span><span style="color:#54b1c7">=</span>centos
+   <span style="color:#dcaeea">security</span><span style="color:#54b1c7">=</span>share
+<span style="color:#54b1c7">[</span>book<span style="color:#54b1c7">]</span>
+   <span style="color:#dcaeea">path</span><span style="color:#54b1c7">=</span>/etc/book
+   <span style="color:#dcaeea">writable</span><span style="color:#54b1c7">=</span>yes
+   guest <span style="color:#dcaeea">ok</span><span style="color:#54b1c7">=</span>yes
+</code></pre></td></tr></table>
+</div>
+</div><p>按<code>esc</code>切换到命令模式<br>
 <code>：wq</code>存盘退出<br>
 重启服务器：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service smb restart  
-</code></pre></div><p>在物理机测试：
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service smb restart  
+</code></pre></td></tr></table>
+</div>
+</div><p>在物理机测试：
 Windows+R(运行)或资源管理器:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">\\</span>10.10.10.10
-</code></pre></div><p>或浏览器输入<code>file://10.10.10.10</code></p>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#d26464;font-weight:bold">\\</span>10.10.10.10
+</code></pre></td></tr></table>
+</div>
+</div><p>或浏览器输入<code>file://10.10.10.10</code></p>
 <h3 id="2配置用户级别global和homes必须有">（2）配置用户级别:<code>[global]</code>和<code>[homes]</code>必须有</h3>
 <blockquote>
 <p>只有Linux系统本身的用户才能成为samba用户</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">useradd jerry <span style="color:#75715e">#创建系统本身用户jerry</span>
-passwd jerry <span style="color:#75715e">#设置密码</span>
-pdbedit -a jerry <span style="color:#75715e">#添加samba用户jerry</span>
-vi /etc/samba/smb.conf <span style="color:#75715e">#利用vi编辑器打开配置文件</span>
-</code></pre></div><ul>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">useradd jerry <span style="color:#8a93a5;font-style:italic">#创建系统本身用户jerry</span>
+passwd jerry <span style="color:#8a93a5;font-style:italic">#设置密码</span>
+pdbedit -a jerry <span style="color:#8a93a5;font-style:italic">#添加samba用户jerry</span>
+vi /etc/samba/smb.conf <span style="color:#8a93a5;font-style:italic">#利用vi编辑器打开配置文件</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>按<code>i</code>切换到文本编辑模式</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>global<span style="color:#f92672">]</span>
-   workgroup<span style="color:#f92672">=</span>workgroup
-   netbios name<span style="color:#f92672">=</span>centos
-   security<span style="color:#f92672">=</span>user
-<span style="color:#f92672">[</span>homes<span style="color:#f92672">]</span>
-   comment<span style="color:#f92672">=</span>Home Directory
-   browseable<span style="color:#f92672">=</span>no
-   writable<span style="color:#f92672">=</span>yes
-</code></pre></div><p>按<code>esc</code>切换到命令模式<br>
+<div class="highlight"><div style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#58626f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#54b1c7">[</span>global<span style="color:#54b1c7">]</span>
+   <span style="color:#dcaeea">workgroup</span><span style="color:#54b1c7">=</span>workgroup
+   netbios <span style="color:#dcaeea">name</span><span style="color:#54b1c7">=</span>centos
+   <span style="color:#dcaeea">security</span><span style="color:#54b1c7">=</span>user
+<span style="color:#54b1c7">[</span>homes<span style="color:#54b1c7">]</span>
+   <span style="color:#dcaeea">comment</span><span style="color:#54b1c7">=</span>Home Directory
+   <span style="color:#dcaeea">browseable</span><span style="color:#54b1c7">=</span>no
+   <span style="color:#dcaeea">writable</span><span style="color:#54b1c7">=</span>yes
+</code></pre></td></tr></table>
+</div>
+</div><p>按<code>esc</code>切换到命令模式<br>
 <code>：wq</code>存盘退出<br>
 重启服务器：<code>service smb restart</code><br>
 在物理机测试：<code>\\10.10.10.10</code></p>
@@ -182,10 +277,10 @@ vi /etc/samba/smb.conf <span style="color:#75715e">#利用vi编辑器打开配�
               class="line">学校Linux，Samba服务器搭建</a></li>
           <li class="post-copyright-license"><strong>版权声明：</strong> 本<span xmlns:dct="http://purl.org/dc/terms/"
               href="http://purl.org/dc/dcmitype/Text" rel="dct:type">作品</span>由<span
-              xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">PaleBlueYk</span>采用<a
+              xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Yazzyk</span>采用<a
               rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh">知识共享署名-非商业性使用 4.0
               国际许可协议</a>进行许可。<br />基于<a xmlns:dct="http://purl.org/dc/terms/" href="https://css0209.cn"
-              rel="dct:source">PaleBlueYk&#39;s Blog</a>上的作品创作。转载请注明出处！</li>
+              rel="dct:source">Yazzyk&#39;s Blog</a>上的作品创作。转载请注明出处！</li>
         </ul>
       </div>
       
@@ -194,24 +289,16 @@ vi /etc/samba/smb.conf <span style="color:#75715e">#利用vi编辑器打开配�
   </div>
   <footer>
   <div class="leftBox">
-    <span>Theme Designed by <a href="https://css0209.cn" target="_blank">PaleBlueYk</a></span><br />
+    <span>Theme Designed by <a href="https://shroot.dev" target="_blank">Yazzyk</a></span><br />
     <span>Proudly published with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
   </div>
   <div class="rightBox">
-    <span>Copyright © 2020-2020.10 <a href="https://css0209.cn">PaleBlueYk</a> All Rights Reserved</span><br />
+    <span>Copyright © 2020-2022.12 <a href="https://shroot.dev">Yazzyk</a> All Rights Reserved</span><br />
     
-    <span><a href="http://www.beian.miit.gov.cn/" target="_blank">蜀ICP备17038940号-2</a></span><br />
-    
-    
-    <span>
-      <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010702001557" target="_blank">
-        <img class="beian" src="https://css0209.cn/img/beian.png" alt="">川公网安备 51010702001557号
-      </a>
-    </span>
     
   </div>
 </footer>
 </body>
 
-<script src="https://css0209.cn/js/list.js"></script>
-<script src="https://css0209.cn/js/post.js"></script>
+<script src="https://shroot.dev/js/list.js"></script>
+<script src="https://shroot.dev/js/post.js"></script>
