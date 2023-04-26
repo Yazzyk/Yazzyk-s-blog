@@ -12,7 +12,7 @@ draft: false
 --- | ---
 年龄 | 23
 Github | [Yazzyk](https://github.com/Yazzyk)
-喜欢 | 写代码，[我老婆](https://space.bilibili.com/31541409)
+喜欢 | 写代码，[我对象](https://space.bilibili.com/31541409)
 
 ## 技术栈
 

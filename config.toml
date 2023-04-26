@@ -13,8 +13,8 @@ enableRobotsTXT = true
 [markup.highlight]
   codeFences = true
   guessSyntax = true
-  style = 'doom-one2'
-  lineNos = true
+  style = 'native'
+  lineNos = false
   lineNumbersInTable = true
   noClasses = true
 
@@ -23,7 +23,7 @@ enableRobotsTXT = true
   subTitle = "芝灵生于幽谷,不以无人而不芳"
   author = "Yazzyk"
   description = "Yazzyk's Blog"
-  keyworlds = "Yazzyk,blog,paleblue,yk,hugo"
+  keyworlds = "Yazzyk,blog,paleblue,yk,hugo,caddy,Golang"
   record = ""
   policeRecordProvince = ""
   policeRecordNumber = ""
