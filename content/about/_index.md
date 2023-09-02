@@ -6,6 +6,7 @@ draft: false
 
 ## 基本信息
 
+<<<<<<< HEAD
 |Key | Value |
 |:---: | :---: |
 |年龄 | 24 |
@@ -14,6 +15,13 @@ draft: false
 
 - 20年大专毕业
 - 3年Golang开发经验
+=======
+个人信息 | 参数
+--- | ---
+年龄 | 23
+Github | [Yazzyk](https://github.com/Yazzyk)
+喜欢 | 写代码，[我对象](https://space.bilibili.com/31541409)
+>>>>>>> 2f24ce0bfb30102ce4e893e9ec559168b98ce741
 
 ## 技术栈
 
