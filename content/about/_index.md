@@ -10,6 +10,7 @@ draft: false
 |:---: | :---: |
 |年龄 | 24 |
 |Github | [Yazzyk](https://github.com/Yazzyk) |
+|E-Mail | root@shroot.dev |
 |喜欢 | 写代码、[我老婆](https://space.bilibili.com/31541409)、电子产品 |
 
 - 20年大专毕业
